@@ -36,7 +36,7 @@
 #include <KMessageBox>
 #include <KService>
 
-#include "ksgrd/SensorManager.h"
+#include "../ksgrd/SensorManager.h"
 #include "SensorDisplay.h"
 
 #define NONE -1
@@ -100,7 +100,7 @@ void SensorDisplay::timerTick()
 {
   int i = 0;
 
-  foreach( SensorProperties *s, mSensors) {
+  for( SensorProperties *s : mSensors) {
     sendRequest( s->hostName(), s->name(), i++ );
  }
 }
@@ -195,7 +195,7 @@ void SensorDisplay::updateWhatsThis()
 
 void SensorDisplay::hosts( QStringList& list )
 {
-  foreach( SensorProperties *s, mSensors)
+  for( SensorProperties *s : mSensors)
     if ( !list.contains( s->hostName() ) )
       list.append( s->hostName() );
 }

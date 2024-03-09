@@ -21,7 +21,7 @@
 */
 
 #include <KLocalizedString>
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 #include <QMouseEvent>
 #include <QLabel>
 #include <QHBoxLayout>

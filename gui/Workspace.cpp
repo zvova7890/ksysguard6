@@ -29,8 +29,10 @@
 #include <KMessageBox>
 #include <KAcceleratorManager>
 #include <KActionCollection>
-#include <KNSCore/Engine>
-#include <KNS3/QtQuickDialogWrapper>
+// TODO
+//#include <KNS3/QtQuickDialogWrapper>
+#include <KNSWidgets/Dialog>
+#include <KNSCore/enginebase.h>
 #include <KConfigGroup>
 
 #include "WorkSheet.h"
@@ -73,21 +75,21 @@ void Workspace::readProperties( const KConfigGroup& cfg )
     * then "restore" a special default configuration. */
     selectedSheets << QStringLiteral("ProcessTable.sgrd");
     selectedSheets << QStringLiteral("SystemLoad2.sgrd");
-  } else if(selectedSheets[0] != QLatin1String("ProcessTable.sgrd")) {
+  } else if(selectedSheets[0] != QStringLiteral("ProcessTable.sgrd")) {
     //We need to make sure that this is really is the process table on the first tab. No GUI way of changing this, but should make sure anyway.
     //Plus this migrates users from the kde3 setup
     selectedSheets.removeAll(QStringLiteral("ProcessTable.sgrd"));
     selectedSheets.prepend( QStringLiteral("ProcessTable.sgrd"));
   }
 
-  int oldSystemLoad = selectedSheets.indexOf(QLatin1String("SystemLoad.sgrd"));
+  int oldSystemLoad = selectedSheets.indexOf(QStringLiteral("SystemLoad.sgrd"));
   if(oldSystemLoad != -1) {
     selectedSheets.replace(oldSystemLoad, QStringLiteral("SystemLoad2.sgrd"));
   }
 
   QString filename;
   for ( QStringList::Iterator it = selectedSheets.begin(); it != selectedSheets.end(); ++it ) {
-    filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "ksysguard/" + *it);
+    filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("ksysguard/") + *it);
     if(!filename.isEmpty()) {
       restoreWorkSheet( filename, false);
     }
@@ -110,11 +112,11 @@ QString Workspace::makeNameForNewSheet() const
   do {
     sheetName = i18n( "Sheet %1" ,  i++ );
     //Check we don't have any existing files with this name
-    found = !(QStandardPaths::locate(QStandardPaths::GenericDataLocation, "ksysguard/" + sheetName + ".sgrd").isEmpty());
+    found = !(QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("ksysguard/") + sheetName + QStringLiteral(".sgrd")).isEmpty());
 
     //Check if we have any sheets with the same tab name or file name
     for(int i = 0; !found && i < mSheetList.size(); i++)
-      if ( tabText(indexOf(mSheetList.at(i))) == sheetName  || QString(sheetName+".sgrd") == mSheetList.at(i)->fileName())
+      if ( tabText(indexOf(mSheetList.at(i))) == sheetName  || QString(sheetName + QStringLiteral(".sgrd")) == mSheetList.at(i)->fileName())
         found = true;
 
   } while ( found );
@@ -138,8 +140,8 @@ void Workspace::newWorkSheet()
   if ( dlg.exec() ) {
     WorkSheet* sheet = new WorkSheet( dlg.rows(), dlg.columns(), dlg.interval(), nullptr );
     sheet->setTitle( dlg.sheetTitle() );
-    sheet->setFileName( sheetName + ".sgrd" );
-    insertTab(-1, sheet, dlg.sheetTitle().replace(QLatin1String("&"), QLatin1String("&&")) );
+    sheet->setFileName( sheetName + QStringLiteral(".sgrd") );
+    insertTab(-1, sheet, dlg.sheetTitle().replace(QStringLiteral("&"), QStringLiteral("&&")) );
     mSheetList.append( sheet );
     setCurrentIndex(indexOf( sheet ));
     connect( sheet, &WorkSheet::titleChanged,
@@ -166,11 +168,11 @@ bool Workspace::saveOnQuit()
 {
   for(int i = 0; i < mSheetList.size(); i++) {
       if ( mSheetList.at(i)->fileName().isEmpty() ) {
-        int res = KMessageBox::warningYesNoCancel( this,
+        int res = KMessageBox::warningTwoActionsCancel( this,
                   i18n( "The tab '%1' contains unsaved data.\n"
                         "Do you want to save the tab?",
                     tabText(indexOf( mSheetList.at(i) )) ), QString(), KStandardGuiItem::save(), KStandardGuiItem::discard() );
-        if ( res == KMessageBox::Yes )
+        if ( res == KMessageBox::PrimaryAction )
           saveWorkSheet( mSheetList.at(i) );
         else if ( res == KMessageBox::Cancel )
           return false; // abort quit
@@ -199,7 +201,7 @@ void Workspace::importWorkSheet( const QUrl &url )
     return;
   }
 
-  mSheetList.last()->setFileName( makeNameForNewSheet() + ".sgrd");
+  mSheetList.last()->setFileName( makeNameForNewSheet() + QStringLiteral(".sgrd"));
 }
 
 bool Workspace::saveWorkSheet( WorkSheet *sheet )
@@ -233,7 +235,7 @@ void Workspace::exportWorkSheet( WorkSheet *sheet )
   do {
     fileName = QFileDialog::getSaveFileName(this,
                                             i18n("Export Tab"),
-                                            QString(tabText(indexOf(currentWidget())) + ".sgrd"),
+                                            QString(tabText(indexOf(currentWidget())) + QStringLiteral(".sgrd")),
                                             QStringLiteral("Sensor Files (*.sgrd)"));
     if ( fileName.isEmpty() )
       return;
@@ -270,7 +272,7 @@ void Workspace::removeAllWorkSheets()
 
 void Workspace::removeWorkSheet( const QString &fileName )
 {
-  QString baseName = fileName.right( fileName.length() - fileName.lastIndexOf( '/' ) - 1 );
+  QString baseName = fileName.right( fileName.length() - fileName.lastIndexOf(QLatin1Char('/')) - 1 );
   for(int i = 0; i < mSheetList.size(); i++) {
     WorkSheet *sheet = mSheetList.at(i);
     if ( sheet->fileName() == baseName ) {
@@ -291,7 +293,8 @@ void Workspace::uploadHotNewWorksheet()
     WorkSheet *currentWorksheet = currentWorkSheet();
     if(!currentWorksheet)
         return;
-    KNSCore::Engine engine;
+
+    KNSCore::EngineBase engine;
     engine.init(QStringLiteral("ksysguard.knsrc"));
     Q_ASSERT(engine.categories().size() == 1);
     KMessageBox::information(this,
@@ -307,26 +310,26 @@ void Workspace::uploadHotNewWorksheet()
 }
 void Workspace::getHotNewWorksheet()
 {
-    KNS3::QtQuickDialogWrapper *dialog = new KNS3::QtQuickDialogWrapper(QStringLiteral("ksysguard.knsrc"), this);
-    dialog->open();
-    connect(dialog, &KNS3::QtQuickDialogWrapper::closed, this, [this, dialog] {
-        const QList<KNSCore::EntryInternal> entries = dialog->changedEntries();
-        for (auto entry : entries) {
-            if(!entry.installedFiles().isEmpty()) {
-                const QString filename = entry.installedFiles().constFirst();
-                restoreWorkSheet(filename, true);
-            }
+
+    KNSWidgets::Dialog dialog(QStringLiteral("ksysguard.knsrc"));
+    if( dialog.exec() == QDialog::Rejected )
+        return;
+
+    KNSCore::Entry::List entries = dialog.changedEntries();
+    for(const auto &entry : std::as_const(entries)) {
+        if(!entry.installedFiles().isEmpty()) {
+            QString filename = entry.installedFiles().first();
+            restoreWorkSheet(filename, true);
         }
-        dialog->deleteLater();
-    });
+    }
 }
 
 bool Workspace::restoreWorkSheet( const QString &fileName, bool switchToTab)
 {
   // extract filename without path
-  QString baseName = fileName.right( fileName.length() - fileName.lastIndexOf( '/' ) - 1 );
+  QString baseName = fileName.right( fileName.length() - fileName.lastIndexOf( QLatin1Char('/') ) - 1 );
 
-  foreach( WorkSheet *sheet, mSheetList ) {
+  for( WorkSheet *sheet : mSheetList ) {
       if(sheet->fileName() == baseName)
           return false; //Don't add the same sheet twice
   }
@@ -342,7 +345,7 @@ bool Workspace::restoreWorkSheet( const QString &fileName, bool switchToTab)
   connect( sheet, &WorkSheet::titleChanged,
     this, &Workspace::updateSheetTitle);
 
-  insertTab(-1, sheet, sheet->translatedTitle().replace(QLatin1String("&"), QLatin1String("&&")) );
+  insertTab(-1, sheet, sheet->translatedTitle().replace(QStringLiteral("&"), QStringLiteral("&&")) );
   if(switchToTab)
    setCurrentIndex(indexOf(sheet));
 

@@ -49,17 +49,21 @@ add_executable(ksysguard ${ksysguard_SRCS})
 target_compile_definitions(ksysguard PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
 target_link_libraries(ksysguard
-    KSysGuard::ProcessUi
-    KSysGuard::SysGuard
-    KSysGuard::SignalPlotter
-    KF5::DBusAddons
-    KF5::ItemViews
-    KF5::KIOWidgets
-    KF5::NewStuff
-    KF5::Notifications
-    KF5::I18n
-    KF5::IconThemes
-    KF5::WindowSystem)
+    ProcessUi
+    SysGuard
+    SignalPlotter
+    Qt6::Xml
+    Qt6::Core5Compat
+    KF6::XmlGui
+    KF6::DBusAddons
+    KF6::ItemViews
+    KF6::KIOWidgets
+    KF6::NewStuffCore
+    KF6::NewStuffWidgets
+    KF6::Notifications
+    KF6::I18n
+    KF6::IconThemes
+    KF6::WindowSystem)
 
 install(TARGETS ksysguard         ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

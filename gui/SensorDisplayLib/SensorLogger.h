@@ -102,7 +102,7 @@ class LogSensorView : public QTreeView
   Q_OBJECT
 
   public:
-    LogSensorView( QWidget *parent = 0 );
+    LogSensorView( QWidget *parent = nullptr );
 
   Q_SIGNALS:
     void contextMenuRequest( const QModelIndex &index, const QPoint &pos );

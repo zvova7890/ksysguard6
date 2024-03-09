@@ -28,7 +28,7 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 
 #include "SensorBrowser.h"
 //#define SENSOR_MODEL_DO_TEST
@@ -65,7 +65,7 @@ QVariant SensorBrowserModel::data( const QModelIndex & index, int role) const { 
                 if(mSensorInfoMap.contains(id)) {
                     Q_ASSERT(mSensorInfoMap.value(id));
                     SensorInfo *sensorInfo = mSensorInfoMap.value(id);
-                    return QString(sensorInfo->description() + " (" + KSGRD::SensorMgr->translateSensorType(sensorInfo->type()) + ')' );
+                    return QString(sensorInfo->description() + QStringLiteral(" (") + KSGRD::SensorMgr->translateSensorType(sensorInfo->type()) + QLatin1Char(')') );
                 }
                 if(mTreeNodeNames.contains(id)) return mTreeNodeNames.value(id);
                 if(mHostInfoMap.contains(id)) {
@@ -346,7 +346,7 @@ void SensorBrowserModel::answerReceived( int hostId,  const QList<QByteArray>&an
          * the sensor user in the cpu node. There is no limit for the
          * depth of nodes. */
         int currentNodeId = hostId;  //Start from the host branch and work our way down the tree
-        QStringList absolutePath = sensorName.split( '/' );
+        QStringList absolutePath = sensorName.split( QLatin1Char('/') );
         for ( int j = 0; j < absolutePath.count()-1; ++j ) {
             // Localize the sensor name part by part.
             QString name = KSGRD::SensorMgr->translateSensorPath( absolutePath[ j ] );
@@ -361,7 +361,7 @@ void SensorBrowserModel::answerReceived( int hostId,  const QList<QByteArray>&an
         it.next();
 
         int currentNodeId = hostId;  //Start from the host branch and work our way down the tree
-        QStringList absolutePath = it.key().split( '/' );
+        QStringList absolutePath = it.key().split( QLatin1Char('/') );
         for ( int j = 0; j < absolutePath.count()-1; ++j ) {
             // Localize the sensor name part by part.
             QString name = KSGRD::SensorMgr->translateSensorPath( absolutePath[ j ] );
@@ -610,9 +610,9 @@ QMimeData * SensorBrowserModel::mimeData ( const QModelIndexList & indexes ) con
     // Only the description may contain blanks.
     Q_ASSERT(sensor);
     Q_ASSERT(sensor->hostInfo());
-    QString mDragText = sensor->hostInfo()->hostName() + ' ' +
-        sensor->name() + ' ' +
-        sensor->type()+ ' ' +
+    QString mDragText = sensor->hostInfo()->hostName() + QLatin1Char(' ') +
+        sensor->name() + QLatin1Char(' ') +
+        sensor->type()+ QLatin1Char(' ') +
         sensor->description();
 
 

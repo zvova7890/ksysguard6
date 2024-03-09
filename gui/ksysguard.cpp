@@ -64,9 +64,9 @@
 #include <KUserTimestamp>
 #include <KWindowSystem>
 
-#include <ksgrd/SensorAgent.h>
-#include <ksgrd/SensorManager.h>
-#include <processui/ksysguardprocesslist.h>
+#include "../ksgrd/SensorAgent.h"
+#include "../ksgrd/SensorManager.h"
+#include "../processui/ksysguardprocesslist.h"
 
 //Comment out to stop ksysguard from forking.  Good for debugging
 //#define FORK_KSYSGUARD
@@ -167,7 +167,7 @@ void TopLevel::setLocalProcessController(ProcessController * localProcessControl
   mLocalProcessController = localProcessController;
   connect( mLocalProcessController, &ProcessController::processListChanged, this, &TopLevel::updateProcessCount);
   for(int i = 0; i < mLocalProcessController->actions().size(); i++) {
-    actionCollection()->addAction("processAction" + QString::number(i), mLocalProcessController->actions().at(i));
+    actionCollection()->addAction(QStringLiteral("processAction") + QString::number(i), mLocalProcessController->actions().at(i));
   }
 }
 
@@ -225,7 +225,7 @@ void TopLevel::currentTabChanged(int index)
 void TopLevel::startSensorBrowserWidget()
 {
   if(mSensorBrowser) return;
-  mSensorBrowser = new SensorBrowserWidget( 0, KSGRD::SensorMgr );
+  mSensorBrowser = new SensorBrowserWidget( nullptr, KSGRD::SensorMgr );
   mSplitter->insertWidget(2,mSensorBrowser);
   mSplitter->setSizes( mSplitterSize );
 }
@@ -236,9 +236,10 @@ void TopLevel::startSensorBrowserWidget()
 
 void TopLevel::showOnCurrentDesktop()
 {
-  KWindowSystem::setOnDesktop( winId(), KWindowSystem::currentDesktop() );
+  //KWindowSystem::setOnDesktop( winId(), KWindowSystem::currentDesktop() );
   KUserTimestamp::updateUserTimestamp();
-  KWindowSystem::forceActiveWindow( winId() );
+  KWindowSystem::activateWindow( windowHandle() );
+  //KWindowSystem::forceActiveWindow( winId() );
 }
 
 void TopLevel::importWorkSheet( const QString &fileName )
@@ -287,7 +288,7 @@ void TopLevel::initStatusBar()
   KSGRD::SensorMgr->sendRequest( QStringLiteral("localhost"), QStringLiteral("mem/swap/used?"),
                                  (KSGRD::SensorClient*)this, 7 );
 
-  KToggleAction *sb = dynamic_cast<KToggleAction*>(action("options_show_statusbar"));
+  KToggleAction *sb = dynamic_cast<KToggleAction*>(action(QStringLiteral("options_show_statusbar")));
   if (sb)
      connect(sb, &QAction::toggled, this, &TopLevel::updateStatusBar);
   setupGUI(QSize(800,600), ToolBar | Keys | StatusBar | Save | Create);
@@ -301,7 +302,7 @@ void TopLevel::updateStatusBar()
     mTimerId = startTimer( 2000 );
 
   // call timerEvent to fill the status bar with real values
-  timerEvent( 0 );
+  timerEvent( nullptr );
 }
 
 void TopLevel::connectHost()
@@ -380,7 +381,7 @@ void TopLevel::timerEvent( QTimerEvent* )
 
 void TopLevel::updateProcessCount()  {
     const int count = mLocalProcessController->processList()->visibleProcessesCount();
-    const QString s = i18np( "1 process", "%1 processes", count ) + "\xc2\x9c" + QString::number( count );
+    const QString s = i18np( "1 process", "%1 processes", count );
     sbProcessCount->setText( s );
 }
 void TopLevel::changeEvent( QEvent * event )
@@ -400,7 +401,7 @@ bool TopLevel::queryClose()
   if ( !mWorkSpace->saveOnQuit() )
     return false;
 
-  KConfigGroup cg( KSharedConfig::openConfig(), "MainWindow" );
+  KConfigGroup cg( KSharedConfig::openConfig(), QStringLiteral("MainWindow") );
   saveProperties( cg );
   KSharedConfig::openConfig()->sync();
 
@@ -461,7 +462,7 @@ void TopLevel::answerReceived( int id, const QList<QByteArray> &answerList )
     case 1:
     {
       const auto percent = (int) (100 - answer.toFloat());
-      s = i18n( "CPU: %1%", percent ) + "\xc2\x9c" + i18nc("This is the shorter version of CPU: %1%", "%1%", percent);
+      s = i18n( "CPU: %1%", percent );
       sbCpuStat->setText( s );
       break;
     }
@@ -481,12 +482,6 @@ void TopLevel::answerReceived( int id, const QList<QByteArray> &answerList )
       const auto total = KFormat().formatByteSize( (mFree+mUsedTotal)*1024 );
       //Use a multi-length string
       s = i18nc( "Arguments are formatted byte sizes (used/total)", "Memory: %1 / %2", used, total );
-      s += "\xc2\x9c";
-      s += i18nc( "Arguments are formatted byte sizes (used/total) This should be a shorter version of the previous Memory: %1 / %2", "Mem: %1 / %2", used, total );
-      s += "\xc2\x9c";
-      s += i18nc( "Arguments is formatted byte sizes (used) This should be a shorter version of the previous Mem: %1 / %2", "Mem: %1", used );
-      s += "\xc2\x9c";
-      s += used;
       sbMemTotal->setText( s );
       break;
     }
@@ -517,10 +512,6 @@ void TopLevel::setSwapInfo( qlonglong used, qlonglong free, const QString & )
     const auto formattedUsed = KFormat().formatByteSize( used*1024 );
     const auto formattedTotal = KFormat().formatByteSize( (free+used)*1024);
     msg = i18nc( "Arguments are formatted byte sizes (used/total)", "Swap: %1 / %2", formattedUsed, formattedTotal );
-    msg += "\xc2\x9c";
-    msg += i18nc( "Arguments is formatted byte sizes (used)", "Swap: %1", formattedUsed );
-    msg += "\xc2\x9c";
-    msg += formattedUsed;
   }
 
   sbSwapTotal->setText( msg );
@@ -606,7 +597,7 @@ int main( int argc, char** argv )
 
 
   // create top-level widget
-  Toplevel->readProperties( KConfigGroup( KSharedConfig::openConfig(), "MainWindow" ) );
+  Toplevel->readProperties( KConfigGroup( KSharedConfig::openConfig(), QStringLiteral("MainWindow") ) );
   // setup the statusbar, toolbar etc.
   // Note that this comes after creating the top-level widgets whcih also
   // sets up the various QActions that the user may have added to the toolbar

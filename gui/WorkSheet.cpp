@@ -40,7 +40,7 @@
 #include <KMessageBox>
 #include <QMenu>
 
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 
 #include "DancingBars.h"
 #include "DummyDisplay.h"
@@ -186,7 +186,7 @@ bool WorkSheet::exportWorkSheet( const QString &fileName )
     QDomElement ws = doc.createElement( QStringLiteral("WorkSheet") );
     doc.appendChild( ws );
     ws.setAttribute( QStringLiteral("title"), mTitle );
-    ws.setAttribute( QStringLiteral("locked"), mSharedSettings.locked?"1":"0" );
+    ws.setAttribute( QStringLiteral("locked"), mSharedSettings.locked? QStringLiteral("1") : QStringLiteral("0") );
     ws.setAttribute( QStringLiteral("interval"), updateInterval() );
     ws.setAttribute( QStringLiteral("rows"), mRows );
     ws.setAttribute( QStringLiteral("columns"), mColumns );
@@ -224,7 +224,7 @@ bool WorkSheet::exportWorkSheet( const QString &fileName )
             element.setAttribute(QStringLiteral("column"), column);
             element.setAttribute(QStringLiteral("rowSpan"), rowSpan);
             element.setAttribute(QStringLiteral("columnSpan"), columnSpan);
-            element.setAttribute(QStringLiteral("class"), display->metaObject()->className());
+            element.setAttribute(QStringLiteral("class"), QLatin1String(display->metaObject()->className()));
 
             display->saveSettings(doc, element);
         }
@@ -503,12 +503,12 @@ void WorkSheet::dropEvent( QDropEvent *event )
     const QString dragObject = QString::fromUtf8(event->mimeData()->data(QStringLiteral("application/x-ksysguard")));
 
     // The host name, sensor name and type are separated by a ' '.
-    QStringList parts = dragObject.split( ' ');
+    QStringList parts = dragObject.split( QLatin1Char(' ') );
 
     QString hostName = parts[ 0 ];
     QString sensorName = parts[ 1 ];
     QString sensorType = parts[ 2 ];
-    QString sensorDescr = QStringList(parts.mid( 3 )).join(' ');
+    QString sensorDescr = QStringList(parts.mid( 3 )).join(QLatin1Char(' '));
 
     if ( hostName.isEmpty() || sensorName.isEmpty() || sensorType.isEmpty() )
         return;
@@ -782,7 +782,7 @@ QString WorkSheet::currentDisplayAsXML()
 
     QDomElement element = doc.createElement( QStringLiteral("display") );
     doc.appendChild( element );
-    element.setAttribute( QStringLiteral("class"), display->metaObject()->className() );
+    element.setAttribute( QStringLiteral("class"), QLatin1String(display->metaObject()->className()) );
     display->saveSettings( doc, element );
 
     return doc.toString();

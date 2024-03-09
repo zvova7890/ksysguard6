@@ -28,7 +28,7 @@
 #include <QHBoxLayout>
 
 
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 #include "StyleEngine.h"
 
 #include "MultiMeter.h"
@@ -81,7 +81,7 @@ bool MultiMeter::addSensor(const QString& hostName, const QString& sensorName,
 
   /* To differentiate between answers from value requests and info
    * requests we use 100 for info requests. */
-  sendRequest(hostName, sensorName + '?', 100);
+  sendRequest(hostName, sensorName + QLatin1Char('?'), 100);
 
   mLcd->setToolTip( QStringLiteral("%1:%2").arg(hostName).arg(sensorName));
 

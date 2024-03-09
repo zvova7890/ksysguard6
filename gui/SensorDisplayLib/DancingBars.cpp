@@ -27,7 +27,7 @@
 #include <QHBoxLayout>
 
 #include <KLocalizedString>
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 #include "StyleEngine.h"
 
 #include "BarGraph.h"

@@ -28,7 +28,7 @@
 
 #include <KXmlGuiWindow>
 
-#include <ksgrd/SensorClient.h>
+#include "../ksgrd/SensorClient.h"
 
 class QAction;
 class QLabel;

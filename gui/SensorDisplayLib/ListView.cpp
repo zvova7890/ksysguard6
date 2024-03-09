@@ -31,7 +31,7 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <ksgrd/SensorManager.h>
+#include "../ksgrd/SensorManager.h"
 #include "StyleEngine.h"
 
 #include <QTreeView>
@@ -233,7 +233,7 @@ ListView::addSensor(const QString& hostName, const QString& sensorName, const QS
 
     /* To differentiate between answers from value requests and info
      * requests we use 100 for info requests. */
-    sendRequest(hostName, sensorName + '?', 100);
+    sendRequest(hostName, sensorName + QLatin1Char('?'), 100);
     sendRequest(hostName, sensorName, 19);
     return true;
 }
@@ -290,7 +290,7 @@ ListView::answerReceived(int id, const QList<QByteArray>& answer)
             }
 
             for(uint i =0 ; i < colTypes.count(); i++) {
-                ColumnType type = convertColumnType(colTypes[i]);
+                ColumnType type = convertColumnType(QLatin1String(colTypes[i]));
                 mColumnTypes.append(type);
                 if (type == Text || type == DiskStat)
                     mModel.addColumnAlignment(Qt::AlignLeft);
@@ -315,19 +315,19 @@ ListView::answerReceived(int id, const QList<QByteArray>& answer)
                     switch( mColumnTypes[j] ) {
                       case Int:
                         item->setData(records[j].toLongLong(), Qt::UserRole);
-                        item->setText(records[j]);
+                        item->setText(QString::fromUtf8(records[j]));
                         break;
                       case Percentage:
                         item->setData(records[j].toInt(), Qt::UserRole);
-                        item->setText(records[j] + QLatin1Char('%'));
+                        item->setText(QString::fromUtf8(records[j]) + QLatin1Char('%'));
                         break;
                       case Float:
                         item->setData(records[j].toFloat(), Qt::DisplayRole);
                         item->setData(records[j].toFloat(), Qt::UserRole);
                         break;
                       case Time:
-                        item->setData(QTime::fromString(records[j]), Qt::DisplayRole);
-                        item->setData(QTime::fromString(records[j]), Qt::UserRole);
+                        item->setData(QTime::fromString(QString::fromUtf8(records[j])), Qt::DisplayRole);
+                        item->setData(QTime::fromString(QString::fromUtf8(records[j])), Qt::UserRole);
                         break;
                       case KByte: {
                         item->setData(records[j].toInt(), Qt::UserRole);
@@ -337,7 +337,7 @@ ListView::answerReceived(int id, const QList<QByteArray>& answer)
                       case DiskStat:
                       case Text:
                       default:
-                        item->setText(records[j]);
+                        item->setText(QString::fromUtf8(records[j]));
                         item->setData(records[j], Qt::UserRole);
                     }
                     mModel.setItem(i, j, item);

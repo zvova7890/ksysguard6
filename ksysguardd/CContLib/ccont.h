@@ -29,7 +29,7 @@
 #define NIL ((void*) 0)
 #endif
 
-#define destr_ctnr(x, y) zero_destr_ctnr(x, y); x=0
+#define destr_ctnr(x, y) {zero_destr_ctnr(x, y); x=0;}
 
 struct container {
 	struct container* next;

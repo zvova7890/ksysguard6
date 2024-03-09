@@ -27,7 +27,7 @@
 #include <QTreeWidget>
 #include <QMap>
 #include <QHash>
-#include <ksgrd/SensorClient.h>
+#include "../ksgrd/SensorClient.h"
 #include <QSortFilterProxyModel>
 
 

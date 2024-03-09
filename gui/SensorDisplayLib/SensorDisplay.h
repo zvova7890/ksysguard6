@@ -27,7 +27,7 @@
 #include <QPointer>
 #include <QWidget>
 
-#include <ksgrd/SensorClient.h>
+#include "../ksgrd/SensorClient.h"
 #include "SharedSettings.h"
 
 class QDomDocument;

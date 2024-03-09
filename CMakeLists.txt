@@ -169,8 +169,8 @@ add_subdirectory( ksgrd )
 add_subdirectory( signalplotter )
 add_subdirectory( gui )
 
-add_subdirectory( doc )
-kdoctools_install(po)
+#add_subdirectory( doc )
+#kdoctools_install(po)
 
 add_subdirectory( pics )
 add_subdirectory( example )

@@ -53,7 +53,6 @@ target_link_libraries(ksysguard
     SysGuard
     SignalPlotter
     Qt6::Xml
-    Qt6::Core5Compat
     KF6::XmlGui
     KF6::DBusAddons
     KF6::ItemViews

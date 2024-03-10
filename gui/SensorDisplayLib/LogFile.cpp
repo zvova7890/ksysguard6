@@ -27,7 +27,7 @@
 #include <QDebug>
 #include <QDialog>
 #include <QPushButton>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QListWidget>
 #include <QHBoxLayout>
 
@@ -270,8 +270,8 @@ LogFile::answerReceived(int id, const QList<QByteArray>& answer)
 				monitor->addItem(s);
 
 				for (QStringList::Iterator it = filterRules.begin(); it != filterRules.end(); ++it) {
-					QRegExp *expr = new QRegExp(QString::fromUtf8((*it).toLatin1()));
-					if (expr->indexIn(s) != -1) {
+					QRegularExpression expr((*it));
+					if (expr.matchView(s).hasMatch()) {
 						KNotification::event(
 							KNotification::Notification,
 							QStringLiteral("pattern_match"),
@@ -279,7 +279,6 @@ LogFile::answerReceived(int id, const QList<QByteArray>& answer)
 							QPixmap(),
 							KNotification::CloseOnTimeout);
 					}
-					delete expr;
 				}
 			}
 

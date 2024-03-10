@@ -16,6 +16,7 @@
 
 #include <KLocalizedString>
 
+#include <QRegularExpression>
 #include <QSet>
 
 #include <dirent.h>
@@ -147,7 +148,7 @@ bool ProcessesLocal::updateProcessInfo(long pid, Process *process)
 
         name = name.trimmed();
         if (!name.isEmpty()) {
-            name.remove(QRegExp("^[^ ]*/"));
+            name.remove(QRegularExpression("^[^ ]*/"));
         }
         process->setName(name);
         name = psinfo.pr_fname;

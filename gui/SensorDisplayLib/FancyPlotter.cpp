@@ -30,7 +30,7 @@
 #include <QLocale>
 #include <QResizeEvent>
 #include <QStandardPaths>
-#include <QRegExp>
+#include <QRegularExpression>
 
 #include <KMessageBox>
 #include "../signalplotter/ksignalplotter.h"
@@ -54,7 +54,7 @@ static inline QChar circleCharacter(const QFontMetrics& fm)
 
 class SensorToAdd {
   public:
-    QRegExp name;
+    QRegularExpression name;
     QString hostname;
     QString type;
     QList<QColor> colors;
@@ -761,8 +761,8 @@ void FancyPlotter::answerReceived( int id, const QList<QByteArray> &answerlist )
                 for ( int i = 0; i < answerlist.count(); ++i ) {
                     if ( answerlist[ i ].isEmpty() )
                         continue;
-                    QString sensorName = QString::fromUtf8(answerlist[ i ].split('\t')[0]);
-                    if(sensor->name.exactMatch(sensorName)) {
+                    QString sensorName = QString::fromUtf8(answerlist[i].split('\t')[0]);
+                    if(sensor->name.matchView(sensorName).hasMatch()) {
                         if(sensor->summationName.isEmpty())
                             beamId = mBeams; //If summationName is not empty then reuse the previous beamId.  In this way we can have multiple sensors with the same beamId, which can then be summed together
                         QColor color;
@@ -825,7 +825,7 @@ bool FancyPlotter::restoreSettings( QDomElement &element )
         QDomElement el = dnList.item( i ).toElement();
         if(el.hasAttribute(QStringLiteral("regexpSensorName"))) {
             SensorToAdd *sensor = new SensorToAdd();
-            sensor->name = QRegExp(el.attribute(QStringLiteral("regexpSensorName")));
+            sensor->name = QRegularExpression(QRegularExpression::anchoredPattern(el.attribute(QStringLiteral("regexpSensorName"))));
             sensor->hostname = el.attribute( QStringLiteral("hostName") );
             sensor->type = el.attribute( QStringLiteral("sensorType") );
             sensor->summationName = el.attribute(QStringLiteral("summationName"));

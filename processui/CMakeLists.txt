@@ -39,7 +39,6 @@ target_link_libraries(processui
     PUBLIC
         ProcessCore
         Qt::Widgets
-        Qt::Core5Compat
         KF6::ConfigCore
     PRIVATE
         Qt::DBus

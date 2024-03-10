@@ -414,9 +414,7 @@ static bool getProcess( int pid, ProcessInfo *ps )
   snprintf( buf, BUFSIZE - 1, "/proc/%d/cgroup", pid );
   buf[ BUFSIZE - 1 ] = '\0';
   if ( ( fd = fopen( buf, "r" ) ) != 0 )  {
-    do {
-         fgets( buf, BUFSIZE, fd );
-    } while ( !feof( fd ) && buf[0] != '0' );
+    while (fgets(buf, BUFSIZE, fd) && buf[0] != '0');
     fclose ( fd );
 
     if ( buf[0] == '0' && buf[1] == ':' && buf[2] == ':' ) {

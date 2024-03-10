@@ -192,8 +192,11 @@ static void dropPrivileges( void )
   struct passwd *pwd;
 
   if ( ( pwd = getpwnam( "nobody" ) ) != NULL ) {
-    if ( !setgid(pwd->pw_gid) )
-      setuid(pwd->pw_uid);
+    if ( !setgid(pwd->pw_gid) ) {
+      if (setuid(pwd->pw_uid)) {
+        perror("setuid");
+      }
+    }
     if (!geteuid() && getuid() != pwd->pw_uid)
       _exit(1);
   }

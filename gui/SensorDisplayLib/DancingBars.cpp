@@ -192,7 +192,7 @@ bool DancingBars::addSensor( const QString &hostName, const QString &name,
 
 bool DancingBars::removeSensor( uint pos )
 {
-  if ( pos >= mBars ) {
+  if ( (int)pos >= mBars ) {
     qDebug() << "DancingBars::removeSensor: idx out of range ("
                   << pos << ")";
     return false;

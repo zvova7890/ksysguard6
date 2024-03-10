@@ -1286,6 +1286,7 @@ void KSysGuardProcessList::reniceSelectedProcesses()
         case KSysGuard::Process::BestEffort:
             if (process->ioPriorityClass() == KSysGuard::Process::None && reniceDlg->newIOPriority == (process->niceLevel() + 20) / 5)
                 break; // Don't set to BestEffort if it's on None and the nicelevel wouldn't change
+            // fallthrough
         case KSysGuard::Process::RealTime:
             if (reniceDlg->newIOSched != (int)process->ioPriorityClass() || reniceDlg->newIOPriority != process->ioniceLevel()) {
                 changeIOSchedulerPids << pid;

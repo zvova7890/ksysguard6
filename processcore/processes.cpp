@@ -405,7 +405,9 @@ void Processes::deleteProcess(long pid)
     if (!process) {
         return;
     }
-    for (Process *it : process->children()) {
+
+    QList<Process *> children = process->children();
+    for (Process *it : children) {
         deleteProcess(it->pid());
     }
 

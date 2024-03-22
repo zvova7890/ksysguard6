@@ -1,0 +1,2497 @@
+# Irish translation of processui
+# Copyright (C) 2009 This_file_is_part_of_KDE
+# This file is distributed under the same license as the processui package.
+# Kevin Scannell <kscanne@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdebase/processui.po\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-01-10 00:57+0000\n"
+"PO-Revision-Date: 2007-07-10 12:28-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+#: ksysguardprocesslist.cpp:199 ksysguardprocesslist.cpp:543
+#, kde-format
+msgid "Set Priority..."
+msgid_plural "Set Priority..."
+msgstr[0] "Socraigh an Tosaíocht..."
+msgstr[1] "Socraigh an Tosaíocht..."
+msgstr[2] "Socraigh an Tosaíocht..."
+msgstr[3] "Socraigh an Tosaíocht..."
+msgstr[4] "Socraigh an Tosaíocht..."
+
+#: ksysguardprocesslist.cpp:201 ksysguardprocesslist.cpp:639
+#, kde-format
+msgid "Jump to Parent Process"
+msgstr "Léim go dtí an Máthairphróiseas"
+
+#: ksysguardprocesslist.cpp:203
+#, kde-format
+msgid "Jump to Process Debugging This One"
+msgstr "Léim go dtí an próiseas atá ag dífhabhtú an ceann seo"
+
+#: ksysguardprocesslist.cpp:204
+#, kde-format
+msgid "Show Application Window"
+msgstr "Taispeáin Fuinneog an Fheidhmchláir"
+
+#: ksysguardprocesslist.cpp:205
+#, fuzzy, kde-format
+#| msgid "Displayed Information"
+msgctxt "@action:inmenu"
+msgid "Detailed Information..."
+msgstr "Faisnéis Taispeánta"
+
+#: ksysguardprocesslist.cpp:206
+#, kde-format
+msgid "Resume Stopped Process"
+msgstr "Atosaigh Próiseas Stoptha"
+
+#: ksysguardprocesslist.cpp:207
+#, kde-format
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Cuir Deireadh Le Próiseas"
+msgstr[1] "Cuir Deireadh Le Próisis"
+msgstr[2] "Cuir Deireadh Le Próisis"
+msgstr[3] "Cuir Deireadh Le Próisis"
+msgstr[4] "Cuir Deireadh Le Próisis"
+
+#: ksysguardprocesslist.cpp:210 ksysguardprocesslist.cpp:544
+#, kde-format
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill Processes"
+msgstr[0] "Maraigh Próiseas Le Lámh Láidir"
+msgstr[1] "Maraigh Próisis Le Lámh Láidir"
+msgstr[2] "Maraigh Próisis Le Lámh Láidir"
+msgstr[3] "Maraigh Próisis Le Lámh Láidir"
+msgstr[4] "Maraigh Próisis Le Lámh Láidir"
+
+#: ksysguardprocesslist.cpp:214
+#, kde-format
+msgid "Suspend (STOP)"
+msgstr "Cuir ar Fionraí (STOP)"
+
+#: ksysguardprocesslist.cpp:215
+#, kde-format
+msgid "Continue (CONT)"
+msgstr "Lean (CONT)"
+
+# FRTF04, ok
+#: ksysguardprocesslist.cpp:216
+#, kde-format
+msgid "Hangup (HUP)"
+msgstr "Croch (HUP)"
+
+#: ksysguardprocesslist.cpp:217
+#, kde-format
+msgid "Interrupt (INT)"
+msgstr "Bris Isteach (INT)"
+
+#: ksysguardprocesslist.cpp:218
+#, kde-format
+msgid "Terminate (TERM)"
+msgstr "Críochnaigh (TERM)"
+
+#: ksysguardprocesslist.cpp:219
+#, kde-format
+msgid "Kill (KILL)"
+msgstr "Maraigh (KILL)"
+
+#: ksysguardprocesslist.cpp:220
+#, kde-format
+msgid "User 1 (USR1)"
+msgstr "Úsáideoir 1 (USR1)"
+
+#: ksysguardprocesslist.cpp:221
+#, kde-format
+msgid "User 2 (USR2)"
+msgstr "Úsáideoir 2 (USR2)"
+
+#: ksysguardprocesslist.cpp:224
+#, kde-format
+msgid "Focus on Quick Search"
+msgstr "Fócas ar Mhearchuardach"
+
+#: ksysguardprocesslist.cpp:407
+#, kde-format
+msgid ""
+"<qt>End the selected process. Warning - you may lose unsaved work.<br>Right "
+"click on a process to send other signals.<br>See What's This for technical "
+"information."
+msgstr ""
+
+#: ksysguardprocesslist.cpp:442
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:545
+#, kde-format
+msgctxt "Context menu"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Cuir Deireadh Le Próiseas"
+msgstr[1] "Cuir Deireadh Le Próisis"
+msgstr[2] "Cuir Deireadh Le Próisis"
+msgstr[3] "Cuir Deireadh Le Próisis"
+msgstr[4] "Cuir Deireadh Le Próisis"
+
+#: ksysguardprocesslist.cpp:579
+#, kde-format
+msgid "Send Signal"
+msgstr "Seol Comhartha"
+
+#: ksysguardprocesslist.cpp:596
+#, kde-format
+msgid "Jump to Parent Process (%1)"
+msgstr "Léim go dtí an Máthairphróiseas (%1)"
+
+#: ksysguardprocesslist.cpp:758
+#, kde-format
+msgid "Hide Column '%1'"
+msgstr "Folaigh Colún '%1'"
+
+#: ksysguardprocesslist.cpp:774
+#, kde-format
+msgid "Show Column '%1'"
+msgstr "Taispeáin Colún '%1'"
+
+#: ksysguardprocesslist.cpp:803
+#, kde-format
+msgid "Display Units"
+msgstr "Taispeáin Aonaid"
+
+#: ksysguardprocesslist.cpp:807
+#, kde-format
+msgid "Mixed"
+msgstr "Measctha"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes per second"
+msgstr "Cilibhearta sa soicind"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes"
+msgstr "Cilibhearta"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes per second"
+msgstr "Meigibhearta sa soicind"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes"
+msgstr "Meigibhearta"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes per second"
+msgstr "Gigibhearta sa soicind"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes"
+msgstr "Gigibhearta"
+
+#: ksysguardprocesslist.cpp:834
+#, kde-format
+msgid "Percentage"
+msgstr "Céatadán"
+
+#: ksysguardprocesslist.cpp:863
+#, kde-format
+msgid "Display command line options"
+msgstr "Taispeáin roghanna líne na n-orduithe"
+
+#: ksysguardprocesslist.cpp:870
+#, kde-format
+msgid "Divide CPU usage by number of CPUs"
+msgstr "Roinn úsáid an LAP ar líon na LAPanna"
+
+#: ksysguardprocesslist.cpp:877
+#, kde-format
+msgid "Displayed Information"
+msgstr "Faisnéis Taispeánta"
+
+#: ksysguardprocesslist.cpp:880
+#, kde-format
+msgid "Characters read/written"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:885
+#, kde-format
+msgid "Number of Read/Write operations"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:890
+#, kde-format
+msgid "Bytes actually read/written"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:896
+#, kde-format
+msgid "Show I/O rate"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:923
+#, kde-format
+msgid "Show Tooltips"
+msgstr "Taispeáin Leideanna Uirlisí"
+
+#: ksysguardprocesslist.cpp:1177
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to kill the process and there was a "
+#| "problem trying to run as root. %1"
+msgid ""
+"You do not have the permission to renice the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Níl go leor ceadanna agat chun an próiseas a mharú, agus bhí fadhb ann nuair "
+"a baineadh triail as é a dhéanamh mar fhorúsáideoir. %1"
+
+#: ksysguardprocesslist.cpp:1203 ksysguardprocesslist.cpp:1387
+#, kde-format
+msgid "You must select a process first."
+msgstr "Caithfidh tú próiseas a roghnú ar dtús."
+
+#: ksysguardprocesslist.cpp:1328
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to kill the process and there was a "
+#| "problem trying to run as root. %1"
+msgid ""
+"You do not have the permission to change the I/O priority of the process and "
+"there was a problem trying to run as root."
+msgstr ""
+"Níl go leor ceadanna agat chun an próiseas a mharú, agus bhí fadhb ann nuair "
+"a baineadh triail as é a dhéanamh mar fhorúsáideoir. %1"
+
+#: ksysguardprocesslist.cpp:1344
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to kill the process and there was a "
+#| "problem trying to run as root. %1"
+msgid ""
+"You do not have the permission to change the CPU Scheduler for the process "
+"and there was a problem trying to run as root."
+msgstr ""
+"Níl go leor ceadanna agat chun an próiseas a mharú, agus bhí fadhb ann nuair "
+"a baineadh triail as é a dhéanamh mar fhorúsáideoir. %1"
+
+#: ksysguardprocesslist.cpp:1359
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to kill the process and there was a "
+#| "problem trying to run as root. %1"
+msgid ""
+"You do not have the permission to kill the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Níl go leor ceadanna agat chun an próiseas a mharú, agus bhí fadhb ann nuair "
+"a baineadh triail as é a dhéanamh mar fhorúsáideoir. %1"
+
+#: ksysguardprocesslist.cpp:1396
+#, kde-format
+msgid ""
+"Are you sure you want to end this process?  Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to end these %1 processes?  Any unsaved work may be "
+"lost"
+msgstr[0] ""
+"An bhfuil tú cinnte gur mhaith leat an próiseas seo a mharú? Seans go "
+"gcaillfidh tú obair nach sábháilte."
+msgstr[1] ""
+"An bhfuil tú cinnte gur mhaith leat an %1 phróiseas seo a mharú? Seans go "
+"gcaillfidh tú obair nach sábháilte."
+msgstr[2] ""
+"An bhfuil tú cinnte gur mhaith leat na %1 phróiseas seo a mharú? Seans go "
+"gcaillfidh tú obair nach sábháilte."
+msgstr[3] ""
+"An bhfuil tú cinnte gur mhaith leat na %1 bpróiseas seo a mharú? Seans go "
+"gcaillfidh tú obair nach sábháilte."
+msgstr[4] ""
+"An bhfuil tú cinnte gur mhaith leat na %1 próiseas seo a mharú? Seans go "
+"gcaillfidh tú obair nach sábháilte."
+
+#: ksysguardprocesslist.cpp:1399
+#, kde-format
+msgctxt "Dialog title"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Cuir Deireadh Le Próiseas"
+msgstr[1] "Cuir Deireadh Le %1 Phróiseas"
+msgstr[2] "Cuir Deireadh Le %1 Phróiseas"
+msgstr[3] "Cuir Deireadh Le %1 bPróiseas"
+msgstr[4] "Cuir Deireadh Le %1 Próiseas"
+
+#: ksysguardprocesslist.cpp:1401
+#, kde-format
+msgid "End"
+msgstr "Deireadh"
+
+#: ksysguardprocesslist.cpp:1403
+#, kde-format
+msgid ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> this "
+"process?  Any unsaved work may be lost."
+msgid_plural ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> these %1 "
+"processes?  Any unsaved work may be lost"
+msgstr[0] ""
+"<qt>An bhfuil tú cinnte gur mhaith leat an próiseas seo a mharú "
+"<b>láithreach agus le lámh láidir</b>? Caillfidh tú aon obair nár shábháil "
+"tú."
+msgstr[1] ""
+"<qt>An bhfuil tú cinnte gur mhaith leat an %1 phróiseas seo a mharú "
+"<b>láithreach agus le lámh láidir</b>? Caillfidh tú aon obair nár shábháil "
+"tú."
+msgstr[2] ""
+"<qt>An bhfuil tú cinnte gur mhaith leat na %1 phróiseas seo a mharú "
+"<b>láithreach agus le lámh láidir</b>? Caillfidh tú aon obair nár shábháil "
+"tú."
+msgstr[3] ""
+"<qt>An bhfuil tú cinnte gur mhaith leat na %1 bpróiseas seo a mharú "
+"<b>láithreach agus le lámh láidir</b>? Caillfidh tú aon obair nár shábháil "
+"tú."
+msgstr[4] ""
+"<qt>An bhfuil tú cinnte gur mhaith leat na %1 próiseas seo a mharú "
+"<b>láithreach agus le lámh láidir</b>? Caillfidh tú aon obair nár shábháil "
+"tú."
+
+#: ksysguardprocesslist.cpp:1406
+#, kde-format
+msgctxt "Dialog title"
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill %1 Processes"
+msgstr[0] "Maraigh Próiseas le Lámh Láidir"
+msgstr[1] "Maraigh %1 Phróiseas le Lámh Láidir"
+msgstr[2] "Maraigh %1 Phróiseas le Lámh Láidir"
+msgstr[3] "Maraigh %1 bPróiseas le Lámh Láidir"
+msgstr[4] "Maraigh %1 Próiseas le Lámh Láidir"
+
+#: ksysguardprocesslist.cpp:1408
+#, kde-format
+msgid "Kill"
+msgstr "Maraigh"
+
+#: processdetails/GeneralTab.cpp:39 processdetails/MemoryMapsTab.cpp:281
+#: processdetails/OpenFilesTab.cpp:276
+#, kde-format
+msgctxt "@info:status"
+msgid "No data to display"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:73
+#, kde-format
+msgctxt "kilobytes"
+msgid "%1 kB"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:123 processdetails/OpenFilesTab.cpp:164
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, txtFilter)
+#: processdetails/MemoryMapsTab.cpp:126 processdetails/OpenFilesTab.cpp:167
+#: ProcessWidgetUI.ui:72
+#, kde-format
+msgid "Quick search"
+msgstr "Mearchuardach"
+
+#: processdetails/MemoryMapsTab.cpp:251 processdetails/OpenFilesTab.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Username"
+msgctxt "@title:column"
+msgid "Filename"
+msgstr "Úsáideoir"
+
+#: processdetails/MemoryMapsTab.cpp:252
+#, kde-format
+msgctxt "@title:column Start of the address space"
+msgid "Start"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:253
+#, fuzzy, kde-format
+#| msgid "End"
+msgctxt "@title:column End of the address space"
+msgid "End"
+msgstr "Deireadh"
+
+#: processdetails/MemoryMapsTab.cpp:254
+#, kde-format
+msgctxt "@title:column"
+msgid "Permissions"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:255
+#, kde-format
+msgctxt "@title:column Offset into the file"
+msgid "Offset"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:256
+#, kde-format
+msgctxt "@title:column"
+msgid "Inode"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:283 processdetails/OpenFilesTab.cpp:278
+#, kde-format
+msgctxt "@info:status"
+msgid "No data matching the filter"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:33
+#, kde-format
+msgctxt "Device type"
+msgid "File"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:36
+#, kde-format
+msgctxt "Device type"
+msgid "Character device"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:39
+#, kde-format
+msgctxt "Device type"
+msgid "Block device"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:42
+#, kde-format
+msgctxt "Device type"
+msgid "Pipe"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:45
+#, kde-format
+msgctxt "Device type"
+msgid "Socket"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:124
+#, fuzzy, kde-format
+#| msgid "Idle"
+msgctxt "@title:column File ID"
+msgid "Id"
+msgstr "Díomhaoin"
+
+#: processdetails/OpenFilesTab.cpp:126
+#, kde-format
+msgctxt "@title:column File type"
+msgid "Type"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:247
+#, kde-format
+msgctxt "@info:status"
+msgid "%1: Failed to list directory contents"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:27
+#, fuzzy, kde-format
+#| msgid "All Processes"
+msgctxt "@title:window"
+msgid "Process Details"
+msgstr "Gach Próiseas"
+
+#: processdetails/ProcessDetailsDialog.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "General"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Memory"
+msgctxt "@title:tab"
+msgid "Memory Maps"
+msgstr "Cuimhne"
+
+#: processdetails/ProcessDetailsDialog.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Open Files"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:79
+#, kde-format
+msgctxt "@info:status"
+msgid "The \"%1\" (PID: %2) process has stopped executing"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:126
+#, fuzzy, kde-format
+#| msgid "Set Priority"
+msgctxt "@title:column Process I/O priority"
+msgid "IO Priority"
+msgstr "Socraigh an Tosaíocht"
+
+#: ProcessModel.cpp:62
+#, kde-format
+msgid "%1 K"
+msgstr "%1 k"
+
+#: ProcessModel.cpp:63
+#, kde-format
+msgid "%1 M"
+msgstr "%1 M"
+
+#: ProcessModel.cpp:64
+#, kde-format
+msgid "%1 G"
+msgstr "%1 G"
+
+#: ProcessModel.cpp:65
+#, kde-format
+msgid "%1 T"
+msgstr "%1 T"
+
+#: ProcessModel.cpp:66
+#, kde-format
+msgid "%1 P"
+msgstr "%1 P"
+
+#: ProcessModel.cpp:636
+#, kde-format
+msgid "- Process is doing some work."
+msgstr "- Tá an próiseas ag déanamh oibre."
+
+#: ProcessModel.cpp:638
+#, kde-format
+msgid "- Process is waiting for something to happen."
+msgstr "- Tá an próiseas ag feitheamh le rud éigin a tharlú."
+
+#: ProcessModel.cpp:640
+#, kde-format
+msgid ""
+"- Process has been stopped. It will not respond to user input at the moment."
+msgstr ""
+"- Stadadh an próiseas. Ní thabharfaidh sé freagra ar ionchur ón úsáideoir "
+"faoi láthair."
+
+#: ProcessModel.cpp:642
+#, kde-format
+msgid ""
+"- Process has finished and is now dead, but the parent process has not "
+"cleaned up."
+msgstr ""
+"- Tá an próiseas críochnaithe agus tá sé marbh anois, ach níor glanadh an "
+"máthairphróiseas."
+
+#: ProcessModel.cpp:1054
+#, kde-format
+msgid "The process name."
+msgstr "Ainm an phróisis."
+
+#: ProcessModel.cpp:1056
+#, kde-format
+msgid "The user who owns this process."
+msgstr "Úinéir an phróisis."
+
+#: ProcessModel.cpp:1058
+#, kde-format
+msgid "The controlling terminal on which this process is running."
+msgstr "Teirminéal rialaithe a bhfuil an próiseas seo ag rith ann."
+
+#: ProcessModel.cpp:1061
+#, kde-format
+msgid ""
+"The priority with which this process is being run. For the normal scheduler, "
+"this ranges from 19 (very nice, least priority) to -19 (top priority)."
+msgstr ""
+"Tosaíocht a bhfuil an próiseas seo ag rith léi. Leis an ngnáthsceidealóir, "
+"ritheann sé ó 19 (an-deas, tosaíocht is ísle) go -19 (tosaíocht is airde)."
+
+#: ProcessModel.cpp:1065
+#, kde-format
+msgid "The current CPU usage of the process."
+msgstr "Úsáid LAP an phróisis."
+
+#: ProcessModel.cpp:1070
+#, kde-format
+msgid ""
+"The current total CPU usage of the process, divided by the %1 processor core "
+"in the machine."
+msgid_plural ""
+"The current total CPU usage of the process, divided by the %1 processor "
+"cores in the machine."
+msgstr[0] ""
+"Úsáid iomlán LAP an phróisis faoi láthair, arna roinnt ar an %1 "
+"chórphróiseálaí sa ríomhaire."
+msgstr[1] ""
+"Úsáid iomlán LAP an phróisis faoi láthair, arna roinnt ar an %1 "
+"chórphróiseálaí sa ríomhaire."
+msgstr[2] ""
+"Úsáid iomlán LAP an phróisis faoi láthair, arna roinnt ar an %1 "
+"chórphróiseálaí sa ríomhaire."
+msgstr[3] ""
+"Úsáid iomlán LAP an phróisis faoi láthair, arna roinnt ar an %1 "
+"gcórphróiseálaí sa ríomhaire."
+msgstr[4] ""
+"Úsáid iomlán LAP an phróisis faoi láthair, arna roinnt ar an %1 "
+"córphróiseálaí sa ríomhaire."
+
+#: ProcessModel.cpp:1074
+#, kde-format
+msgid "The current total CPU usage of the process."
+msgstr "Úsáid iomlán LAP an phróisis faoi láthair."
+
+#: ProcessModel.cpp:1076
+#, kde-format
+msgid ""
+"<qt>The total user and system time that this process has been running for, "
+"displayed as minutes:seconds."
+msgstr ""
+
+#: ProcessModel.cpp:1079
+#, kde-format
+msgid ""
+"<qt>This is the amount of virtual memory space that the process is using, "
+"included shared libraries, graphics memory, files on disk, and so on. This "
+"number is almost meaningless.</qt>"
+msgstr ""
+"<qt>Seo é an méid cuimhne fíorúla á úsáid ag an bpróiseas, comhleabharlanna, "
+"cuimhne ghrafach, comhaid ar an diosca, srl. san áireamh. Uimhir beagnach "
+"gan bhrí é seo.</qt>"
+
+#: ProcessModel.cpp:1083
+#, kde-format
+msgid ""
+"<qt>This is the amount of real physical memory that this process is using by "
+"itself, and approximates the Private memory usage of the process.<br>It does "
+"not include any swapped out memory, nor the code size of its shared "
+"libraries.<br>This is often the most useful figure to judge the memory use "
+"of a program.  See What's This for more information.</qt>"
+msgstr ""
+"<qt>Seo é an méid cuimhne fhisicí á úsáid ag an bpróiseas féin.<br>Ní "
+"chuireann sé cuimhne bhabhtála ná méid na gcomhleabharlann san áireamh."
+"<br>Go minic seo é an luach is áisiúla más mian leat úsáid chuimhne de "
+"ríomhchlár a mheas.  Féach ar 'Cad É Seo' chun tuilleadh eolais a fháil.</qt>"
+
+#: ProcessModel.cpp:1088
+#, kde-format
+msgid ""
+"<qt>This is approximately the amount of real physical memory that this "
+"process's shared libraries are using.<br>This memory is shared among all "
+"processes that use this library.</qt>"
+msgstr ""
+"<qt>Seo é thart faoin mhéid cuimhne fhisicí in úsáid ag na comhleabharlanna "
+"a mbaineann an próiseas seo úsáid astu.<br>Tá an chuimhne seo comhroinnte "
+"idir na próisis go léir a bhaineann úsáid as an leabharlann seo.</qt>"
+
+#: ProcessModel.cpp:1091
+#, fuzzy, kde-format
+#| msgid "<qt>The command with which this process was launched.</qt>"
+msgid "<qt>The elapsed time since the process was started.</qt>"
+msgstr "<qt>An t-ordú a úsáideadh chun an próiseas a thosú.</qt>"
+
+#: ProcessModel.cpp:1093
+#, kde-format
+msgid ""
+"<qt>Linux flag NoNewPrivileges, if set the process can't gain further "
+"privileges via setuid etc.</qt>"
+msgstr ""
+
+#: ProcessModel.cpp:1095
+#, kde-format
+msgid "<qt>The command with which this process was launched.</qt>"
+msgstr "<qt>An t-ordú a úsáideadh chun an próiseas a thosú.</qt>"
+
+#: ProcessModel.cpp:1097
+#, kde-format
+msgid "<qt>The amount of pixmap memory that this process is using.</qt>"
+msgstr ""
+
+#: ProcessModel.cpp:1099
+#, kde-format
+msgid "<qt>The title of any windows that this process is showing.</qt>"
+msgstr ""
+"<qt>Teideal ar aon fhuinneoga atá á dtaispeáint ag an bpróiseas seo.</qt>"
+
+#: ProcessModel.cpp:1101
+#, kde-format
+msgid "The unique Process ID that identifies this process."
+msgstr "An tAitheantas Uathúil a bhaineann leis an bpróiseas seo."
+
+#: ProcessModel.cpp:1103
+#, kde-format
+msgid "The number of bytes read.  See What's This for more information."
+msgstr ""
+
+#: ProcessModel.cpp:1105
+#, kde-format
+msgid "The number of bytes written.  See What's This for more information."
+msgstr ""
+
+#: ProcessModel.cpp:1107
+#, fuzzy, kde-format
+#| msgid "<qt>The title of any windows that this process is showing.</qt>"
+msgid "<qt>The control group (cgroup) where this process belongs.</qt>"
+msgstr ""
+"<qt>Teideal ar aon fhuinneoga atá á dtaispeáint ag an bpróiseas seo.</qt>"
+
+#: ProcessModel.cpp:1109
+#, kde-format
+msgid ""
+"<qt>Mandatory Access Control (SELinux or AppArmor) context for this process."
+"</qt>"
+msgstr ""
+
+#: ProcessModel.cpp:1112
+#, kde-format
+msgid ""
+"The amount of private physical memory used by a process, with the amount of "
+"shared memory divided by the amount of processes using that shared memory "
+"added."
+msgstr ""
+
+#: ProcessModel.cpp:1122
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The kernel process name is a maximum of 8 "
+"characters long, so the full command is examined.  If the first word in the "
+"full command line starts with the process name, the first word of the "
+"command line is shown, otherwise the process name is used."
+msgstr ""
+
+#: ProcessModel.cpp:1126
+#, kde-format
+msgid ""
+"<qt>The user who owns this process.  If the effective, setuid etc user is "
+"different, the user who owns the process will be shown, followed by the "
+"effective user.  The ToolTip contains the full information.  "
+"<p><table><tr><td>Login Name/Group</td><td>The username of the Real User/"
+"Group who created this process</td></tr><tr><td>Effective User/Group</"
+"td><td>The process is running with privileges of the Effective User/Group.  "
+"This is shown if different from the real user.</td></tr><tr><td>Setuid User/"
+"Group</td><td>The saved username of the binary.  The process can escalate "
+"its Effective User/Group to the Setuid User/Group.</td></tr><tr><td>File "
+"System User/Group</td><td>Accesses to the filesystem are checked with the "
+"File System User/Group.  This is a Linux specific call. See setfsuid(2) for "
+"more information.</td></tr></table>"
+msgstr ""
+
+#: ProcessModel.cpp:1141
+#, kde-format
+msgid ""
+"<qt>This is the size of allocated address space - not memory, but address "
+"space. This value in practice means next to nothing. When a process requests "
+"a large memory block from the system but uses only a small part of it, the "
+"real usage will be low, VIRT will be high. <p><i>Technical information: </"
+"i>This is VmSize in proc/*/status and VIRT in top."
+msgstr ""
+
+#: ProcessModel.cpp:1146
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Private "
+"memory usage, calculated as VmRSS - Shared, from /proc/*/statm.  This tends "
+"to underestimate the true Private memory usage of a process (by not "
+"including i/o backed memory pages), but is the best estimation that is fast "
+"to determine.  This is sometimes known as URSS (Unique Resident Set Size). "
+"For an individual process, see \"Detailed  Memory Information\" for a more "
+"accurate, but slower, calculation of the true Private memory usage."
+msgstr ""
+
+#: ProcessModel.cpp:1151
+#, kde-format
+msgid "The CPU usage of a process and all of its threads."
+msgstr ""
+
+#: ProcessModel.cpp:1154
+#, kde-format
+msgid ""
+"<qt>The total system and user time that a process and all of its threads "
+"have been running on the CPU for. This can be greater than the wall clock "
+"time if the process has been across multiple CPU cores."
+msgstr ""
+
+#: ProcessModel.cpp:1158
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Shared "
+"memory, called SHR in top.  It is the number of pages that are backed by a "
+"file (see kernel Documentation/filesystems/proc.txt).  For an individual "
+"process, see \"Detailed Memory Information\" for a more accurate, but "
+"slower, calculation of the true Shared memory usage."
+msgstr ""
+
+#: ProcessModel.cpp:1162
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The underlying value (clock ticks since "
+"system boot) is retrieved from /proc/[pid]/stat"
+msgstr ""
+
+#: ProcessModel.cpp:1164
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The flag is retrieved from /proc/[pid]/"
+"status"
+msgstr ""
+
+#: ProcessModel.cpp:1166
+#, kde-format
+msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
+msgstr ""
+
+#: ProcessModel.cpp:1169
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the amount of memory used by the "
+"Xorg process for images for this process.  This is memory used in addition "
+"to Memory and Shared Memory.<br><i>Technical information: </i>This only "
+"counts the pixmap memory, and does not include resource memory used by "
+"fonts, cursors, glyphsets etc.  See the <code>xrestop</code> program for a "
+"more detailed breakdown."
+msgstr ""
+
+#: ProcessModel.cpp:1174
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>For each X11 window, the X11 property "
+"_NET_WM_PID is used to map the window to a PID.  If a process' windows are "
+"not shown, then that application incorrectly is not setting _NET_WM_PID."
+msgstr ""
+
+#: ProcessModel.cpp:1178
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the Process ID.  A multi-threaded "
+"application is treated a single process, with all threads sharing the same "
+"PID.  The CPU usage etc will be the total, accumulated, CPU usage of all the "
+"threads."
+msgstr ""
+
+#: ProcessModel.cpp:1183
+#, kde-format
+msgid ""
+"<qt>This column shows the IO statistics for each process. The tooltip "
+"provides the following information:<br><table><tr><td>Characters Read</"
+"td><td>The number of bytes which this task has caused to be read from "
+"storage. This is simply the sum of bytes which this process passed to read() "
+"and pread(). It includes things like tty IO and it is unaffected by whether "
+"or not actual physical disk IO was required (the read might have been "
+"satisfied from pagecache).</td></tr><tr><td>Characters Written</td><td>The "
+"number of bytes which this task has caused, or shall cause to be written to "
+"disk. Similar caveats apply here as with Characters Read.</td></"
+"tr><tr><td>Read Syscalls</td><td>The number of read I/O operations, i.e. "
+"syscalls like read() and pread().</td></tr><tr><td>Write Syscalls</"
+"td><td>The number of write I/O operations, i.e. syscalls like write() and "
+"pwrite().</td></tr><tr><td>Actual Bytes Read</td><td>The number of bytes "
+"which this process really did cause to be fetched from the storage layer. "
+"Done at the submit_bio() level, so it is accurate for block-backed "
+"filesystems. This may not give sensible values for NFS and CIFS filesystems."
+"</td></tr><tr><td>Actual Bytes Written</td><td>Attempt to count the number "
+"of bytes which this process caused to be sent to the storage layer. This is "
+"done at page-dirtying time.</td></table><p>The number in brackets shows the "
+"rate at which each value is changing, determined from taking the difference "
+"between the previous value and the new value, and dividing by the update "
+"interval.<p><i>Technical information: </i>This data is collected from /proc/"
+"*/io and is documented further in Documentation/accounting and Documentation/"
+"filesystems/proc.txt in the kernel source."
+msgstr ""
+
+#: ProcessModel.cpp:1203
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This shows Linux Control Group (cgroup) "
+"membership, retrieved from /proc/[pid]/cgroup. Control groups are used by "
+"Systemd and containers for limiting process group's usage of resources and "
+"to monitor them."
+msgstr ""
+
+#: ProcessModel.cpp:1207
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This shows Mandatory Access Control "
+"(SELinux or AppArmor) context, retrieved from /proc/[pid]/attr/current."
+msgstr ""
+
+#: ProcessModel.cpp:1211
+#, kde-format
+msgid ""
+"<i>Technical information:</i> This is often referred to as \"Proportional "
+"Set Size\" and is the closest approximation of the real amount of total "
+"memory used by a process. Note that the number of applications sharing "
+"shared memory is determined per shared memory section and thus can vary per "
+"memory section."
+msgstr ""
+
+#: ProcessModel.cpp:1294
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Login Name:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1298
+#, fuzzy, kde-kuit-format
+#| msgid "This user is not recognized for some reason."
+msgctxt "@info:tooltip"
+msgid "<para>This user is not recognized for some reason.</para>"
+msgstr "Ní aithnítear an t-úsáideoir seo ar fáth éigin."
+
+#: ProcessModel.cpp:1301
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>%1</emphasis></para>"
+msgstr ""
+
+#: ProcessModel.cpp:1303
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Login Name:</emphasis> %1 (uid: %2)</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1308
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Room Number:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1311
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Work Phone:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1316
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective User:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1318
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid User:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1321
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System User:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1325
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Group:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1328
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective Group:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1330
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid Group:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1333
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System Group:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1342
+#, fuzzy, kde-format
+#| msgctxt "Short description of a process. PID, name, user"
+#| msgid "<numid>%1</numid>: %2, owned by user %3"
+msgctxt "Short description of a process. PID, name, user"
+msgid "%1: %2, owned by user %3"
+msgstr "<numid>%1</numid>: %2, próiseas atá ag úsáideoir %3"
+
+#: ProcessModel.cpp:1353
+#, fuzzy, kde-format
+#| msgid "%1 (uid: %2)"
+msgctxt "Group name and group id"
+msgid "%1 (gid: %2)"
+msgstr "%1 (uid: %2)"
+
+#: ProcessModel.cpp:1375
+#, fuzzy, kde-format
+#| msgid "%1 (uid: %2)"
+msgctxt "User name and user id"
+msgid "%1 (uid: %2)"
+msgstr "%1 (uid: %2)"
+
+#: ProcessModel.cpp:1441
+#, kde-format
+msgctxt "scheduler"
+msgid "Idle"
+msgstr "Díomhaoin"
+
+#: ProcessModel.cpp:1443
+#, kde-format
+msgctxt "scheduler"
+msgid "(Batch) %1"
+msgstr "(Baisc) %1"
+
+#: ProcessModel.cpp:1445
+#, kde-format
+msgctxt "Round robin scheduler"
+msgid "RR %1"
+msgstr ""
+
+#: ProcessModel.cpp:1448
+#, kde-format
+msgctxt "Real Time scheduler"
+msgid "RT"
+msgstr ""
+
+#: ProcessModel.cpp:1450
+#, kde-format
+msgctxt "First in first out scheduler"
+msgid "FIFO %1"
+msgstr "TITA %1"
+
+#: ProcessModel.cpp:1452
+#, kde-format
+msgctxt "scheduler"
+msgid "(IA) %1"
+msgstr "(IA) %1"
+
+#: ProcessModel.cpp:1523 ProcessModel.cpp:1531 ProcessModel.cpp:1548
+#: ProcessModel.cpp:1556
+#, kde-format
+msgid "%1/s"
+msgstr "%1/s"
+
+#: ProcessModel.cpp:1595
+#, fuzzy, kde-kuit-format
+#| msgctxt "tooltip. name,pid "
+#| msgid "This process is being debugged by %1 (<numid>%2</numid>)"
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (%2)"
+msgstr "Tá an próiseas seo á dhífhabhtú ag %1 (<numid>%2</numid>)"
+
+#: ProcessModel.cpp:1617
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para>The parent of all other processes and cannot be "
+"killed.</para><para><emphasis strong='true'>Process ID:</emphasis> %2</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1623
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "<b>KThreadd</b> manages kernel threads. The children processes run in the "
+#| "kernel, controlling hard disk access, etc.<br/>"
+msgctxt "@info:tooltip"
+msgid ""
+"<title>KThreadd</title><para>Manages kernel threads. The children processes "
+"run in the kernel, controlling hard disk access, etc.</para>"
+msgstr ""
+"Bainistíonn <b>KThreadd</b> snáitheanna eithne. Ritheann macphróisis san "
+"eithne, ag rialú rochtain ar an diosca crua, srl.<br/>"
+
+#: ProcessModel.cpp:1627
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para>"
+msgstr ""
+
+#: ProcessModel.cpp:1635
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent:</emphasis> %3</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %4</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1645
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %3</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1654 ProcessModel.cpp:1755
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Number of threads:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1656
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Command:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1659 ProcessModel.cpp:1690
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Running on:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1674
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Clock ticks since system boot:</emphasis> %1</"
+"para><para><emphasis strong='true'>Seconds since system boot:</emphasis> %2 "
+"(System boot time: %3)</para><para><emphasis strong='true'>Absolute start "
+"time:</emphasis> %4</para><para><emphasis strong='true'>Relative start time:"
+"</emphasis> %5</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1686
+#, fuzzy, kde-kuit-format
+#| msgid "<qt>This process was run with the following command:<br />%1"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This process was run with the following "
+"command:</emphasis></para><para>%1</para>"
+msgstr "<qt>Ritheadh an próiseas seo leis an ordú seo a leanas:<br />%1"
+
+#: ProcessModel.cpp:1711 ProcessModel.cpp:1777
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Nice level:</emphasis> %1 (%2)</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1718
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This is a real time process.</emphasis></"
+"para><para><emphasis strong='true'>Scheduler priority:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1726
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Scheduler:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1732 ProcessModel.cpp:1784
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Nice level:</emphasis> %1 (%2)</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1735 ProcessModel.cpp:1787
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Class:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1746
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Process status:</emphasis> %1 %2</"
+"para><para><emphasis strong='true'>User CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>System CPU usage:</emphasis> %4%</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1758
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Number of children:</emphasis> %1</"
+"para><para><emphasis strong='true'>Total User CPU usage:</emphasis> %2%</"
+"para><para><emphasis strong='true'>Total System CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>Total CPU usage:</emphasis> %4%</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1769
+#, fuzzy, kde-kuit-format
+#| msgid "<br /><br />CPU time spent running as user: %1 seconds"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running as user:</emphasis> %1 "
+"seconds</para>"
+msgstr "<br /><br />Am iomlán LAP mar úsáideoir: %1 soicind"
+
+#: ProcessModel.cpp:1773
+#, fuzzy, kde-kuit-format
+#| msgid "<br />CPU time spent running in kernel: %1 seconds"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running in kernel:</emphasis> "
+"%1 seconds</para>"
+msgstr "<br />Am LAP san eithne: %1 soicind"
+
+#: ProcessModel.cpp:1803
+#, fuzzy, kde-kuit-format
+#| msgid "Memory usage: %1 out of %2  (%3 %)<br />"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Memory usage:</emphasis> %1 out of %2  (%3 %)</"
+"para>"
+msgstr "Úsáid chuimhne: %1 as %2  (%3 %)<br />"
+
+#: ProcessModel.cpp:1809
+#, fuzzy, kde-kuit-format
+#| msgid "Memory usage: %1 out of %2  (%3 %)<br />"
+msgctxt "@info:tooltip"
+msgid "<emphasis strong='true'>Memory usage:</emphasis> %1<br />"
+msgstr "Úsáid chuimhne: %1 as %2  (%3 %)<br />"
+
+#: ProcessModel.cpp:1813
+#, fuzzy, kde-kuit-format
+#| msgid "RSS Memory usage: %1 out of %2  (%3 %)"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1 out of %2  (%3 "
+"%)</para>"
+msgstr "Úsáid chuimhne RSS: %1 as %2  (%3 %)"
+
+#: ProcessModel.cpp:1819
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1826 ProcessModel.cpp:1887
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Your system does not seem to have this information available to be read."
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Your system does not seem to have this "
+"information available to be read.</emphasis></para>"
+msgstr ""
+"Dealraíonn sé nach bhfuil an t-eolas seo ar fáil le léamh ar do chóras."
+
+#: ProcessModel.cpp:1830
+#, fuzzy, kde-kuit-format
+#| msgid "Shared library memory usage: %1 out of %2  (%3 %)"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1 out "
+"of %2  (%3 %)</para>"
+msgstr "Úsáid chuimhne comhleabharlainne: %1 as %2  (%3 %)"
+
+#: ProcessModel.cpp:1836 ProcessModel.cpp:1897
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1</"
+"para>"
+msgstr ""
+
+#: ProcessModel.cpp:1843
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Characters read:</emphasis> %1 (%2 KiB/s)</"
+"para><para><emphasis strong='true'>Characters written:</emphasis> %3 (%4 KiB/"
+"s)</para><para><emphasis strong='true'>Read syscalls:</emphasis> %5 (%6 "
+"s⁻¹)</para><para><emphasis strong='true'>Write syscalls:</emphasis> %7 (%8 "
+"s⁻¹)</para><para><emphasis strong='true'>Actual bytes read:</emphasis> %9 "
+"(%10 KiB/s)</para><para><emphasis strong='true'>Actual bytes written:</"
+"emphasis> %11 (%12 KiB/s)</para>"
+msgstr ""
+
+#: ProcessModel.cpp:1891
+#, fuzzy, kde-kuit-format
+#| msgid "Memory usage: %1 out of %2  (%3 %)<br />"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Total memory usage:</emphasis> %1 out of %2  "
+"(%3 %)</para>"
+msgstr "Úsáid chuimhne: %1 as %2  (%3 %)<br />"
+
+#: ProcessModel.cpp:2181
+#, kde-format
+msgctxt "process heading"
+msgid "Name"
+msgstr "Ainm"
+
+#: ProcessModel.cpp:2182
+#, kde-format
+msgctxt "process heading"
+msgid "Username"
+msgstr "Úsáideoir"
+
+#: ProcessModel.cpp:2183
+#, kde-format
+msgctxt "process heading"
+msgid "PID"
+msgstr "PID"
+
+#: ProcessModel.cpp:2184
+#, kde-format
+msgctxt "process heading"
+msgid "TTY"
+msgstr "TTY"
+
+#: ProcessModel.cpp:2185
+#, kde-format
+msgctxt "process heading"
+msgid "Niceness"
+msgstr "Tosaíocht"
+
+#: ProcessModel.cpp:2187
+#, no-c-format, kde-format
+msgctxt "process heading"
+msgid "CPU %"
+msgstr "LAP %"
+
+#: ProcessModel.cpp:2188
+#, kde-format
+msgctxt "process heading"
+msgid "CPU Time"
+msgstr "Am LAP"
+
+#: ProcessModel.cpp:2189
+#, kde-format
+msgctxt "process heading"
+msgid "IO Read"
+msgstr "Léamh I/A"
+
+#: ProcessModel.cpp:2190
+#, kde-format
+msgctxt "process heading"
+msgid "IO Write"
+msgstr "Scríobh I/A"
+
+#: ProcessModel.cpp:2191
+#, kde-format
+msgctxt "process heading"
+msgid "Virtual Size"
+msgstr "Méid Fhíorúil"
+
+#: ProcessModel.cpp:2192
+#, kde-format
+msgctxt "process heading"
+msgid "Memory"
+msgstr "Cuimhne"
+
+#: ProcessModel.cpp:2193
+#, kde-format
+msgctxt "process heading"
+msgid "Shared Mem"
+msgstr "Comhchuimhne"
+
+#: ProcessModel.cpp:2194
+#, kde-format
+msgctxt "process heading"
+msgid "Relative Start Time"
+msgstr ""
+
+#: ProcessModel.cpp:2195
+#, kde-format
+msgctxt "process heading"
+msgid "NNP"
+msgstr ""
+
+#: ProcessModel.cpp:2196
+#, kde-format
+msgctxt "process heading"
+msgid "Command"
+msgstr "Ordú"
+
+#: ProcessModel.cpp:2199
+#, kde-format
+msgctxt "process heading"
+msgid "X11 Memory"
+msgstr "Cuimhne X11"
+
+#: ProcessModel.cpp:2200
+#, kde-format
+msgctxt "process heading"
+msgid "Window Title"
+msgstr "Teideal na Fuinneoige"
+
+#: ProcessModel.cpp:2203
+#, fuzzy, kde-format
+#| msgid "Group: %1"
+msgctxt "process heading"
+msgid "CGroup"
+msgstr "Grúpa: %1"
+
+#: ProcessModel.cpp:2204
+#, kde-format
+msgctxt "process heading"
+msgid "MAC Context"
+msgstr ""
+
+#: ProcessModel.cpp:2205
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Memory"
+msgctxt "process heading"
+msgid "Total Memory"
+msgstr "Cuimhne"
+
+#: ProcessModel.cpp:2327
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#| "css\">\n"
+#| "p, li { white-space: pre-wrap; }\n"
+#| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#| "font-weight:400; font-style:normal;\">\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#| "weight:600;\">Idle Scheduling</span></p>\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\">A  program running with "
+#| "<span style=\" font-weight:600;\">Idle</span> I/O priority will only get "
+#| "disk time when no other program has asked for disk I/O for a defined "
+#| "grace period. The impact of <span style=\" font-weight:600;\">Idle</span> "
+#| "I/O processes on normal system activity should be zero. Priority is not "
+#| "applicable to this scheduling class.</p></body></html>"
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Attempt to kill the "
+"currently selected process by sending it the SIGTERM signal.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Technical information: </span><br />The SIGTERM signal is sent to "
+"the given process. If there are insufficient privileges to do so, by default "
+"a password is requested.<br />By running the program <span style=\" font-"
+"family:'Courier New,courier';\">polkit-kde-authorization</span> you can give "
+"certain (or all) users permission to kill any process, without requiring a "
+"password. </p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Díomhaoin</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Má tá ríomhchlár ag rith "
+"le tosaíocht I/A <span style=\" font-weight:600;\">'Díomhaoin'</span>, "
+"soláthraítear rochtain ar an diosca dó nuair nach raibh aon ríomhchlár eile "
+"ag iarraidh I/A diosca a dhéanamh ar feadh tréimhse áirithe. Ní chuireann "
+"próisis I/A <span style=\" font-weight:600;\">Díomhaoin</span> isteach ar "
+"gnáthghníomhaíocht an chórais ar chor ar bith. Níl aon bhaint ag Tosaíocht "
+"leis an aicme sceidealta seo.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:42
+#, kde-format
+msgid "&End Process..."
+msgstr "&Cuir Deireadh le Próiseas..."
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:58
+#, kde-format
+msgid ""
+"Type comma separated search terms or regular expressions to filter the "
+"process list"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:69
+#, kde-format
+msgid ""
+"Filter which processes are shown by the text given here.  The text can be a "
+"partial string match of the Name, Command or Window Title of the process.  "
+"It can also be a Username or a Process ID number.<p>\n"
+"For example:\n"
+"\n"
+"<table>\n"
+"<tr><th>ksys</th><td>Show processes containing \"<b>ksys</b>\" in the name, "
+"for example the processes \"<i>ksysguard</i>\" and \"<i>ksysguardd</i>\"."
+"<td></tr>\n"
+"<tr><th>root</th><td>Show processes owned by <b>root</b>.  For example "
+"<i>init</i></td></tr>\n"
+"<tr><th>1234</th><td>Show the processes with the PID or Parent PID of "
+"<b>1234</b>.</td></th></tr>\n"
+"</table>\n"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:101
+#, kde-format
+msgid ""
+"<qt>Change which processes are shown, and how they are shown.  The processes "
+"can be further filtered by using the Quick Search text filter.<p>\n"
+"<table>\n"
+"<tr><td>All Processes</td><td>Show all the processes on the system.</td></"
+"tr>\n"
+"<tr><td>All Processes, tree</td><td>Show all the processes on the system, in "
+"a hierarchical manner using the parent PID information.</td></tr>\n"
+"<tr><td>System Processes</td><td>Show processes running as root and as a "
+"user who cannot login.</td></tr>\n"
+"<tr><td>User Processes</td><td>Show processes running as a non-root user who "
+"can login.</td></tr>\n"
+"<tr><td>Own Processes</td><td>Show processes owned by the same user that "
+"this process is owned by.</td></tr>\n"
+"<tr><td>Programs Only</td><td>Show processes which are running as a user who "
+"can login and are either attached to a TTY or have at least one X11 Window.</"
+"td></tr>\n"
+"</table>\n"
+"<p>\n"
+"<i>Technical Information:</i><br>\n"
+"Processes with multiple threads are just shown as a single process, and not "
+"treated any differently.<br>\n"
+"Kernel threads are shown as normal processes, but are actually running "
+"inside the kernel and are not real processes.  As such, many of the fields "
+"(such as Username) do not apply.\n"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:111
+#, kde-format
+msgid "All Processes"
+msgstr "Gach Próiseas"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:116
+#, kde-format
+msgid "All Processes, Tree"
+msgstr "Gach Próiseas, Crann"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:121
+#, kde-format
+msgid "System Processes"
+msgstr "Próisis an Chórais"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:126
+#, kde-format
+msgid "User Processes"
+msgstr "Próisis Úsáideora"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:131
+#, kde-format
+msgid "Own Processes"
+msgstr "Do Phróisis Féin"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:136
+#, kde-format
+msgid "Programs Only"
+msgstr "Ríomhchláir Amháin"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnTools)
+#: ProcessWidgetUI.ui:144
+#, kde-format
+msgid "Tools"
+msgstr ""
+
+#: ReniceDlg.cpp:28
+#, kde-format
+msgid "Set Priority"
+msgstr "Socraigh an Tosaíocht"
+
+#: ReniceDlg.cpp:63
+#, kde-format
+msgctxt "Scheduler"
+msgid "Interactive"
+msgstr "Idirghníomhach"
+
+#. i18n: ectx: property (text), widget (QLabel, lblMessage1)
+#: ReniceDlgUi.ui:23
+#, kde-format
+msgid "Change scheduling priority for:"
+msgstr "Athraigh tosaíocht sceidealta le haghaidh:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ReniceDlgUi.ui:100
+#, kde-format
+msgid "CPU Scheduler"
+msgstr "Sceidealóir LAP"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:129
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The standard time-sharing "
+"scheduler for processes without special requirements.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">An sceidealóir "
+"caighdeánach comhroinnte ama le haghaidh próiseas gan riachtanais speisialta."
+"</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:136
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling: Default Linux time-sharing  (Other)</span></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+"\">Normal<span style=\" font-weight:400;\"> is the standard Linux time-"
+"sharing scheduler that is intended for all processes that do not  require "
+"special static priority real-time mechanisms. The process to run is chosen "
+"from the list of other</span> Normal<span style=\" font-weight:400;\"> or </"
+"span>Batch<span style=\" font-weight:400;\"> processes based on a dynamic "
+"priority that is determined only inside this list. The dynamic priority is "
+"based on the priority level given and increased for each time-quantum the "
+"process is ready to run, but denied to run by the scheduler. This ensures "
+"fair progress among all Normal processes.</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Gnáthsceidealadh: Comhroinnt ama réamhshocraithe ar Linux "
+"(Eile)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Is é "
+"Gnáth<span style=\" font-weight:400;\"> an sceidealóir caighdeánach "
+"comhroinnte ama atá ceaptha le haghaidh próiseas nach bhfuil meicníochtaí "
+"speisialta fíor-ama tosaíochta stataí de dhíth orthu. Roghnaítear an "
+"próiseas le rith ó liosta de na próisis eile</span> Gnáth<span style=\" font-"
+"weight:400;\"> nó </span>Baisc<span style=\" font-weight:400;\"> bunaithe ar "
+"thosaíocht dhinimiciúil a gcinntear uirthi sa liosta seo amháin. Tá an "
+"tosaíocht dhinimiciúil bunaithe ar an leibhéal tosaíochta sonraithe agus "
+"méadaítear é le linn gach candam ama atá an próiseas réidh le rith ach "
+"díultaíonn an sceidealóir é. Cinntíonn sé seo cothrom na Féinne do na "
+"Gnáthphróisis go léir.</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioNormal)
+#. i18n: ectx: property (text), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:139 ReniceDlgUi.ui:303
+#, kde-format
+msgid "Normal"
+msgstr "Gnáth"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:149
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">For CPU-intensive non-"
+"interactive processes.  Process is mildly disfavored in scheduling decisions."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Le haghaidh próiseas neamh-"
+"idirghníomhach atá dian ar an LAP. Beidh tosaíocht beagán níos ísle ag an "
+"bpróiseas le linn sceidealta.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:156
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Batch Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(Since Linux 2.6.16.)</"
+"span><span style=\" font-weight:400;\"> This policy is similar to </"
+"span>Normal<span style=\" font-weight:400;\">, except that this policy will "
+"cause the scheduler to always assume that the process is CPU-intensive.  "
+"Consequently, the scheduler will apply a small scheduling penalty so that "
+"this process is mildly disfavored in scheduling decisions. This policy is "
+"useful for workloads that are non-interactive, but do not want to lower "
+"their nice value, and for workloads that want a deterministic scheduling "
+"policy without interactivity causing extra preemptions (between the "
+"workload's tasks).</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Baisce</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(Ó Linux 2.6.16.)</span><span "
+"style=\" font-weight:400;\"> Tá an polasaí seo cosúil le </span>Gnáth<span "
+"style=\" font-weight:400;\">, cé go nglacfaidh an sceidealóir leis go bhfuil "
+"an próiseas dian ar an LAP. Dá bhrí sin, cuirfidh an sceidealóir pionós beag "
+"sceidealta i bhfeidhm sa chaoi go mbeidh tosaíocht beagán níos ísle ag an "
+"bpróiseas seo le linn sceidealta. Polasaí áisiúil é seo le haghaidh ualaigh "
+"oibre neamh-idirghníomhaigh ach nuair nach mian leat a leibhéil tosaíochta a "
+"ísliú, nó le haghaidh ualaigh oibre a éilíonn polasaí cinntitheach "
+"sceidealta gan sáruithe breise (idir tascanna an ualaigh oibre) a tharlaíonn "
+"de bhrí idirghníomhacht.</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:159
+#, kde-format
+msgid "Batch"
+msgstr "Baisc"
+
+# "eangú ama" ó focal.ie
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:169
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  Has Timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Rithfear an próiseas nuair "
+"is féidir. Tosaíocht níos airde ná Gnáth nó Baisc. Eangú ama aige.</p></"
+"body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:176
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin</span> is a simple enhancement of <span style=\" "
+"font-weight:600;\">FIFO</span>.  Everything described below for <span style="
+"\" font-weight:600;\">FIFO</span> also applies to <span style=\" font-"
+"weight:600;\">Round Robin</span>, except that each process is only allowed "
+"to run for a maximum time quantum.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Comh-Agach</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Is éard atá i <span style="
+"\" font-weight:600;\">Sceidealadh Comh-Agach</span> ná feabhsúchán simplí ar "
+"<span style=\" font-weight:600;\">TITA</span>.  Baineann gach uile rud sa "
+"chur síos thíos ar <span style=\" font-weight:600;\">TITA</span> le <span "
+"style=\" font-weight:600;\">Sceidealadh Comh-Agach</span> freisin, cé nach "
+"gceadaítear do phróiseas ar bith rith níos faide ná candam ama áirithe.</p></"
+"body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:179
+#, kde-format
+msgid "Round robin"
+msgstr "Comh-agach"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:189
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  No timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Rithfear an próiseas nuair "
+"is féidir. Tosaíocht níos airde ná Gnáth nó Baisc. Gan eangú ama.</p></"
+"body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:196
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">First In-First Out Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">When  a  <span style=\" "
+"font-weight:600;\">FIFO</span> process  becomes  runnable,  it  will always "
+"immediately preempt any currently running <span style=\" font-weight:600;"
+"\">Normal</span> or <span style=\" font-weight:600;\">Batch</span> process.</"
+"p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Is Túisce Isteach Is Túisce Amach</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Nuair a bheidh próiseas "
+"<span style=\" font-weight:600;\">TITA</span> inrite, rithfear é láithreach "
+"bonn in áit aon phróisis <span style=\" font-weight:600;\">Gnáth</span> nó "
+"<span style=\" font-weight:600;\">Baisc</span> atá ag rith faoi láthair.</"
+"p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:199
+#, kde-format
+msgid "FIFO"
+msgstr "TITA"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ReniceDlgUi.ui:264
+#, kde-format
+msgid "I/O Scheduler"
+msgstr "Sceidealóir I/A"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:293
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process's priority is "
+"based on the CPU priority.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tá tosaíocht an phróisis "
+"bunaithe ar thosaíocht an LAP</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:300
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This is the same as <span "
+"style=\" font-weight:600;\">Best Effort</span> scheduling, except that the "
+"priority is calculated automatically based on the CPU priority.  Processes "
+"with a higher priority will take priority for access to the hard disk.  "
+"Programs running at the same <span style=\" font-weight:600;\">Best Effort/"
+"Normal</span> priority are served in a <span style=\" font-weight:600;"
+"\">Round Robin</span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Gnáthsceidealadh</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Is ionann é seo agus <span "
+"style=\" font-weight:600;\">Dícheall</span>, cé go n-áirítear an tosaíocht "
+"go huathoibríoch bunaithe ar an tosaíocht LAP. Tugtar rochtain ar an diosca "
+"crua do phróisis le tosaíocht níos airde.  Nuair atá roinnt próiseas ann "
+"leis an tosaíocht chéanna <span style=\" font-weight:600;\">Dícheall/Gnáth</"
+"span>, déantar freastal orthu de réir polasaí <span style=\" font-weight:600;"
+"\">Comh-Agach</span>.</p></body></html>"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:313
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process can only use the "
+"hard disk when no other process has used it very recently.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Ní cheadaítear don "
+"phróiseas an diosca crua a úsáid ach nuair nár úsáid aon phróiseas eile é le "
+"déanaí.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:320
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Idle Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A  program running with "
+"<span style=\" font-weight:600;\">Idle</span> I/O priority will only get "
+"disk time when no other program has asked for disk I/O for a defined grace "
+"period. The impact of <span style=\" font-weight:600;\">Idle</span> I/O "
+"processes on normal system activity should be zero. Priority is not "
+"applicable to this scheduling class.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Díomhaoin</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Má tá ríomhchlár ag rith "
+"le tosaíocht I/A <span style=\" font-weight:600;\">'Díomhaoin'</span>, "
+"soláthraítear rochtain ar an diosca dó nuair nach raibh aon ríomhchlár eile "
+"ag iarraidh I/A diosca a dhéanamh ar feadh tréimhse áirithe. Ní chuireann "
+"próisis I/A <span style=\" font-weight:600;\">Díomhaoin</span> isteach ar "
+"gnáthghníomhaíocht an chórais ar chor ar bith. Níl aon bhaint ag Tosaíocht "
+"leis an aicme sceidealta seo.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:323
+#, kde-format
+msgid "Idle"
+msgstr "Díomhaoin"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:333
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process is given higher "
+"priority to access the hard disk than Normal.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Beidh tosaíocht níos airde "
+"ná Gnáth ag an bpróiseas ar an diosca crua.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:340
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Best Effort Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Processes with a higher "
+"priority will take priority for access to the hard disk.  Programs running "
+"at the same <span style=\" font-weight:600;\">Best Effort/Normal</span> "
+"priority are served in a <span style=\" font-weight:600;\">Round Robin</"
+"span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Díchill</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tugtar rochtain ar an "
+"diosca crua do phróisis le tosaíochtaí is airde.  Nuair atá roinnt próiseas "
+"ann leis an tosaíocht chéanna <span style=\" font-weight:600;\">Dícheall/"
+"Gnáth</span>, déantar freastal orthu de réir polasaí <span style=\" font-"
+"weight:600;\">Comh-Agach</span>.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:343
+#, kde-format
+msgid "Best effort"
+msgstr "Dícheall"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:353
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process gets immediate "
+"access to the hard disk whenever needed, regardless of what else is going on."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tugtar rochtain láithreach "
+"ar an diosca crua don phróiseas seo nuair is gá, beag beann ar cad eile atá "
+"ar siúl.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:360
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Real Time Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The <span style=\" font-"
+"weight:600;\">Real Time</span> scheduling class is given first access to the "
+"disk, regardless of what else is going on in the system. Thus the <span "
+"style=\" font-weight:600;\">Real Time</span> class needs to be used with "
+"some care, as it can starve other processes. As with the <span style=\" font-"
+"weight:600;\">Best Effort</span> class, 8 priority levels are defined "
+"denoting how big a time slice a given process will receive on each "
+"scheduling window.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Sceidealadh Fíor-Ama</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tugtar an chéad rochtain "
+"ar an diosca do phróisis san aicme sceidealta <span style=\" font-weight:600;"
+"\">Fíor-Ama</span>, beag beann ar cad eile atá ar siúl ar an gcóras. Mar "
+"sin, ba chóir duit a bheith cúramach agus an aicme <span style=\" font-"
+"weight:600;\">Fíor-Ama</span> a úsáid, toisc gurbh fhéidir go mbeadh próisis "
+"eile tréigthe. Díreach cosúil leis an aicme <span style=\" font-weight:600;"
+"\">'Dícheall'</span>, soláthraítear ocht leibhéal tosaiochta lenar féidir an "
+"méid ama a thabharfaidh do phróiseas i ngach fuinneog sceidealta</p></body></"
+"html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:363
+#, kde-format
+msgid "Real time"
+msgstr "Fíor-Am"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuLow)
+#. i18n: ectx: property (text), widget (QLabel, lblIOLow)
+#: ReniceDlgUi.ui:402 ReniceDlgUi.ui:470
+#, kde-format
+msgid "Low Priority"
+msgstr "Tosaíocht Íseal"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuHigh)
+#. i18n: ectx: property (text), widget (QLabel, lblIOHigh)
+#: ReniceDlgUi.ui:409 ReniceDlgUi.ui:477
+#, kde-format
+msgid "High Priority"
+msgstr "Tosaíocht Ard"
+
+#: scripting.cpp:243
+#, kde-format
+msgid "QtWebEngineWidgets not available"
+msgstr ""
+
+#: scripting.cpp:244
+#, kde-format
+msgid ""
+"KSysGuard library was compiled without QtWebEngineWidgets, please contact "
+"your distribution."
+msgstr ""
+
+#, fuzzy
+#~| msgctxt "process heading"
+#~| msgid "Command"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Run Command"
+#~ msgstr "Ordú"
+
+#~ msgid ""
+#~ "You do not have the permission to renice the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Níl go leor ceadanna agat chun tosaíocht an phróisis a athrú agus bhí "
+#~ "fadhb ann nuair a baineadh triail as é a dhéanamh mar fhorúsáideoir.  "
+#~ "Earráid %1 %2"
+
+#~ msgid ""
+#~ "You do not have the permission to kill the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Níl go leor ceadanna agat chun an próiseas a mharú, agus bhí fadhb ann "
+#~ "nuair a baineadh triail as é a dhéanamh mar fhorúsáideoir.  Earráid %1 %2"
+
+#, fuzzy
+#~| msgid "Memory usage: %1<br />"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Memory usage:</emphasis> %1<br />"
+#~ msgstr "Úsáid chuimhne: %1<br />"
+
+#~ msgid "Login Name: %1<br/>"
+#~ msgstr "Ainm Logála Isteach: %1<br/>"
+
+#~ msgid "<b>%1</b><br/>"
+#~ msgstr "<b>%1</b><br/>"
+
+#~ msgid "Login Name: %1 (uid: %2)<br/>"
+#~ msgstr "Ainm Logála Isteach: %1 (uid: %2)<br/>"
+
+#~ msgid "  Room Number: %1<br/>"
+#~ msgstr "  Uimhir Seomra: %1<br/>"
+
+#~ msgid "  Work Phone: %1<br/>"
+#~ msgstr "  Fón Oibre: %1<br/>"
+
+#~ msgid "Effective User: %1<br/>"
+#~ msgstr "Úsáideoir Feidhmiúil: %1<br/>"
+
+#~ msgid "Setuid User: %1<br/>"
+#~ msgstr "Úsáideoir Setuid: %1<br/>"
+
+#~ msgid "File System User: %1<br/>"
+#~ msgstr "Úsáideoir an Chórais Comhad: %1<br/>"
+
+#~ msgid "<br/>Effective Group: %1"
+#~ msgstr "<br/>Grúpa Feidhmiúil: %1"
+
+#~ msgid "<br/>Setuid Group: %1"
+#~ msgstr "<br/>Grúpa Setuid: %1"
+
+#~ msgid "<br/>File System Group: %1"
+#~ msgstr "<br/>Grúpa Córais Comhad: %1"
+
+#~ msgid ""
+#~ "<b>Init</b> is the parent of all other processes and cannot be killed.<br/"
+#~ ">"
+#~ msgstr ""
+#~ "Is é <b>Init</b> máthair gach próisis eile agus ní féidir é a mharú.<br/>"
+
+#, fuzzy
+#~| msgctxt "name column tooltip. first item is the name"
+#~| msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2"
+#~ msgstr "<b>%1</b><br />Aitheantas an Phróisis: <numid>%2</numid>"
+
+#, fuzzy
+#~| msgctxt "name column tooltip. first item is the name"
+#~| msgid ""
+#~| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br /"
+#~| ">Parent's ID: <numid>%4</numid>"
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent: %3<br />Parent's ID: %4"
+#~ msgstr ""
+#~ "<b>%1</b><br />Aitheantas an Phróisis: <numid>%2</numid><br /"
+#~ ">Máthairphróiseas: %3<br />Aitheantas an Mháthairphróisis: <numid>%4</"
+#~ "numid>"
+
+#, fuzzy
+#~| msgctxt "name column tooltip. first item is the name"
+#~| msgid ""
+#~| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>"
+#~| "%3</numid>"
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent's ID: %3"
+#~ msgstr ""
+#~ "<b>%1</b><br />Aitheantas an Phróisis: <numid>%2</numid><br />Aitheantas "
+#~ "an Mháthairphróisis: <numid>%3</numid>"
+
+#~ msgid "<br/>Command: %1"
+#~ msgstr "<br/>Ordú: %1"
+
+#~ msgid "<br />Running on: %1"
+#~ msgstr "<br />Ag rith ar: %1"
+
+#~ msgid "<br /><br />Running on: %1"
+#~ msgstr "<br /><br />Ag rith ar: %1"
+
+#~ msgid "Nice level: %1 (%2)"
+#~ msgstr "Leibhéal tosaíochta: %1 (%2)"
+
+#~ msgid "<br/>Scheduler: %1"
+#~ msgstr "<br/>Sceidealóir: %1"
+
+#~ msgid "<br/>I/O Nice level: %1 (%2)"
+#~ msgstr "<br/>Leibhéal tosaíochta I/A: %1 (%2)"
+
+#~ msgid "<br/>I/O Class: %1"
+#~ msgstr "<br/>Aicme I/A: %1"
+
+#~ msgid ""
+#~ "<qt><p style='white-space:pre'>Process status: %1 %2<br />User CPU usage: "
+#~ "%3%<br />System CPU usage: %4%"
+#~ msgstr ""
+#~ "<qt><p style='white-space:pre'>Stádas an phróisis: %1 %2<br />Úsáid LAP "
+#~ "(úsáideoir): %3%<br />Úsáid LAP (córas): %4%"
+
+#~ msgid ""
+#~ "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
+#~ "System CPU usage: %3%<br />Total CPU usage: %4%"
+#~ msgstr ""
+#~ "<br />Líon na macphróiseas: %1<br />Úsáid iomlán LAP (úsáideoir): %2%<br /"
+#~ ">Úsáid iomlán LAP (córas): %3%<br />Úsáid iomlán LAP: %4%"
+
+#~ msgid "<br />Nice level: %1 (%2)"
+#~ msgstr "<br />Leibhéal tosaíochta: %1 (%2)"
+
+#~ msgid "RSS Memory usage: %1"
+#~ msgstr "Úsáid chuimhne RSS: %1"
+
+#~ msgid "Shared library memory usage: %1"
+#~ msgstr "Úsáid chuimhne comhleabharlainne: %1"
+
+#~ msgid "%1 (gid: <numid>%2</numid>)"
+#~ msgstr "%1 (gid: <numid>%2</numid>)"
+
+#~ msgid "End Process..."
+#~ msgid_plural "End Processes..."
+#~ msgstr[0] "Cuir Deireadh le Próiseas..."
+#~ msgstr[1] "Cuir Deireadh le Próisis..."
+#~ msgstr[2] "Cuir Deireadh le Próisis..."
+#~ msgstr[3] "Cuir Deireadh le Próisis..."
+#~ msgstr[4] "Cuir Deireadh le Próisis..."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the CPU scheduler. "
+#~ "Aborting."
+#~ msgstr ""
+#~ "Níl go leor ceadanna agat chun sceidealóir an LAP a athrú. Á thobscor."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the CPU priority. "
+#~ "Aborting."
+#~ msgstr ""
+#~ "Níl go leor ceadanna agat chun tosaíocht an LAP a athrú. Á thobscor."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the IO scheduler and "
+#~ "priority. Aborting."
+#~ msgstr ""
+#~ "Níl go leor ceadanna agat chun sceidealóir agus tosaíocht I/A a athrú. Á "
+#~ "thobscor."
+
+#~| msgid "Kill Process"
+#~| msgid_plural "Kill Processes"
+#~ msgid "End process"
+#~ msgid_plural "End %1 processes"
+#~ msgstr[0] "Maraigh Próiseas"
+#~ msgstr[1] "Maraigh Próisis"
+#~ msgstr[2] "Maraigh Próisis"
+#~ msgstr[3] "Maraigh Próisis"
+#~ msgstr[4] "Maraigh Próisis"
+
+#~ msgid "Scheduler priority: %1"
+#~ msgstr "Tosaíocht sceidealóra: %1"
+
+#~ msgid "Monitoring I/O for %1 (%2)"
+#~ msgstr "I/A á mhonatóireacht le haghaidh %1 (%2)"
+
+#~ msgid ""
+#~ "The program '%1' (PID: %2) is being monitored for input and output "
+#~ "through any file descriptor (stdin, stdout, stderr, open files, network "
+#~ "connections, etc.).  Data being written by the process is shown in red "
+#~ "and data being read by the process is shown in blue."
+#~ msgstr ""
+#~ "Táthar ag déanamh monatóireacht ar ionchur agus aschur ó ríomhchlár "
+#~ "'%1' (PID: %2) trí thuarascálaí comhad ar bith (stdin, stdout, stderr, "
+#~ "comhaid oscailte, ceangail líonra, srl.). Taispeántar sonraí scríofa ag "
+#~ "an bpróiseas i ndath dearg agus sonraí léite ag an bpróiseas i ndath gorm."
+
+#~ msgid "&Attach"
+#~ msgstr "Ce&angail"
+
+#~ msgid "&Pause"
+#~ msgstr "&Sos"
+
+#~ msgid "&Resume"
+#~ msgstr "&Lean ar aghaidh"
+
+#~ msgid "&Detach"
+#~ msgstr "&Dícheangail"
+
+#~ msgid ""
+#~ "Interpret output as containing VT100 commands. For console-based programs."
+#~ msgstr ""
+#~ "Léigh aschur ionann is dá mbeadh orduithe VT100 ann. Le haghaidh "
+#~ "ríomhchlár bunaithe ar an gconsól."
+
+#~ msgid ""
+#~ "If this is checked then ANSI escape sequences will be interpreted and not "
+#~ "displayed.  Useful for when monitoring bash."
+#~ msgstr ""
+#~ "Má chuireann tú tic anseo, léirmhíneofar seichimh éalúcháin ANSI agus ní "
+#~ "thaispeánfar iad. Rogha áisiúil le linn monatóireacht a dhéanamh ar bash."
+
+#~ msgid "Interpret ANSI escape sequences"
+#~ msgstr "Léirmhínigh seichimh éalúcháin ANSI"
+
+#~ msgid "Show the output from processes launched by this process."
+#~ msgstr "Taispeáin an t-aschur ó phróisis a thosaigh an próiseas seo."
+
+#~ msgid "Follow fork and clone commands to monitor child processes"
+#~ msgstr ""
+#~ "Lean orduithe 'fork' agus 'clone' chun monatóireacht a dhéanamh ar "
+#~ "mhacphróisis"
+
+#~ msgid "Monitor child processes"
+#~ msgstr "Déan monatóireacht ar mhacphróisis"
+
+#~ msgid "Pause the process and its output"
+#~ msgstr "Cuir an próiseas agus a aschur ar shos"
+
+#~ msgid ""
+#~ "Stop reading the output from the process. This will cause the process to "
+#~ "be blocked, effectively pausing it. The process can be resumed by "
+#~ "resuming, detaching or closing the dialog."
+#~ msgstr ""
+#~ "Stad aschur ón phróiseas a léamh. Cuireann sé seo bac ar an bpróiseas, "
+#~ "agus cuirfear é ar shos mar sin. Is féidir an próiseas a atosú trí atosú, "
+#~ "dícheangal, nó an dialóg a dhúnadh."
+
+#~ msgid "Stop monitoring the process"
+#~ msgstr "Stad monatóireacht an phróisis"
+
+#~ msgid "Stop monitoring the process and allow the process to resume running."
+#~ msgstr "Stad monatóireacht an phróisis agus ceadaigh dó tosú arís."
+
+#~ msgid "Renice Process"
+#~ msgstr "Athraigh Tosaíocht an Phróisis"
+
+#~ msgid "No."
+#~ msgstr "Uimh."
+
+#~ msgid ""
+#~ "Could not find setscheduler executable.  This should have been installed "
+#~ "alongside system monitor."
+#~ msgstr ""
+#~ "Níorbh fhéidir clár inrite setscheduler a aimsiú. Ba chóir dó a bheith "
+#~ "suiteáilte in éineacht le monatóir an chórais."
+
+#~ msgid "Form"
+#~ msgstr "Foirm"
+
+#~ msgctxt "process heading"
+#~ msgid "Pid"
+#~ msgstr "Pid"
+
+#~ msgctxt "process heading"
+#~ msgid "Tty"
+#~ msgstr "Tty"
+
+#~ msgid "QLineEdit { padding-right: 16; }"
+#~ msgstr "QLineEdit { padding-right: 16; }"

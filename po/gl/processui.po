@@ -1,0 +1,2454 @@
+# translation of processui.po to galician
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# mvillarino <mvillarino@users.sourceforge.net>, 2007, 2008, 2009.
+# marce villarino <mvillarino@users.sourceforge.net>, 2009.
+# Marce Villarino <mvillarino@kde-espana.es>, 2009, 2011, 2012, 2013.
+# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: processui\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-01-10 00:57+0000\n"
+"PO-Revision-Date: 2023-08-06 05:39+0200\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.3\n"
+
+#: ksysguardprocesslist.cpp:199 ksysguardprocesslist.cpp:543
+#, kde-format
+msgid "Set Priority..."
+msgid_plural "Set Priority..."
+msgstr[0] "Definir a prioridade…"
+msgstr[1] "Baixa prioridade"
+
+#: ksysguardprocesslist.cpp:201 ksysguardprocesslist.cpp:639
+#, kde-format
+msgid "Jump to Parent Process"
+msgstr "Saltar ao proceso pai"
+
+#: ksysguardprocesslist.cpp:203
+#, kde-format
+msgid "Jump to Process Debugging This One"
+msgstr "Saltar ao proceso que está a depurar este"
+
+#: ksysguardprocesslist.cpp:204
+#, kde-format
+msgid "Show Application Window"
+msgstr "Amosar a xanela da aplicación"
+
+#: ksysguardprocesslist.cpp:205
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Detailed Information..."
+msgstr "Información detallada…"
+
+#: ksysguardprocesslist.cpp:206
+#, kde-format
+msgid "Resume Stopped Process"
+msgstr "Continuar os procesos detidos"
+
+#: ksysguardprocesslist.cpp:207
+#, kde-format
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Finalizar o proceso"
+msgstr[1] "Finalizar os procesos"
+
+#: ksysguardprocesslist.cpp:210 ksysguardprocesslist.cpp:544
+#, kde-format
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill Processes"
+msgstr[0] "Matar o proceso á forza"
+msgstr[1] "Matar os procesos á forza"
+
+#: ksysguardprocesslist.cpp:214
+#, kde-format
+msgid "Suspend (STOP)"
+msgstr "Suspender (STOP)"
+
+#: ksysguardprocesslist.cpp:215
+#, kde-format
+msgid "Continue (CONT)"
+msgstr "Continuar (CONT)"
+
+#: ksysguardprocesslist.cpp:216
+#, kde-format
+msgid "Hangup (HUP)"
+msgstr "Cortar (HUP)"
+
+#: ksysguardprocesslist.cpp:217
+#, kde-format
+msgid "Interrupt (INT)"
+msgstr "Interromper (INT)"
+
+#: ksysguardprocesslist.cpp:218
+#, kde-format
+msgid "Terminate (TERM)"
+msgstr "Terminar (TERM)"
+
+#: ksysguardprocesslist.cpp:219
+#, kde-format
+msgid "Kill (KILL)"
+msgstr "Matar (KILL)"
+
+#: ksysguardprocesslist.cpp:220
+#, kde-format
+msgid "User 1 (USR1)"
+msgstr "Usuario 1 (USR1)"
+
+#: ksysguardprocesslist.cpp:221
+#, kde-format
+msgid "User 2 (USR2)"
+msgstr "Usuario 2 (USR2)"
+
+#: ksysguardprocesslist.cpp:224
+#, kde-format
+msgid "Focus on Quick Search"
+msgstr "Focalizar a busca rápida"
+
+#: ksysguardprocesslist.cpp:407
+#, kde-format
+msgid ""
+"<qt>End the selected process. Warning - you may lose unsaved work.<br>Right "
+"click on a process to send other signals.<br>See What's This for technical "
+"information."
+msgstr ""
+"<qt>Finaliza o proceso escollido. Advertencia: pode perder o traballo non "
+"gardado.<br>Faga clic dereito nun proceso para enviar outros sinais."
+"<br>Consulte o Que é isto? para obter información técnica."
+
+#: ksysguardprocesslist.cpp:442
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window"
+msgstr "Matar unha xanela"
+
+#: ksysguardprocesslist.cpp:545
+#, kde-format
+msgctxt "Context menu"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Finalizar o proceso"
+msgstr[1] "Os meus procesos"
+
+#: ksysguardprocesslist.cpp:579
+#, kde-format
+msgid "Send Signal"
+msgstr "Enviar o sinal"
+
+#: ksysguardprocesslist.cpp:596
+#, kde-format
+msgid "Jump to Parent Process (%1)"
+msgstr "Saltar ao proceso pai (%1)"
+
+#: ksysguardprocesslist.cpp:758
+#, kde-format
+msgid "Hide Column '%1'"
+msgstr "Agochar a columna «%1»"
+
+#: ksysguardprocesslist.cpp:774
+#, kde-format
+msgid "Show Column '%1'"
+msgstr "Amosar a columna «%1»"
+
+#: ksysguardprocesslist.cpp:803
+#, kde-format
+msgid "Display Units"
+msgstr "Unidades para amosar"
+
+#: ksysguardprocesslist.cpp:807
+#, kde-format
+msgid "Mixed"
+msgstr "Mesturadas"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes per second"
+msgstr "Quilobytes por segundo"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes"
+msgstr "Kilobytes"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes per second"
+msgstr "Megabytes por segundo"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes"
+msgstr "Megabytes"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes per second"
+msgstr "Xigabytes por segundo"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes"
+msgstr "Xigabytes"
+
+#: ksysguardprocesslist.cpp:834
+#, kde-format
+msgid "Percentage"
+msgstr "Porcentaxe"
+
+#: ksysguardprocesslist.cpp:863
+#, kde-format
+msgid "Display command line options"
+msgstr "Amosar as opcións da liña de ordes"
+
+#: ksysguardprocesslist.cpp:870
+#, kde-format
+msgid "Divide CPU usage by number of CPUs"
+msgstr "Dividir o uso de procesador polo número deles"
+
+#: ksysguardprocesslist.cpp:877
+#, kde-format
+msgid "Displayed Information"
+msgstr "Información amosada"
+
+#: ksysguardprocesslist.cpp:880
+#, kde-format
+msgid "Characters read/written"
+msgstr "Caracteres lidos/escritos"
+
+#: ksysguardprocesslist.cpp:885
+#, kde-format
+msgid "Number of Read/Write operations"
+msgstr "Cantidade de operacións de lectura ou escritura"
+
+#: ksysguardprocesslist.cpp:890
+#, kde-format
+msgid "Bytes actually read/written"
+msgstr "Bytes lidos ou escritos realmente"
+
+#: ksysguardprocesslist.cpp:896
+#, kde-format
+msgid "Show I/O rate"
+msgstr "Amosar a taxa de E/S"
+
+#: ksysguardprocesslist.cpp:923
+#, kde-format
+msgid "Show Tooltips"
+msgstr "Amosar as axudas"
+
+#: ksysguardprocesslist.cpp:1177
+#, kde-format
+msgid ""
+"You do not have the permission to renice the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Non ten permisos para cambiar a prioridade do proceso. Ademais produciuse un "
+"problema ao intentar executar como root."
+
+#: ksysguardprocesslist.cpp:1203 ksysguardprocesslist.cpp:1387
+#, kde-format
+msgid "You must select a process first."
+msgstr "Antes debe escoller un proceso."
+
+#: ksysguardprocesslist.cpp:1328
+#, kde-format
+msgid ""
+"You do not have the permission to change the I/O priority of the process and "
+"there was a problem trying to run as root."
+msgstr ""
+"Non ten permisos para cambiar a prioridades de E/S do proceso, ademais "
+"produciuse un problema ao intentar executar como root."
+
+#: ksysguardprocesslist.cpp:1344
+#, kde-format
+msgid ""
+"You do not have the permission to change the CPU Scheduler for the process "
+"and there was a problem trying to run as root."
+msgstr ""
+"Non ten permisos para cambiar o planificador de procesador do proceso. "
+"Ademais produciuse un problema ao intentar executar como root."
+
+#: ksysguardprocesslist.cpp:1359
+#, kde-format
+msgid ""
+"You do not have the permission to kill the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Non ten permisos para matar o proceso. Ademais produciuse un problema ao "
+"intentar executar como root."
+
+#: ksysguardprocesslist.cpp:1396
+#, kde-format
+msgid ""
+"Are you sure you want to end this process?  Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to end these %1 processes?  Any unsaved work may be "
+"lost"
+msgstr[0] ""
+"Seguro que quere finalizar este proceso? Pode perder o traballo que non "
+"estea gardado."
+msgstr[1] ""
+"Seguro que quere finalizar estes %1 procesos? Pode perder o traballo que non "
+"estea gardado."
+
+#: ksysguardprocesslist.cpp:1399
+#, kde-format
+msgctxt "Dialog title"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Finalizar o proceso"
+msgstr[1] "Finalizar %1 procesos"
+
+#: ksysguardprocesslist.cpp:1401
+#, kde-format
+msgid "End"
+msgstr "Finalizar"
+
+#: ksysguardprocesslist.cpp:1403
+#, kde-format
+msgid ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> this "
+"process?  Any unsaved work may be lost."
+msgid_plural ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> these %1 "
+"processes?  Any unsaved work may be lost"
+msgstr[0] ""
+"<qt>Seguro que quere <b>matar inmediatamente e á forza</b> este proceso? "
+"Pode perder o traballo que non estea gardado."
+msgstr[1] ""
+"<qt>Seguro que quere <b>matar inmediatamente e á forza</b> estes %1 "
+"procesos? Pode perder o traballo que non estea gardado."
+
+#: ksysguardprocesslist.cpp:1406
+#, kde-format
+msgctxt "Dialog title"
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill %1 Processes"
+msgstr[0] "Matar o proceso á forza"
+msgstr[1] "Matar os %1 procesos á forza"
+
+#: ksysguardprocesslist.cpp:1408
+#, kde-format
+msgid "Kill"
+msgstr "Matar"
+
+#: processdetails/GeneralTab.cpp:39 processdetails/MemoryMapsTab.cpp:281
+#: processdetails/OpenFilesTab.cpp:276
+#, kde-format
+msgctxt "@info:status"
+msgid "No data to display"
+msgstr "Non hai datos para amosar."
+
+#: processdetails/MemoryMapsTab.cpp:73
+#, kde-format
+msgctxt "kilobytes"
+msgid "%1 kB"
+msgstr "%1 kB"
+
+#: processdetails/MemoryMapsTab.cpp:123 processdetails/OpenFilesTab.cpp:164
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Actualizar"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, txtFilter)
+#: processdetails/MemoryMapsTab.cpp:126 processdetails/OpenFilesTab.cpp:167
+#: ProcessWidgetUI.ui:72
+#, kde-format
+msgid "Quick search"
+msgstr "Busca rápida"
+
+#: processdetails/MemoryMapsTab.cpp:251 processdetails/OpenFilesTab.cpp:128
+#, kde-format
+msgctxt "@title:column"
+msgid "Filename"
+msgstr "Nome do ficheiro"
+
+#: processdetails/MemoryMapsTab.cpp:252
+#, kde-format
+msgctxt "@title:column Start of the address space"
+msgid "Start"
+msgstr "Comezo"
+
+#: processdetails/MemoryMapsTab.cpp:253
+#, kde-format
+msgctxt "@title:column End of the address space"
+msgid "End"
+msgstr "Fin"
+
+#: processdetails/MemoryMapsTab.cpp:254
+#, kde-format
+msgctxt "@title:column"
+msgid "Permissions"
+msgstr "Permisos"
+
+#: processdetails/MemoryMapsTab.cpp:255
+#, kde-format
+msgctxt "@title:column Offset into the file"
+msgid "Offset"
+msgstr "Desprazamento"
+
+#: processdetails/MemoryMapsTab.cpp:256
+#, kde-format
+msgctxt "@title:column"
+msgid "Inode"
+msgstr "Inodo"
+
+#: processdetails/MemoryMapsTab.cpp:283 processdetails/OpenFilesTab.cpp:278
+#, kde-format
+msgctxt "@info:status"
+msgid "No data matching the filter"
+msgstr "Ningún dato coincide co filtro."
+
+#: processdetails/OpenFilesTab.cpp:33
+#, kde-format
+msgctxt "Device type"
+msgid "File"
+msgstr "Ficheiro"
+
+#: processdetails/OpenFilesTab.cpp:36
+#, kde-format
+msgctxt "Device type"
+msgid "Character device"
+msgstr "Dispositivo de caracteres"
+
+#: processdetails/OpenFilesTab.cpp:39
+#, kde-format
+msgctxt "Device type"
+msgid "Block device"
+msgstr "Dispositivo de bloques"
+
+#: processdetails/OpenFilesTab.cpp:42
+#, kde-format
+msgctxt "Device type"
+msgid "Pipe"
+msgstr "Cano"
+
+#: processdetails/OpenFilesTab.cpp:45
+#, kde-format
+msgctxt "Device type"
+msgid "Socket"
+msgstr "Toma"
+
+#: processdetails/OpenFilesTab.cpp:124
+#, kde-format
+msgctxt "@title:column File ID"
+msgid "Id"
+msgstr "Identificador"
+
+#: processdetails/OpenFilesTab.cpp:126
+#, kde-format
+msgctxt "@title:column File type"
+msgid "Type"
+msgstr "Tipo"
+
+#: processdetails/OpenFilesTab.cpp:247
+#, kde-format
+msgctxt "@info:status"
+msgid "%1: Failed to list directory contents"
+msgstr "%1: non se puido listar o contido do cartafol."
+
+#: processdetails/ProcessDetailsDialog.cpp:27
+#, kde-format
+msgctxt "@title:window"
+msgid "Process Details"
+msgstr "Detalles do proceso"
+
+#: processdetails/ProcessDetailsDialog.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "General"
+msgstr "Xeral"
+
+#: processdetails/ProcessDetailsDialog.cpp:42
+#, kde-format
+msgctxt "@title:tab"
+msgid "Memory Maps"
+msgstr "Mapas de memoria"
+
+#: processdetails/ProcessDetailsDialog.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Open Files"
+msgstr "Ficheiros abertos"
+
+#: processdetails/ProcessDetailsDialog.cpp:79
+#, kde-format
+msgctxt "@info:status"
+msgid "The \"%1\" (PID: %2) process has stopped executing"
+msgstr "Detívose a execución do proceso «%1» (identificador: %2)."
+
+#: processdetails/ProcessDetailsDialog.cpp:126
+#, kde-format
+msgctxt "@title:column Process I/O priority"
+msgid "IO Priority"
+msgstr "Prioridade de entrada e saída"
+
+#: ProcessModel.cpp:62
+#, kde-format
+msgid "%1 K"
+msgstr "%1 K"
+
+#: ProcessModel.cpp:63
+#, kde-format
+msgid "%1 M"
+msgstr "%1 M"
+
+#: ProcessModel.cpp:64
+#, kde-format
+msgid "%1 G"
+msgstr "%1 G"
+
+#: ProcessModel.cpp:65
+#, kde-format
+msgid "%1 T"
+msgstr "%1 T"
+
+#: ProcessModel.cpp:66
+#, kde-format
+msgid "%1 P"
+msgstr "%1 P"
+
+#: ProcessModel.cpp:636
+#, kde-format
+msgid "- Process is doing some work."
+msgstr "- O proceso está a facer algún traballo."
+
+#: ProcessModel.cpp:638
+#, kde-format
+msgid "- Process is waiting for something to happen."
+msgstr "- O proceso está a agardar algún evento."
+
+#: ProcessModel.cpp:640
+#, kde-format
+msgid ""
+"- Process has been stopped. It will not respond to user input at the moment."
+msgstr ""
+"- Detívose o proceso. De momento non responderá á interacción do usuario."
+
+#: ProcessModel.cpp:642
+#, kde-format
+msgid ""
+"- Process has finished and is now dead, but the parent process has not "
+"cleaned up."
+msgstr "- O proceso rematou e está morto, pero o proceso pai non o limpou."
+
+#: ProcessModel.cpp:1054
+#, kde-format
+msgid "The process name."
+msgstr "O nome do proceso."
+
+#: ProcessModel.cpp:1056
+#, kde-format
+msgid "The user who owns this process."
+msgstr "O usuario que posúe este proceso."
+
+#: ProcessModel.cpp:1058
+#, kde-format
+msgid "The controlling terminal on which this process is running."
+msgstr "A terminal de control onde se está a executar este proceso."
+
+#: ProcessModel.cpp:1061
+#, kde-format
+msgid ""
+"The priority with which this process is being run. For the normal scheduler, "
+"this ranges from 19 (very nice, least priority) to -19 (top priority)."
+msgstr ""
+"A prioridade coa que se está a executar este proceso. Co planificador normal "
+"os posíbeis valores van do 19 (mínima prioridade) ao -19 (máxima prioridade)."
+
+#: ProcessModel.cpp:1065
+#, kde-format
+msgid "The current CPU usage of the process."
+msgstr "O uso que o proceso está facendo do procesador."
+
+#: ProcessModel.cpp:1070
+#, kde-format
+msgid ""
+"The current total CPU usage of the process, divided by the %1 processor core "
+"in the machine."
+msgid_plural ""
+"The current total CPU usage of the process, divided by the %1 processor "
+"cores in the machine."
+msgstr[0] "O uso total que o proceso fai do procesador."
+msgstr[1] ""
+"O uso total que o proceso fai do procesador, dividido polos %1 núcleos do "
+"procesador."
+
+#: ProcessModel.cpp:1074
+#, kde-format
+msgid "The current total CPU usage of the process."
+msgstr "O uso total que o proceso fixo do procesador."
+
+#: ProcessModel.cpp:1076
+#, kde-format
+msgid ""
+"<qt>The total user and system time that this process has been running for, "
+"displayed as minutes:seconds."
+msgstr ""
+"<qt>O tempo total do usuario e do sistema nos que correu este proceso, "
+"amosado como minutos:segundos."
+
+#: ProcessModel.cpp:1079
+#, kde-format
+msgid ""
+"<qt>This is the amount of virtual memory space that the process is using, "
+"included shared libraries, graphics memory, files on disk, and so on. This "
+"number is almost meaningless.</qt>"
+msgstr ""
+"<qt>Esta é a cantidade de memoria virtual que está a usar o proceso, "
+"incluídas as bibliotecas compartidas, memoria gráfica, ficheiros no disco, e "
+"o demais. Este número case que carece de significación.</qt>"
+
+#: ProcessModel.cpp:1083
+#, kde-format
+msgid ""
+"<qt>This is the amount of real physical memory that this process is using by "
+"itself, and approximates the Private memory usage of the process.<br>It does "
+"not include any swapped out memory, nor the code size of its shared "
+"libraries.<br>This is often the most useful figure to judge the memory use "
+"of a program.  See What's This for more information.</qt>"
+msgstr ""
+"<qt>Esta é a cantidade de memoria física real que está a usar este proceso "
+"en si, e aproxímase ao uso se memoria privada do proceso.<br>Non inclúe a "
+"memoria na swap, nin o tamaño do código das bibliotecas compartidas.<br>Polo "
+"xeral esta é a cantidade máis útil para avaliar a memoria usada por un "
+"programa. Consulte o «Que é isto?» para máis información.</qt>"
+
+#: ProcessModel.cpp:1088
+#, kde-format
+msgid ""
+"<qt>This is approximately the amount of real physical memory that this "
+"process's shared libraries are using.<br>This memory is shared among all "
+"processes that use this library.</qt>"
+msgstr ""
+"<qt>Esta é aproximadamente a cantidade de memoria física real que están a "
+"usar as bibliotecas compartidas deste proceso.<br>Esta memoria é compartida "
+"por todos os procesos que usen esta biblioteca.</qt>"
+
+#: ProcessModel.cpp:1091
+#, kde-format
+msgid "<qt>The elapsed time since the process was started.</qt>"
+msgstr "<qt>O tempo que pasou desde que se iniciou o proceso.</qt>"
+
+#: ProcessModel.cpp:1093
+#, kde-format
+msgid ""
+"<qt>Linux flag NoNewPrivileges, if set the process can't gain further "
+"privileges via setuid etc.</qt>"
+msgstr ""
+"<qt>A marca de Linux NoNewPrivileges, se se define o proceso non pode "
+"conseguir privilexios adicionais mediante setuid etc.</qt>"
+
+#: ProcessModel.cpp:1095
+#, kde-format
+msgid "<qt>The command with which this process was launched.</qt>"
+msgstr "<qt>A orde coa que se iniciou este proceso.</qt>"
+
+#: ProcessModel.cpp:1097
+#, kde-format
+msgid "<qt>The amount of pixmap memory that this process is using.</qt>"
+msgstr ""
+"<qt>A cantidade de memoria de mapa de píxeles que estea a usar este proceso."
+"</qt>"
+
+#: ProcessModel.cpp:1099
+#, kde-format
+msgid "<qt>The title of any windows that this process is showing.</qt>"
+msgstr "<qt>O título de calquera xanela que estea a amosar este proceso.</qt>"
+
+#: ProcessModel.cpp:1101
+#, kde-format
+msgid "The unique Process ID that identifies this process."
+msgstr "A ID única do proceso que o identifica."
+
+#: ProcessModel.cpp:1103
+#, kde-format
+msgid "The number of bytes read.  See What's This for more information."
+msgstr ""
+"A cantidade de bytes lidos. Consulte o Que é isto para máis información."
+
+#: ProcessModel.cpp:1105
+#, kde-format
+msgid "The number of bytes written.  See What's This for more information."
+msgstr ""
+"A cantidade de bytes escritos. Consulte o Que é isto para máis información."
+
+#: ProcessModel.cpp:1107
+#, kde-format
+msgid "<qt>The control group (cgroup) where this process belongs.</qt>"
+msgstr "<qt>O grupo de control (cgroup) ao que pertence este proceso.</qt>"
+
+#: ProcessModel.cpp:1109
+#, kde-format
+msgid ""
+"<qt>Mandatory Access Control (SELinux or AppArmor) context for this process."
+"</qt>"
+msgstr ""
+"<qt>Contexto de control de acceso obrigatorio (MAC; SELinux ou AppArmor) "
+"deste proceso.</qt>"
+
+#: ProcessModel.cpp:1112
+#, kde-format
+msgid ""
+"The amount of private physical memory used by a process, with the amount of "
+"shared memory divided by the amount of processes using that shared memory "
+"added."
+msgstr ""
+"A cantidade de memoria física privada que un proceso usa, incluída a "
+"cantidade de memoria compartida dividida polo número de procesos que a usan."
+
+#: ProcessModel.cpp:1122
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The kernel process name is a maximum of 8 "
+"characters long, so the full command is examined.  If the first word in the "
+"full command line starts with the process name, the first word of the "
+"command line is shown, otherwise the process name is used."
+msgstr ""
+"<qt><i>Información técnica:</i> O nome do proceso do núcleo ten como moito "
+"oito caracteres de longo, polo que se examina toda a orde. Se a primeira "
+"palabra de toda a orde comeza co nome do proceso amosarase a primeira "
+"palabra da liña de orde, noutro caso úsase o nome do proceso."
+
+#: ProcessModel.cpp:1126
+#, kde-format
+msgid ""
+"<qt>The user who owns this process.  If the effective, setuid etc user is "
+"different, the user who owns the process will be shown, followed by the "
+"effective user.  The ToolTip contains the full information.  "
+"<p><table><tr><td>Login Name/Group</td><td>The username of the Real User/"
+"Group who created this process</td></tr><tr><td>Effective User/Group</"
+"td><td>The process is running with privileges of the Effective User/Group.  "
+"This is shown if different from the real user.</td></tr><tr><td>Setuid User/"
+"Group</td><td>The saved username of the binary.  The process can escalate "
+"its Effective User/Group to the Setuid User/Group.</td></tr><tr><td>File "
+"System User/Group</td><td>Accesses to the filesystem are checked with the "
+"File System User/Group.  This is a Linux specific call. See setfsuid(2) for "
+"more information.</td></tr></table>"
+msgstr ""
+"<qt>O usuario que posúe este proceso. Se o setuid efectivo do usuario é "
+"distinto amosarase o usuario que posúe o proceso seguido polo usuario "
+"efectivo. A axudiña contén a información completa. <p><table><tr><td>Nome de "
+"usuaria/grupo</td><td>O nome de usuaria do usuario e grupo reais que crearon "
+"este proceso</td></tr><tr> <td>Usuario/grupo efectivo</td><td>O proceso está "
+"a executarse cos privilexios do usuario e grupo efectivos. Amósase se é "
+"distinto do usuario real.</td></tr> <tr><td>Usuario e grupo setuid</td><td>O "
+"nome de usuaria gardado do binario. O proceso pode trocar do usuario ou "
+"grupo efectivos ao setuid.</td></tr> <tr><td>Usuario e grupo no sistema de "
+"ficheiros</td><td>Os accesos ao sistema de ficheiros compróbanse con este "
+"usuario e grupo. Esta é unha chamada específica de Linux. Consulte "
+"setfsuid(2) para máis información.</td></tr></table>"
+
+#: ProcessModel.cpp:1141
+#, kde-format
+msgid ""
+"<qt>This is the size of allocated address space - not memory, but address "
+"space. This value in practice means next to nothing. When a process requests "
+"a large memory block from the system but uses only a small part of it, the "
+"real usage will be low, VIRT will be high. <p><i>Technical information: </"
+"i>This is VmSize in proc/*/status and VIRT in top."
+msgstr ""
+"<qt>Este é o tamaño do espazo de enderezos reservados, non da memoria, senón "
+"do espazo dos enderezos. Este valor na práctica non significa nada. Cando un "
+"proceso solicita un bloque de memoria grande no sistema pero só usa unha "
+"parte pequena del o uso real será pequeno, pero VIRT será grande."
+"<p><i>Información técnica:</i> Isto é VmSize en proc/*/status e VIRT en top."
+
+#: ProcessModel.cpp:1146
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Private "
+"memory usage, calculated as VmRSS - Shared, from /proc/*/statm.  This tends "
+"to underestimate the true Private memory usage of a process (by not "
+"including i/o backed memory pages), but is the best estimation that is fast "
+"to determine.  This is sometimes known as URSS (Unique Resident Set Size). "
+"For an individual process, see \"Detailed  Memory Information\" for a more "
+"accurate, but slower, calculation of the true Private memory usage."
+msgstr ""
+"<qt><i>Información técnica:</i> Esta é unha aproximación ao uso privado de "
+"memoria, calculado como VmRSS - Compartida, obtido de /proc/*/statm. Isto "
+"tende a subestimar o uso real da memoria privada por parte dun proceso, "
+"porque non inclúe as páxinas de memoria con salvagarda, pero é a mellor "
+"estimación das rápidas de calcular. Isto coñécese tamén como URSS (Unique "
+"Resident Set Size). Para un proceso individual obterá un cálculo máis exacto "
+"pero lento na «Información detallada da memoria»."
+
+#: ProcessModel.cpp:1151
+#, kde-format
+msgid "The CPU usage of a process and all of its threads."
+msgstr "O uso que un proceso e os seus fíos fan do procesador."
+
+#: ProcessModel.cpp:1154
+#, kde-format
+msgid ""
+"<qt>The total system and user time that a process and all of its threads "
+"have been running on the CPU for. This can be greater than the wall clock "
+"time if the process has been across multiple CPU cores."
+msgstr ""
+"<qt>O tempo total de usuario e do sistema durante o que estiveron a "
+"executarse no procesador un proceso e máis todos os seus fíos. Isto pode ser "
+"maior do que o tempo do reloxo se o proceso se executou en varios núcleos de "
+"procesador."
+
+#: ProcessModel.cpp:1158
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Shared "
+"memory, called SHR in top.  It is the number of pages that are backed by a "
+"file (see kernel Documentation/filesystems/proc.txt).  For an individual "
+"process, see \"Detailed Memory Information\" for a more accurate, but "
+"slower, calculation of the true Shared memory usage."
+msgstr ""
+"<qt><i>Información técnica:</i> Esta é unha aproximación á memoria "
+"compartida, chamada SHR en top. É o número de páxinas con apoio nun ficheiro "
+"(consulte a documentación do núcleo en Documentation/filesystems/proc.txt). "
+"Para un proceso individual obterá un cálculo máis exacto pero máis lento en "
+"«Información detallada da memoria»."
+
+#: ProcessModel.cpp:1162
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The underlying value (clock ticks since "
+"system boot) is retrieved from /proc/[pid]/stat"
+msgstr ""
+"<qt><i>Información técnica: </i>O valor (tics do reloxo desde o arranque do "
+"sistema) obtense de «/proc/[pid]/stat»."
+
+#: ProcessModel.cpp:1164
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The flag is retrieved from /proc/[pid]/"
+"status"
+msgstr "<qt><i>Información técnica:</i> A marca obtense de /proc/[pid]/status"
+
+#: ProcessModel.cpp:1166
+#, kde-format
+msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
+msgstr "<qt><i>Información técnica:</i> Tómase de /proc/*/cmdline"
+
+#: ProcessModel.cpp:1169
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the amount of memory used by the "
+"Xorg process for images for this process.  This is memory used in addition "
+"to Memory and Shared Memory.<br><i>Technical information: </i>This only "
+"counts the pixmap memory, and does not include resource memory used by "
+"fonts, cursors, glyphsets etc.  See the <code>xrestop</code> program for a "
+"more detailed breakdown."
+msgstr ""
+"<qt><i>Información técnica:</i> Esta é a cantidade de memoria usada polo "
+"proceso Xorg para as imaxes del. Esta memoria úsase ademais da memoria e da "
+"memoria compartida.<br><i>Información técnica:</i> Isto só conta a memoria "
+"de mapas de píxeles e non inclúe a dos recursos, que usan as fontes, os "
+"cursores, os glifos, etc. Consulte o programa <code>xrestop</code> para unha "
+"explicación máis detallada."
+
+#: ProcessModel.cpp:1174
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>For each X11 window, the X11 property "
+"_NET_WM_PID is used to map the window to a PID.  If a process' windows are "
+"not shown, then that application incorrectly is not setting _NET_WM_PID."
+msgstr ""
+"<qt><i>Información técnica:</i> En cada xanela do X11, a propiedade "
+"_NET_WM_PID úsase para relacionar a xanela dun PID. Se non se amosan as dun "
+"proceso entón esa aplicación non indica _NET_WM_PID, o que é incorrecto."
+
+#: ProcessModel.cpp:1178
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the Process ID.  A multi-threaded "
+"application is treated a single process, with all threads sharing the same "
+"PID.  The CPU usage etc will be the total, accumulated, CPU usage of all the "
+"threads."
+msgstr ""
+"<qt><i>Información técnica:</i> Este é o ID do proceso. Unha aplicación de "
+"varios fíos trátase como un proceso único, con todos os fíos compartindo o "
+"mesmo PID. O uso do procesador e o demais será a total, acumulada de todos "
+"os fíos."
+
+#: ProcessModel.cpp:1183
+#, kde-format
+msgid ""
+"<qt>This column shows the IO statistics for each process. The tooltip "
+"provides the following information:<br><table><tr><td>Characters Read</"
+"td><td>The number of bytes which this task has caused to be read from "
+"storage. This is simply the sum of bytes which this process passed to read() "
+"and pread(). It includes things like tty IO and it is unaffected by whether "
+"or not actual physical disk IO was required (the read might have been "
+"satisfied from pagecache).</td></tr><tr><td>Characters Written</td><td>The "
+"number of bytes which this task has caused, or shall cause to be written to "
+"disk. Similar caveats apply here as with Characters Read.</td></"
+"tr><tr><td>Read Syscalls</td><td>The number of read I/O operations, i.e. "
+"syscalls like read() and pread().</td></tr><tr><td>Write Syscalls</"
+"td><td>The number of write I/O operations, i.e. syscalls like write() and "
+"pwrite().</td></tr><tr><td>Actual Bytes Read</td><td>The number of bytes "
+"which this process really did cause to be fetched from the storage layer. "
+"Done at the submit_bio() level, so it is accurate for block-backed "
+"filesystems. This may not give sensible values for NFS and CIFS filesystems."
+"</td></tr><tr><td>Actual Bytes Written</td><td>Attempt to count the number "
+"of bytes which this process caused to be sent to the storage layer. This is "
+"done at page-dirtying time.</td></table><p>The number in brackets shows the "
+"rate at which each value is changing, determined from taking the difference "
+"between the previous value and the new value, and dividing by the update "
+"interval.<p><i>Technical information: </i>This data is collected from /proc/"
+"*/io and is documented further in Documentation/accounting and Documentation/"
+"filesystems/proc.txt in the kernel source."
+msgstr ""
+"<qt>Esta columna amosa as estatísticas de E/S de cada proceso. A axudiña "
+"fornece a seguinte información:<br><table> <tr><td>Caracteres lidos</"
+"td><td>A cantidade de bytes que lese esta tarefa desde o almacén. Non é máis "
+"que a suma dos bytes que pasase a read() ou pread(). Inclúe cousas como a E/"
+"S por tty e non se ve afectada polo acceso real de E/S ao disco (pode que "
+"pagecache satisfixese a lectura).</td></tr> <tr><td>Caracteres escritos</"
+"td><td>A cantidade de caracteres que fosen escritos no disco ou fixese "
+"escribir esta tarefa. Aplícanse os mesmos avisos que se fan para os "
+"caracteres lidos.</td></tr> <tr><td>Chamadas do sistema de lectura</td><td>O "
+"número de operacións de E/S, i.e. chamadas do sistema como read() e pread()."
+"</td></tr> <tr><td>Chamadas do sistema de escritura</td><td>O número de "
+"operacións de E/S, i.e. chamadas como write() e pwrite().</td></tr> "
+"<tr><td>Bytes realmente lidos</td><td>A cantidade de bytes realmente obtidos "
+"da capa de almacén a causa do proceso. Faise ao nivel de submit_bio(), polo "
+"que é exacto para sistemas de ficheiros con salvagarda a nivel de bloque. "
+"Isto pode non dar valores sensíbeis en sistemas de ficheiro NFS e CIFS.</"
+"td></tr> <tr><td>Bytes realmente escritos</td><td>Intento de contar a "
+"cantidade de bytes enviados á capa de almacén a causa do proceso. Isto faise "
+"no momento de tocar as páxinas.</td></table><p>A cantidade entre corchetes "
+"amosa a taxa á que está a cambiarse cada valor, que se determina tomando a "
+"diferenza entre o valor anterior e o novo, e dividindo entre o intervalo de "
+"actualización. <p><i>Información técnica:</i> Estes datos recóllense en /"
+"proc/*/io e está máis documentado en Documentation/accounting e "
+"Documentación/filesystems/proc.txt nas fontes do núcleo."
+
+#: ProcessModel.cpp:1203
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This shows Linux Control Group (cgroup) "
+"membership, retrieved from /proc/[pid]/cgroup. Control groups are used by "
+"Systemd and containers for limiting process group's usage of resources and "
+"to monitor them."
+msgstr ""
+"<qt><i>Información técnica:</i> Isto amosa a pertenza a un grupo de control "
+"de Linux (cgroup), obtida de /proc/[pid]/cgroup. Systemd e os contedores "
+"usan os grupos de control para liminar o uso de recursos por parte dun grupo "
+"de procesos e para vixialos."
+
+#: ProcessModel.cpp:1207
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This shows Mandatory Access Control "
+"(SELinux or AppArmor) context, retrieved from /proc/[pid]/attr/current."
+msgstr ""
+"<qt><i>Información técnica:</i> Isto amosa o contexto de control de acceso "
+"obrigatorio (MAC; SELinux ou AppArmor), obtido de /proc/[pid]/attr/current."
+
+#: ProcessModel.cpp:1211
+#, kde-format
+msgid ""
+"<i>Technical information:</i> This is often referred to as \"Proportional "
+"Set Size\" and is the closest approximation of the real amount of total "
+"memory used by a process. Note that the number of applications sharing "
+"shared memory is determined per shared memory section and thus can vary per "
+"memory section."
+msgstr ""
+"<i>Información técnica:</i> A isto adóitano chamar «tamaño proporcional do "
+"conxunto» e é a mellor aproximación á cantidade real de memoria total que "
+"usa un proceso. Teña en conta que o número de aplicacións que se reparten a "
+"memoria compartida determínase por cada sección de memoria compartida, e "
+"polo tanto pode ser distinto por cada sección de memoria."
+
+#: ProcessModel.cpp:1294
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Login Name:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Nome de usuaria:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1298
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para>This user is not recognized for some reason.</para>"
+msgstr "<para>Por algún motivo, este usuario non é recoñecido.</para>"
+
+#: ProcessModel.cpp:1301
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>%1</emphasis></para>"
+msgstr "<para><emphasis strong='true'>%1</emphasis></para>"
+
+#: ProcessModel.cpp:1303
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Login Name:</emphasis> %1 (uid: %2)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Nome de usuaria:</emphasis> %1 (uid: %2)</para>"
+
+#: ProcessModel.cpp:1308
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Room Number:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>  Número da sala:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1311
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Work Phone:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>  Teléfono do traballo:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1316
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective User:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Usuario efectivo:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1318
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid User:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Usuario de Setuid:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1321
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System User:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Usuario do sistema de ficheiros:</emphasis> "
+"%1</para>"
+
+#: ProcessModel.cpp:1325
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Grupo:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1328
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Grupo efectivo:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1330
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Grupo de Setuid:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1333
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System Group:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Grupo do sistema de ficheiros:</emphasis> %1</"
+"para>"
+
+#: ProcessModel.cpp:1342
+#, kde-format
+msgctxt "Short description of a process. PID, name, user"
+msgid "%1: %2, owned by user %3"
+msgstr "%1: %2, propiedade do usuario %3"
+
+#: ProcessModel.cpp:1353
+#, kde-format
+msgctxt "Group name and group id"
+msgid "%1 (gid: %2)"
+msgstr "%1 (gid: %2)"
+
+#: ProcessModel.cpp:1375
+#, kde-format
+msgctxt "User name and user id"
+msgid "%1 (uid: %2)"
+msgstr "%1 (uid: %2)"
+
+#: ProcessModel.cpp:1441
+#, kde-format
+msgctxt "scheduler"
+msgid "Idle"
+msgstr "Ocioso"
+
+#: ProcessModel.cpp:1443
+#, kde-format
+msgctxt "scheduler"
+msgid "(Batch) %1"
+msgstr "(Lote) %1"
+
+#: ProcessModel.cpp:1445
+#, kde-format
+msgctxt "Round robin scheduler"
+msgid "RR %1"
+msgstr "RR %1"
+
+#: ProcessModel.cpp:1448
+#, kde-format
+msgctxt "Real Time scheduler"
+msgid "RT"
+msgstr "RT"
+
+#: ProcessModel.cpp:1450
+#, kde-format
+msgctxt "First in first out scheduler"
+msgid "FIFO %1"
+msgstr "FIFO %1"
+
+#: ProcessModel.cpp:1452
+#, kde-format
+msgctxt "scheduler"
+msgid "(IA) %1"
+msgstr "(IA) %1"
+
+#: ProcessModel.cpp:1523 ProcessModel.cpp:1531 ProcessModel.cpp:1548
+#: ProcessModel.cpp:1556
+#, kde-format
+msgid "%1/s"
+msgstr "%1/s"
+
+#: ProcessModel.cpp:1595
+#, kde-kuit-format
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (%2)"
+msgstr "Este proceso está a ser depurado por %1 (%2)."
+
+#: ProcessModel.cpp:1617
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para>The parent of all other processes and cannot be "
+"killed.</para><para><emphasis strong='true'>Process ID:</emphasis> %2</para>"
+msgstr ""
+"<title>%1</title> <para>Non se pode matar o pai de todos os procesos.</para> "
+"<para><emphasis strong='true'>Identificador do proceso:</emphasis> %2</para>"
+
+#: ProcessModel.cpp:1623
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>KThreadd</title><para>Manages kernel threads. The children processes "
+"run in the kernel, controlling hard disk access, etc.</para>"
+msgstr ""
+"<title>KThreadd</title> <para>Xestiona fíos do núcleo. Os procesos fillos "
+"execútanse no núcleo e controlan o acceso ao disco duro, etc.</para>"
+
+#: ProcessModel.cpp:1627
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>Identificador do proceso:</"
+"emphasis> %2</para>"
+
+#: ProcessModel.cpp:1635
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent:</emphasis> %3</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %4</para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>Identificador do proceso:</"
+"emphasis> %2</para><para><emphasis strong='true'>Pai:</emphasis> %3</"
+"para><para><emphasis strong='true'>Identificador do pai:</emphasis> %4</para>"
+
+#: ProcessModel.cpp:1645
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %3</para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>Identificador do proceso:</"
+"emphasis> %2</para><para><emphasis strong='true'>Identificador do pai:</"
+"emphasis> %3</para>"
+
+#: ProcessModel.cpp:1654 ProcessModel.cpp:1755
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Number of threads:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Número de fíos:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1656
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Command:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Orde:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1659 ProcessModel.cpp:1690
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Running on:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Executándose en:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1674
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Clock ticks since system boot:</emphasis> %1</"
+"para><para><emphasis strong='true'>Seconds since system boot:</emphasis> %2 "
+"(System boot time: %3)</para><para><emphasis strong='true'>Absolute start "
+"time:</emphasis> %4</para><para><emphasis strong='true'>Relative start time:"
+"</emphasis> %5</para>"
+msgstr ""
+"<para><emphasis strong='true'>Tics do reloxo desde o arranque do sistema:</"
+"emphasis> %1</para><para><emphasis strong='true'>Segundos desde o arranque "
+"do sistema:</emphasis> %2 (hora de arranque do sistema: %3)</"
+"para><para><emphasis strong='true'>Hora de inicio absoluta:</emphasis> %4</"
+"para><para><emphasis strong='true'>Hora de inicio relativa:</emphasis> %5</"
+"para>"
+
+#: ProcessModel.cpp:1686
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This process was run with the following "
+"command:</emphasis></para><para>%1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Este proceso executouse coa seguinte orde:</"
+"emphasis></para><para>%1</para>"
+
+#: ProcessModel.cpp:1711 ProcessModel.cpp:1777
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Nice level:</emphasis> %1 (%2)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Nivel de prioridade:</emphasis> %1 (%2).</para>"
+
+#: ProcessModel.cpp:1718
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This is a real time process.</emphasis></"
+"para><para><emphasis strong='true'>Scheduler priority:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Este é un proceso en tempo real.</emphasis></"
+"para><para><emphasis strong='true'>Prioridade no planificador:</emphasis> "
+"%1</para>"
+
+#: ProcessModel.cpp:1726
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Scheduler:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Planificador:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1732 ProcessModel.cpp:1784
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Nice level:</emphasis> %1 (%2)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Nivel de prioridade de entrada e saída:</"
+"emphasis> %1 (%2).</para>"
+
+#: ProcessModel.cpp:1735 ProcessModel.cpp:1787
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Class:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Clase de entrada e saída:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1746
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Process status:</emphasis> %1 %2</"
+"para><para><emphasis strong='true'>User CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>System CPU usage:</emphasis> %4%</para>"
+msgstr ""
+"<para><emphasis strong='true'>Estado do proceso:</emphasis> %1 %2.</"
+"para><para><emphasis strong='true'>Uso do procesador pola persoa usuaria:</"
+"emphasis> %3%</para><para><emphasis strong='true'>Uso do procesador polo "
+"sistema:</emphasis> %4%</para>"
+
+#: ProcessModel.cpp:1758
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Number of children:</emphasis> %1</"
+"para><para><emphasis strong='true'>Total User CPU usage:</emphasis> %2%</"
+"para><para><emphasis strong='true'>Total System CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>Total CPU usage:</emphasis> %4%</para>"
+msgstr ""
+"<para><emphasis strong='true'>Número de fillos:</emphasis> %1</"
+"para><para><emphasis strong='true'>Uso total do procesador pola persoa "
+"usuaria:</emphasis> %2%</para><para><emphasis strong='true'>Uso total do "
+"procesador polo sistema:</emphasis> %3%</para><para><emphasis "
+"strong='true'>Uso total do procesador:</emphasis> %4%</para>"
+
+#: ProcessModel.cpp:1769
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running as user:</emphasis> %1 "
+"seconds</para>"
+msgstr ""
+"<para><emphasis strong='true'>Tempo do procesador usado executando como "
+"persoa usuaria:</emphasis> %1 segundos.</para>"
+
+#: ProcessModel.cpp:1773
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running in kernel:</emphasis> "
+"%1 seconds</para>"
+msgstr ""
+"<para><emphasis strong='true'>Tempo do procesador usado executando no kernel:"
+"</emphasis> %1 segundos.</para>"
+
+#: ProcessModel.cpp:1803
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Memory usage:</emphasis> %1 out of %2  (%3 %)</"
+"para>"
+msgstr ""
+"<para><emphasis strong='true'>Uso de memoria:</emphasis> %1 de %2  (%3 %).</"
+"para>"
+
+#: ProcessModel.cpp:1809
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<emphasis strong='true'>Memory usage:</emphasis> %1<br />"
+msgstr "<emphasis strong='true'>Uso de memoria:</emphasis> %1.<br />"
+
+#: ProcessModel.cpp:1813
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1 out of %2  (%3 "
+"%)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Uso de memoria RSS:</emphasis> %1 de %2  (%3 "
+"%).</para>"
+
+#: ProcessModel.cpp:1819
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>uso de memoria RSS:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1826 ProcessModel.cpp:1887
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Your system does not seem to have this "
+"information available to be read.</emphasis></para>"
+msgstr ""
+"<para><emphasis strong='true'>O sistema non parece ter esta información "
+"dispoñíbel para lectura.</emphasis></para>"
+
+#: ProcessModel.cpp:1830
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1 out "
+"of %2  (%3 %)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Uso de memoria por bibliotecas compartidas:</"
+"emphasis> %1 de %2  (%3 %).</para>"
+
+#: ProcessModel.cpp:1836 ProcessModel.cpp:1897
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1</"
+"para>"
+msgstr ""
+"<para><emphasis strong='true'>Uso de memoria por bibliotecas compartidas:</"
+"emphasis> %1</para>"
+
+#: ProcessModel.cpp:1843
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Characters read:</emphasis> %1 (%2 KiB/s)</"
+"para><para><emphasis strong='true'>Characters written:</emphasis> %3 (%4 KiB/"
+"s)</para><para><emphasis strong='true'>Read syscalls:</emphasis> %5 (%6 "
+"s⁻¹)</para><para><emphasis strong='true'>Write syscalls:</emphasis> %7 (%8 "
+"s⁻¹)</para><para><emphasis strong='true'>Actual bytes read:</emphasis> %9 "
+"(%10 KiB/s)</para><para><emphasis strong='true'>Actual bytes written:</"
+"emphasis> %11 (%12 KiB/s)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Caracteres lidos:</emphasis> %1 (%2 KiB/s)</"
+"para><para><emphasis strong='true'>Caracteres escritos:</emphasis> %3 (%4 "
+"KiB/s)</para><para><emphasis strong='true'>Chamadas de lectura:</emphasis> "
+"%5 (%6 s⁻¹)</para><para><emphasis strong='true'>Chamadas de escritura:</"
+"emphasis> %7 (%8 s⁻¹)</para><para><emphasis strong='true'>Bytes realmente "
+"lidos:</emphasis> %9 (%10 KiB/s)</para><para><emphasis strong='true'>Bytes "
+"realmente escritos:</emphasis> %11 (%12 KiB/s)</para>"
+
+#: ProcessModel.cpp:1891
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Total memory usage:</emphasis> %1 out of %2  "
+"(%3 %)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Uso de memoria total:</emphasis> %1 de %2  (%3 "
+"%).</para>"
+
+#: ProcessModel.cpp:2181
+#, kde-format
+msgctxt "process heading"
+msgid "Name"
+msgstr "Nome"
+
+#: ProcessModel.cpp:2182
+#, kde-format
+msgctxt "process heading"
+msgid "Username"
+msgstr "Nome de usuaria"
+
+#: ProcessModel.cpp:2183
+#, kde-format
+msgctxt "process heading"
+msgid "PID"
+msgstr "PID"
+
+#: ProcessModel.cpp:2184
+#, kde-format
+msgctxt "process heading"
+msgid "TTY"
+msgstr "TTY"
+
+#: ProcessModel.cpp:2185
+#, kde-format
+msgctxt "process heading"
+msgid "Niceness"
+msgstr "Prioridade"
+
+#: ProcessModel.cpp:2187
+#, no-c-format, kde-format
+msgctxt "process heading"
+msgid "CPU %"
+msgstr "% do procesador"
+
+#: ProcessModel.cpp:2188
+#, kde-format
+msgctxt "process heading"
+msgid "CPU Time"
+msgstr "Tempo do procesador"
+
+#: ProcessModel.cpp:2189
+#, kde-format
+msgctxt "process heading"
+msgid "IO Read"
+msgstr "E/S de lectura"
+
+#: ProcessModel.cpp:2190
+#, kde-format
+msgctxt "process heading"
+msgid "IO Write"
+msgstr "Escritura de E/S"
+
+#: ProcessModel.cpp:2191
+#, kde-format
+msgctxt "process heading"
+msgid "Virtual Size"
+msgstr "Tamaño virtual"
+
+#: ProcessModel.cpp:2192
+#, kde-format
+msgctxt "process heading"
+msgid "Memory"
+msgstr "Memoria"
+
+#: ProcessModel.cpp:2193
+#, kde-format
+msgctxt "process heading"
+msgid "Shared Mem"
+msgstr "Memoria compartida"
+
+#: ProcessModel.cpp:2194
+#, kde-format
+msgctxt "process heading"
+msgid "Relative Start Time"
+msgstr "Hora de inicio relativa"
+
+#: ProcessModel.cpp:2195
+#, kde-format
+msgctxt "process heading"
+msgid "NNP"
+msgstr "NNP"
+
+#: ProcessModel.cpp:2196
+#, kde-format
+msgctxt "process heading"
+msgid "Command"
+msgstr "Orde"
+
+#: ProcessModel.cpp:2199
+#, kde-format
+msgctxt "process heading"
+msgid "X11 Memory"
+msgstr "Memoria de X11"
+
+#: ProcessModel.cpp:2200
+#, kde-format
+msgctxt "process heading"
+msgid "Window Title"
+msgstr "Título da xanela"
+
+#: ProcessModel.cpp:2203
+#, kde-format
+msgctxt "process heading"
+msgid "CGroup"
+msgstr "CGroup"
+
+#: ProcessModel.cpp:2204
+#, kde-format
+msgctxt "process heading"
+msgid "MAC Context"
+msgstr "Contexto de MAC"
+
+#: ProcessModel.cpp:2205
+#, kde-format
+msgctxt "process heading"
+msgid "Total Memory"
+msgstr "Memoria total"
+
+#: ProcessModel.cpp:2327
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:39
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Attempt to kill the "
+"currently selected process by sending it the SIGTERM signal.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Technical information: </span><br />The SIGTERM signal is sent to "
+"the given process. If there are insufficient privileges to do so, by default "
+"a password is requested.<br />By running the program <span style=\" font-"
+"family:'Courier New,courier';\">polkit-kde-authorization</span> you can give "
+"certain (or all) users permission to kill any process, without requiring a "
+"password. </p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Intenta matar o proceso "
+"escollido enviándolle o sinal SIGTERM.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Información técnica: </span><br />O sinal SIGTERM envíase ao "
+"proceso dado. Se non hai privilexios de abondo para facelo, de maneira "
+"predeterminada pedirase un contrasinal.<br />Executando o programa <span "
+"style=\" font-family:'Courier New,courier';\">polkit-kde-authorization</"
+"span> pode dar algúns (ou todos) os permisos de usuario para matar calquera "
+"proceso, sen requirir un contrasinal. </p></body></html>"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:42
+#, kde-format
+msgid "&End Process..."
+msgstr "&Finalizar o proceso…"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:58
+#, kde-format
+msgid ""
+"Type comma separated search terms or regular expressions to filter the "
+"process list"
+msgstr ""
+"Escriba termos de busca ou expresións regulares separadas por comas para "
+"filtrar a lista de procesos."
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:69
+#, kde-format
+msgid ""
+"Filter which processes are shown by the text given here.  The text can be a "
+"partial string match of the Name, Command or Window Title of the process.  "
+"It can also be a Username or a Process ID number.<p>\n"
+"For example:\n"
+"\n"
+"<table>\n"
+"<tr><th>ksys</th><td>Show processes containing \"<b>ksys</b>\" in the name, "
+"for example the processes \"<i>ksysguard</i>\" and \"<i>ksysguardd</i>\"."
+"<td></tr>\n"
+"<tr><th>root</th><td>Show processes owned by <b>root</b>.  For example "
+"<i>init</i></td></tr>\n"
+"<tr><th>1234</th><td>Show the processes with the PID or Parent PID of "
+"<b>1234</b>.</td></th></tr>\n"
+"</table>\n"
+msgstr ""
+"O texto que se indica aquí filtra os procesos que se amosan. Este texto pode "
+"se unha parte da cadea do nome, orde ou título da xanela do proceso. Tamén "
+"pode ser un nome de usuaria ou un número ID de proceso.<p>\n"
+"Por exemplo:\n"
+"\n"
+"<table>\n"
+"<tr><th>ksys</th><td>Amosa os procesos que conteñen «<b>ksys</b>» no nome, "
+"por exemplo os procesos «<i>ksysguard</i>» e «<i>ksysguardd</i>». <td></tr>\n"
+"<tr><th>root</th><td>Amosa os procesos posuídos por <b>root</b>. Por exemplo "
+"<i>init</i></td></tr>\n"
+"<tr><th>1234</th><td>Amosa os procesos con PID ou PID do pai con valor "
+"<b>1234</b>.</td></th></tr>\n"
+"</table>\n"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:101
+#, kde-format
+msgid ""
+"<qt>Change which processes are shown, and how they are shown.  The processes "
+"can be further filtered by using the Quick Search text filter.<p>\n"
+"<table>\n"
+"<tr><td>All Processes</td><td>Show all the processes on the system.</td></"
+"tr>\n"
+"<tr><td>All Processes, tree</td><td>Show all the processes on the system, in "
+"a hierarchical manner using the parent PID information.</td></tr>\n"
+"<tr><td>System Processes</td><td>Show processes running as root and as a "
+"user who cannot login.</td></tr>\n"
+"<tr><td>User Processes</td><td>Show processes running as a non-root user who "
+"can login.</td></tr>\n"
+"<tr><td>Own Processes</td><td>Show processes owned by the same user that "
+"this process is owned by.</td></tr>\n"
+"<tr><td>Programs Only</td><td>Show processes which are running as a user who "
+"can login and are either attached to a TTY or have at least one X11 Window.</"
+"td></tr>\n"
+"</table>\n"
+"<p>\n"
+"<i>Technical Information:</i><br>\n"
+"Processes with multiple threads are just shown as a single process, and not "
+"treated any differently.<br>\n"
+"Kernel threads are shown as normal processes, but are actually running "
+"inside the kernel and are not real processes.  As such, many of the fields "
+"(such as Username) do not apply.\n"
+msgstr ""
+"<qt>Cambia cales procesos se ven e como se amosan. Os procesos poden "
+"filtrarse ademais usando o filtro de texto de Busca rápida.<p>\n"
+"<table>\n"
+"<tr><td>Todos os procesos</td><td>Amosa todos os procesos do sistema.</td></"
+"tr>\n"
+"<tr><td>Todos os procesos, en árbore</td><td>Amosa todos os procesos do "
+"sistema, nunha vista xerárquica usando a información de PID do pai.</td></"
+"tr>\n"
+"<tr><td>Procesos do sistema</td><td>Amosa os procesos que se executan como "
+"root ou como un usuario que non poida acceder ao sistema.</td></tr>\n"
+"<tr><td>Procesos de usuario</td><td>Amosa os procesos que se executan por un "
+"usuario que non sexa root e que poida acceder ao sistema.</td></tr>\n"
+"<tr><td>Procesos propios</td><td>Amosa os procesos posuídos polo mesmo "
+"usuario que posúe este.</td></tr>\n"
+"<tr><td>Só programas</td><td>Amosa os procesos que se executan por un "
+"usuario que poida acceder ao sistema e que esteas conectado ou a un TTY ou "
+"que polo menos teñan unha xanela do X11.</td></tr>\n"
+"</table>\n"
+"<p>\n"
+"<i>Información técnica:</i><br>\n"
+"Os procesos con varios fíos de execución amósanse como un único proceso e "
+"non se tratan dun xeito distinto.<br>\n"
+"Os fíos do núcleo amósanse como procesos normais pero en realidade "
+"execútanse dentro do núcleo e non son un proceso real. Polo tanto moitos dos "
+"campos (como Nome de usuaria) non se aplican.\n"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:111
+#, kde-format
+msgid "All Processes"
+msgstr "Todos os procesos"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:116
+#, kde-format
+msgid "All Processes, Tree"
+msgstr "Todos os procesos, en árbore"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:121
+#, kde-format
+msgid "System Processes"
+msgstr "Procesos do sistema"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:126
+#, kde-format
+msgid "User Processes"
+msgstr "Procesos de usuarios"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:131
+#, kde-format
+msgid "Own Processes"
+msgstr "Procesos propios"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:136
+#, kde-format
+msgid "Programs Only"
+msgstr "Só programas"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnTools)
+#: ProcessWidgetUI.ui:144
+#, kde-format
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: ReniceDlg.cpp:28
+#, kde-format
+msgid "Set Priority"
+msgstr "Definir a prioridade"
+
+#: ReniceDlg.cpp:63
+#, kde-format
+msgctxt "Scheduler"
+msgid "Interactive"
+msgstr "Interactivo"
+
+#. i18n: ectx: property (text), widget (QLabel, lblMessage1)
+#: ReniceDlgUi.ui:23
+#, kde-format
+msgid "Change scheduling priority for:"
+msgstr "Cambiar a prioridade de planificación de:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ReniceDlgUi.ui:100
+#, kde-format
+msgid "CPU Scheduler"
+msgstr "Planificador do procesador"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:129
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The standard time-sharing "
+"scheduler for processes without special requirements.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O planificador estándar de "
+"tempo compartido para procesos sen requirimentos especiais.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:136
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling: Default Linux time-sharing  (Other)</span></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+"\">Normal<span style=\" font-weight:400;\"> is the standard Linux time-"
+"sharing scheduler that is intended for all processes that do not  require "
+"special static priority real-time mechanisms. The process to run is chosen "
+"from the list of other</span> Normal<span style=\" font-weight:400;\"> or </"
+"span>Batch<span style=\" font-weight:400;\"> processes based on a dynamic "
+"priority that is determined only inside this list. The dynamic priority is "
+"based on the priority level given and increased for each time-quantum the "
+"process is ready to run, but denied to run by the scheduler. This ensures "
+"fair progress among all Normal processes.</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación normal: Compartición de tempo predeterminada en "
+"Linux (Outro)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+"\">Normal<span style=\" font-weight:400;\"> é o planificador da compartición "
+"de tempos estándar en Linux, que é o deseñado para os procesos que non "
+"requiran mecanismos especiais de tempo real con prioridades estáticas. O "
+"proceso a executar é escollido na lista doutros procesos</span> Normais<span "
+"style=\" font-weight:400;\"> ou </span>Lote<span style=\" font-weight:400;"
+"\"> segundo unha prioridade dinámica que só se determina dentro desta lista. "
+"A prioridade dinámica está baseada no nivel de prioridade dado e é auméntaa "
+"cada unidade de tempo que o proceso estea listo para ser executado, pero que "
+"non o sexa polo planificador. Isto garante un progreso equitativo entre "
+"todos os procesos normais.</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioNormal)
+#. i18n: ectx: property (text), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:139 ReniceDlgUi.ui:303
+#, kde-format
+msgid "Normal"
+msgstr "Normal"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:149
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">For CPU-intensive non-"
+"interactive processes.  Process is mildly disfavored in scheduling decisions."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Para procesos interactivos "
+"cun gran consumo de procesador. O proceso vese un pouco desfavorecido nas "
+"decisións de planificación.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:156
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Batch Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(Since Linux 2.6.16.)</"
+"span><span style=\" font-weight:400;\"> This policy is similar to </"
+"span>Normal<span style=\" font-weight:400;\">, except that this policy will "
+"cause the scheduler to always assume that the process is CPU-intensive.  "
+"Consequently, the scheduler will apply a small scheduling penalty so that "
+"this process is mildly disfavored in scheduling decisions. This policy is "
+"useful for workloads that are non-interactive, but do not want to lower "
+"their nice value, and for workloads that want a deterministic scheduling "
+"policy without interactivity causing extra preemptions (between the "
+"workload's tasks).</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación en lotes</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(Desde Linux 2.6.16.)</"
+"span><span style=\" font-weight:400;\"> Esta política é similar á </"
+"span>Normal<span style=\" font-weight:400;\">, excepto que esta fará que o "
+"planificador sempre asuma que o proceso consume moito procesador. En "
+"consecuencia, o planificador aplicará unha pequena penalización na "
+"planificación para que se vexa un pouco prexudicado nas decisións de "
+"planificación. Esta política é útil para cargar de traballo que non sexan "
+"interactivas, pero que non queira diminuír a súa prioridade, e para "
+"traballos que queiran unha política de planificación determinista sen "
+"interaccións que causen apropiacións adicionais (entre as tarefas da carga "
+"de traballo).</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:159
+#, kde-format
+msgid "Batch"
+msgstr "Lote"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:169
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  Has Timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O proceso executarase "
+"sempre que sexa executábel. É unha prioridade maior que Normal ou Batch. Ten "
+"división de tempo.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:176
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin</span> is a simple enhancement of <span style=\" "
+"font-weight:600;\">FIFO</span>.  Everything described below for <span style="
+"\" font-weight:600;\">FIFO</span> also applies to <span style=\" font-"
+"weight:600;\">Round Robin</span>, except that each process is only allowed "
+"to run for a maximum time quantum.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación Round Robin</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin</span> é unha mellora simple de <span style=\" "
+"font-weight:600;\">FIFO</span>. Todo o descrito en baixo para <span style=\" "
+"font-weight:600;\">FIFO</span> tamén se aplica a <span style=\" font-"
+"weight:600;\">Round Robin</span>, excepto que a cada proceso só se lle "
+"permite a execución durante unha cantidade máxima de tempo.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:179
+#, kde-format
+msgid "Round robin"
+msgstr "Round Robin"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:189
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  No timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O proceso executarase "
+"sempre que sexa executábel. É unha prioridade maior que Normal ou Lote. Non "
+"hai repartimento de tempos.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:196
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">First In-First Out Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">When  a  <span style=\" "
+"font-weight:600;\">FIFO</span> process  becomes  runnable,  it  will always "
+"immediately preempt any currently running <span style=\" font-weight:600;"
+"\">Normal</span> or <span style=\" font-weight:600;\">Batch</span> process.</"
+"p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación FIFO (First In-First Out)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Cando un proceso <span "
+"style=\"font-weight:600;\">FIFO</span> sexa executábel, sempre se adiantará "
+"inmediatamente a calquera proceso <span style=\" font-weight:600;\">Normal</"
+"span> ou <span style=\" font-weight:600;\">Lote</span> en execución.</p></"
+"body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:199
+#, kde-format
+msgid "FIFO"
+msgstr "FIFO"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ReniceDlgUi.ui:264
+#, kde-format
+msgid "I/O Scheduler"
+msgstr "Planificador de E/S"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:293
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process's priority is "
+"based on the CPU priority.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A prioridade dos procesos "
+"está baseada na prioridade do procesador.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:300
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This is the same as <span "
+"style=\" font-weight:600;\">Best Effort</span> scheduling, except that the "
+"priority is calculated automatically based on the CPU priority.  Processes "
+"with a higher priority will take priority for access to the hard disk.  "
+"Programs running at the same <span style=\" font-weight:600;\">Best Effort/"
+"Normal</span> priority are served in a <span style=\" font-weight:600;"
+"\">Round Robin</span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación Normal</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">É a mesma que a "
+"planificación do <span style=\" font-weight:600;\">Mellor esforzo</span>, "
+"excepto en que a prioridade é calculada automaticamente con base na "
+"prioridade do procesador. Os procesos con maior prioridade terán prioridade "
+"para os accesos ao disco duro. Os programas que se executen coa mesma "
+"prioridade <span style=\" font-weight:600;\">Mellor esforzo/Normal</span> "
+"son servidos como nun <span style=\" font-weight:600;\">Round Robin</span>.</"
+"p></body></html>"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:313
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process can only use the "
+"hard disk when no other process has used it very recently.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O proceso só poderá usar o "
+"disco duro cando ningún outro proceso o usase recentemente.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:320
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Idle Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A  program running with "
+"<span style=\" font-weight:600;\">Idle</span> I/O priority will only get "
+"disk time when no other program has asked for disk I/O for a defined grace "
+"period. The impact of <span style=\" font-weight:600;\">Idle</span> I/O "
+"processes on normal system activity should be zero. Priority is not "
+"applicable to this scheduling class.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación Ociosa</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Un programa que se execute "
+"coa prioridade de E/S <span style=\" font-weight:600;\">Ociosa</span> só "
+"terá tempo de disco cando ningún outro programa pedise E/S ao disco durante "
+"un período de graza determinado. O impacto da E/S dos procesos <span style="
+"\" font-weight:600;\">Ociosos</span> na actividade dos sistemas normais "
+"debería ser nulo. A prioridade non é aplicábel a esta clase de planificación."
+"</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:323
+#, kde-format
+msgid "Idle"
+msgstr "Ocioso"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:333
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process is given higher "
+"priority to access the hard disk than Normal.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Dáselle maior prioridade "
+"para o acceso ao disco duro a este proceso que en Normal.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:340
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Best Effort Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Processes with a higher "
+"priority will take priority for access to the hard disk.  Programs running "
+"at the same <span style=\" font-weight:600;\">Best Effort/Normal</span> "
+"priority are served in a <span style=\" font-weight:600;\">Round Robin</"
+"span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación por Mellor Esforzo</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Os procesos con maior "
+"prioridade terán acceso prioritario ao disco duro. Os programas que se "
+"executen coa mesma prioridade <span style=\" font-weight:600;\">Mellor "
+"esforzo/Normal</span> serviranse como nun <span style=\" font-weight:600;"
+"\">Round Robin</span>.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:343
+#, kde-format
+msgid "Best effort"
+msgstr "Mellor esforzo"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:353
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process gets immediate "
+"access to the hard disk whenever needed, regardless of what else is going on."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O proceso terá acceso "
+"inmediato ao disco duro sempre que o precise, sen importar o demais que se "
+"estea a facer.</p></body></html>"
+
+# skip-rule: PT-2010_window
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:360
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Real Time Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The <span style=\" font-"
+"weight:600;\">Real Time</span> scheduling class is given first access to the "
+"disk, regardless of what else is going on in the system. Thus the <span "
+"style=\" font-weight:600;\">Real Time</span> class needs to be used with "
+"some care, as it can starve other processes. As with the <span style=\" font-"
+"weight:600;\">Best Effort</span> class, 8 priority levels are defined "
+"denoting how big a time slice a given process will receive on each "
+"scheduling window.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Planificación de Tempo Real</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">O tipo de planificación "
+"<span style=\" font-weight:600;\">Tempo real</span> ten acceso prioritario "
+"ao disco, sen importar o demais que estea a pasar no sistema. Por iso a "
+"clase de <span style=\" font-weight:600;\">Tempo real</span> debe usarse con "
+"precaución, xa que pode trancar a outros procesos. Igual que a clase <span "
+"style=\"font-weight:600;\">Mellor esforzo</span>, hai definidos 8 niveis de "
+"prioridade que indican a cantidade de tempo que recibe cada proceso en cada "
+"xanela de planificación.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:363
+#, kde-format
+msgid "Real time"
+msgstr "Tempo real"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuLow)
+#. i18n: ectx: property (text), widget (QLabel, lblIOLow)
+#: ReniceDlgUi.ui:402 ReniceDlgUi.ui:470
+#, kde-format
+msgid "Low Priority"
+msgstr "Baixa prioridade"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuHigh)
+#. i18n: ectx: property (text), widget (QLabel, lblIOHigh)
+#: ReniceDlgUi.ui:409 ReniceDlgUi.ui:477
+#, kde-format
+msgid "High Priority"
+msgstr "Alta prioridade"
+
+#: scripting.cpp:243
+#, kde-format
+msgid "QtWebEngineWidgets not available"
+msgstr "QtWebEngineWidgets non está dispoñíbel"
+
+#: scripting.cpp:244
+#, kde-format
+msgid ""
+"KSysGuard library was compiled without QtWebEngineWidgets, please contact "
+"your distribution."
+msgstr ""
+"A biblioteca KSysGuard compilouse sen QtWebEngineWidgets, póñase en contacto "
+"coa súa distribución."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Run Command"
+#~ msgstr "Executar unha orde"
+
+#~ msgid ""
+#~ "You do not have the permission to renice the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Non ten permisos para cambiar a prioridade do proceso. Ademais produciuse "
+#~ "un problema ao intentar executar como root. Erro %1 %2"
+
+#~ msgid ""
+#~ "You do not have the permission to kill the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Non ten permisos para matar o proceso. Ademais produciuse un problema ao "
+#~ "intentar executar como root. Erro %1 %2"
+
+#, fuzzy
+#~| msgid "Memory usage: %1<br />"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Memory usage:</emphasis> %1<br />"
+#~ msgstr "Uso de memoria: %1<br/>"
+
+#~ msgid "Login Name: %1<br/>"
+#~ msgstr "Nome de usuario: %1<br/>"
+
+#~ msgid "<b>%1</b><br/>"
+#~ msgstr "<b>%1</b><br/>"
+
+#~ msgid "Login Name: %1 (uid: %2)<br/>"
+#~ msgstr "Nome de usuario: %1 (uid: %2)<br/>"
+
+#~ msgid "  Room Number: %1<br/>"
+#~ msgstr "  Despacho: %1<br/>"
+
+#~ msgid "  Work Phone: %1<br/>"
+#~ msgstr "  Teléfono do traballo: %1<br/> "
+
+#~ msgid "Effective User: %1<br/>"
+#~ msgstr "Usuario efectivo: %1<br/>"
+
+#~ msgid "Setuid User: %1<br/>"
+#~ msgstr "Usuario setuid: %1<br/>"
+
+#~ msgid "File System User: %1<br/>"
+#~ msgstr "Usuario do sistema de ficheiro: %1<br/>"
+
+#~ msgid "<br/>Effective Group: %1"
+#~ msgstr "<br/>Grupo efectivo: %1"
+
+#~ msgid "<br/>Setuid Group: %1"
+#~ msgstr "<br/>Grupo setuid: %1"
+
+#~ msgid "<br/>File System Group: %1"
+#~ msgstr "<br/>Grupo do sistema de ficheiros: %1"
+
+#~ msgid ""
+#~ "<b>Init</b> is the parent of all other processes and cannot be killed.<br/"
+#~ ">"
+#~ msgstr ""
+#~ "<b>Init</b> é o pai de todos os outros procesos e non se pode matar.<br/>"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2"
+#~ msgstr "<b>%1</b><br />ID do proceso: %2"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent: %3<br />Parent's ID: %4"
+#~ msgstr "<b>%1</b><br />ID do proceso: %2<br />Pai: %3<br />ID do pai: %4"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent's ID: %3"
+#~ msgstr "<b>%1</b><br />ID do proceso: %2<br />ID do pai: %3"
+
+#~ msgid "<br/>Number of threads: %1"
+#~ msgstr "<br/>Cantidade de fíos: %1"
+
+#~ msgid "<br/>Command: %1"
+#~ msgstr "<br/>Orde: %1"
+
+#~ msgid "<br />Running on: %1"
+#~ msgstr "<br/>A executarse en: %1"
+
+#~ msgid ""
+#~ "Clock ticks since system boot: %1<br/>Seconds since system boot: %2 "
+#~ "(System boot time: %3)<br/>Absolute start time: %4<br/>Relative start "
+#~ "time: %5"
+#~ msgstr ""
+#~ "Tics do reloxo desde que iniciou o sistema: %1<br/> Segundos desde que "
+#~ "iniciou o sistema: %2 (o sistema leva funcionando %3)<br/> Hora de inicio "
+#~ "absoluta: %4<br/> Hora de inicio relativa: %5"
+
+#~ msgid "<br /><br />Running on: %1"
+#~ msgstr "<br/><br/>A executarse en: %1"
+
+#~ msgid "Nice level: %1 (%2)"
+#~ msgstr "Nivel de prioridade: %1 (%2)"
+
+#~ msgid "This is a real time process.<br>Scheduler priority: %1"
+#~ msgstr "Este é un proceso en tempo real.<br>Prioridade no planificador: %1"
+
+#~ msgid "<br/>Scheduler: %1"
+#~ msgstr "<br/>Planificador: %1"
+
+#~ msgid "<br/>I/O Nice level: %1 (%2)"
+#~ msgstr "<br/>Nivel de prioridade de E/S: %1 (%2)"
+
+#~ msgid "<br/>I/O Class: %1"
+#~ msgstr "<br/>Clase de E/S: %1"
+
+#~ msgid ""
+#~ "<qt><p style='white-space:pre'>Process status: %1 %2<br />User CPU usage: "
+#~ "%3%<br />System CPU usage: %4%"
+#~ msgstr ""
+#~ "<qt><p style='white-space:pre'>Estado do proceso: %1 %2<br/>Uso da CPU "
+#~ "polo usuario: %3% <br/>Uso da CPU polo sistema: %4%"
+
+#~ msgid ""
+#~ "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
+#~ "System CPU usage: %3%<br />Total CPU usage: %4%"
+#~ msgstr ""
+#~ "<br/>Número de fillos: %1<br/>Uso total da CPU polo usuario: %2%<br/>Uso "
+#~ "total da CPU polo sistema: %3%<br/>Uso total da CPU: %4%"
+
+#~ msgid "<br />Nice level: %1 (%2)"
+#~ msgstr "<br/>Nivel de prioridade: %1 (%2)"
+
+#~ msgid "RSS Memory usage: %1"
+#~ msgstr "Uso de memoria RSS: %1"
+
+#~ msgid "Shared library memory usage: %1"
+#~ msgstr "Uso de memoria por bibliotecas compartidas: %1"
+
+#~ msgid ""
+#~ "Characters read: %1 (%2 KiB/s)<br>Characters written: %3 (%4 KiB/"
+#~ "s)<br>Read syscalls: %5 (%6 s⁻¹)<br>Write syscalls: %7 (%8 s⁻¹)<br>Actual "
+#~ "bytes read: %9 (%10 KiB/s)<br>Actual bytes written: %11 (%12 KiB/s)"
+#~ msgstr ""
+#~ "Caracteres lidos: %1 (%2 KiB/s)<br>Caracteres escritos: %3 (%4 KiB/"
+#~ "s)<br>Chamadas de lectura: %5 (%6 s⁻¹)<br>Chamadas de escrita: %7 (%8 "
+#~ "s⁻¹)<br>Bytes realmente lidos: %9 (%10 KiB/s)<br>Bytes realmente "
+#~ "escritos: %11 (%12 KiB/s)"
+
+#~ msgid "%1 (gid: <numid>%2</numid>)"
+#~ msgstr "%1 (gid: <numid>%2</numid>)"

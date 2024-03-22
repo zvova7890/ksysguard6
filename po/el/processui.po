@@ -1,0 +1,2679 @@
+# translation of processui.po to greek
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Spiros Georgaras <sng@hellug.gr>, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2007, 2008, 2009.
+# Petros Vidalis <p_vidalis@hotmail.com>, 2010.
+# Nikos Pantazis <pantazisnikolaos@gmail.com>, 2011.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012.
+# Antonis Geralis <capoiosct@gmail.com>, 2012.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2015, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: processui\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-01-10 00:57+0000\n"
+"PO-Revision-Date: 2017-02-21 13:55+0200\n"
+"Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: ksysguardprocesslist.cpp:199 ksysguardprocesslist.cpp:543
+#, kde-format
+msgid "Set Priority..."
+msgid_plural "Set Priority..."
+msgstr[0] "Ορίστε προτεραιότητα..."
+msgstr[1] "Ορίστε προτεραιότητα..."
+
+#: ksysguardprocesslist.cpp:201 ksysguardprocesslist.cpp:639
+#, kde-format
+msgid "Jump to Parent Process"
+msgstr "Μετάβαση στη γονική διεργασία"
+
+#: ksysguardprocesslist.cpp:203
+#, kde-format
+msgid "Jump to Process Debugging This One"
+msgstr "Μετάβαση στη διεργασία αποσφαλμάτωσης αυτής"
+
+#: ksysguardprocesslist.cpp:204
+#, kde-format
+msgid "Show Application Window"
+msgstr "Εμφάνιση παραθύρου της εφαρμογής"
+
+#: ksysguardprocesslist.cpp:205
+#, fuzzy, kde-format
+#| msgid "Displayed Information"
+msgctxt "@action:inmenu"
+msgid "Detailed Information..."
+msgstr "Εμφανιζόμενες πληροφορίες"
+
+#: ksysguardprocesslist.cpp:206
+#, kde-format
+msgid "Resume Stopped Process"
+msgstr "Συνέχιση σταματημένης διεργασίας"
+
+#: ksysguardprocesslist.cpp:207
+#, kde-format
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Τερματισμός διεργασίας"
+msgstr[1] "Τερματισμός διεργασιών"
+
+#: ksysguardprocesslist.cpp:210 ksysguardprocesslist.cpp:544
+#, kde-format
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill Processes"
+msgstr[0] "Βίαιο σκότωμα διεργασίας"
+msgstr[1] "Βίαιο σκότωμα διεργασιών"
+
+#: ksysguardprocesslist.cpp:214
+#, kde-format
+msgid "Suspend (STOP)"
+msgstr "Αναστολή (STOP)"
+
+#: ksysguardprocesslist.cpp:215
+#, kde-format
+msgid "Continue (CONT)"
+msgstr "Συνέχιση (CONT)"
+
+#: ksysguardprocesslist.cpp:216
+#, kde-format
+msgid "Hangup (HUP)"
+msgstr "Αποσύνδεση (HUP)"
+
+#: ksysguardprocesslist.cpp:217
+#, kde-format
+msgid "Interrupt (INT)"
+msgstr "Διακοπή (INT)"
+
+#: ksysguardprocesslist.cpp:218
+#, kde-format
+msgid "Terminate (TERM)"
+msgstr "Τερματισμός (TERM)"
+
+#: ksysguardprocesslist.cpp:219
+#, kde-format
+msgid "Kill (KILL)"
+msgstr "Σκότωμα (KILL)"
+
+#: ksysguardprocesslist.cpp:220
+#, kde-format
+msgid "User 1 (USR1)"
+msgstr "Χρήστης 1 (USR1)"
+
+#: ksysguardprocesslist.cpp:221
+#, kde-format
+msgid "User 2 (USR2)"
+msgstr "Χρήστης 2 (USR2)"
+
+#: ksysguardprocesslist.cpp:224
+#, kde-format
+msgid "Focus on Quick Search"
+msgstr "Εστίαση στη γρήγορη αναζήτηση"
+
+#: ksysguardprocesslist.cpp:407
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>End the selected process. Warning - you may lose unsaved work."
+#| "<br>Right click on a process to send other signals.<br>See What's This "
+#| "for technical information.<br>To target a specific window to kill, press "
+#| "Ctrl+Alt+Esc at any time."
+msgid ""
+"<qt>End the selected process. Warning - you may lose unsaved work.<br>Right "
+"click on a process to send other signals.<br>See What's This for technical "
+"information."
+msgstr ""
+"<qt>Τερματίστε την επιλεγμένη διεργασία. Προσοχή - πιθανόν να χάσετε τις μη "
+"αποθηκευμένες εργασίες.<br>Πατήστε δεξί κλικ σε μια διεργασία για την "
+"αποστολή άλλων σημάτων.<br>Δείτε στο «Τι είναι αυτό;» για τεχνικές "
+"πληροφορίες.<br>Για να στοχεύσετε και να τερματίσετε ένα συγκεκριμένο "
+"παράθυρο, πατήστε Ctrl+Alt+Esc οποιαδήποτε στιγμή."
+
+#: ksysguardprocesslist.cpp:442
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:545
+#, kde-format
+msgctxt "Context menu"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Τερματισμός διεργασίας"
+msgstr[1] "Τερματισμός διεργασιών"
+
+#: ksysguardprocesslist.cpp:579
+#, kde-format
+msgid "Send Signal"
+msgstr "Αποστολή σήματος"
+
+#: ksysguardprocesslist.cpp:596
+#, kde-format
+msgid "Jump to Parent Process (%1)"
+msgstr "Μετάβαση στη γονική διεργασία (%1)"
+
+#: ksysguardprocesslist.cpp:758
+#, kde-format
+msgid "Hide Column '%1'"
+msgstr "Απόκρυψη στήλης '%1'"
+
+#: ksysguardprocesslist.cpp:774
+#, kde-format
+msgid "Show Column '%1'"
+msgstr "Εμφάνιση στήλης '%1'"
+
+#: ksysguardprocesslist.cpp:803
+#, kde-format
+msgid "Display Units"
+msgstr "Εμφάνιση μονάδων"
+
+#: ksysguardprocesslist.cpp:807
+#, kde-format
+msgid "Mixed"
+msgstr "Ανάμεικτες"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes per second"
+msgstr "Kilobytes ανά δευτερόλεπτο"
+
+#: ksysguardprocesslist.cpp:813
+#, kde-format
+msgid "Kilobytes"
+msgstr "Kilobytes"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes per second"
+msgstr "Megabytes ανά δευτερόλεπτο"
+
+#: ksysguardprocesslist.cpp:819
+#, kde-format
+msgid "Megabytes"
+msgstr "Megabytes"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes per second"
+msgstr "Gigabytes ανά δευτερόλεπτο"
+
+#: ksysguardprocesslist.cpp:825
+#, kde-format
+msgid "Gigabytes"
+msgstr "Gigabytes"
+
+#: ksysguardprocesslist.cpp:834
+#, kde-format
+msgid "Percentage"
+msgstr "Ποσοστό"
+
+#: ksysguardprocesslist.cpp:863
+#, kde-format
+msgid "Display command line options"
+msgstr "Εμφάνιση επιλογών γραμμής εντολών"
+
+#: ksysguardprocesslist.cpp:870
+#, kde-format
+msgid "Divide CPU usage by number of CPUs"
+msgstr "Διαίρεση χρήσης ΚΜΕ με τον αριθμό των ΚΜΕ"
+
+#: ksysguardprocesslist.cpp:877
+#, kde-format
+msgid "Displayed Information"
+msgstr "Εμφανιζόμενες πληροφορίες"
+
+#: ksysguardprocesslist.cpp:880
+#, kde-format
+msgid "Characters read/written"
+msgstr "Διαβασμένοι/γραμμένοι χαρακτήρες"
+
+#: ksysguardprocesslist.cpp:885
+#, kde-format
+msgid "Number of Read/Write operations"
+msgstr "Αριθμός εργασιών ανάγνωσης/εγγραφής"
+
+#: ksysguardprocesslist.cpp:890
+#, kde-format
+msgid "Bytes actually read/written"
+msgstr "Bytes που πραγματικά διαβάστηκαν/γράφτηκαν"
+
+#: ksysguardprocesslist.cpp:896
+#, kde-format
+msgid "Show I/O rate"
+msgstr "Εμφάνιση ρυθμού εισόδου/εξόδου"
+
+#: ksysguardprocesslist.cpp:923
+#, kde-format
+msgid "Show Tooltips"
+msgstr "Εμφάνιση υποδείξεων"
+
+#: ksysguardprocesslist.cpp:1177
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to renice the process and there was a "
+#| "problem trying to run as root"
+msgid ""
+"You do not have the permission to renice the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Δεν έχετε άδεια να κάνετε renice της διεργασίας και παρουσιάστηκε πρόβλημα "
+"κατά την προσπάθεια εκτέλεσης ως υπερχρήστης"
+
+#: ksysguardprocesslist.cpp:1203 ksysguardprocesslist.cpp:1387
+#, kde-format
+msgid "You must select a process first."
+msgstr "Πρέπει πρώτα να επιλέξετε μια διεργασία."
+
+#: ksysguardprocesslist.cpp:1328
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to change the I/O priority of the process "
+#| "and there was a problem trying to run as root.  Error %1 %2"
+msgid ""
+"You do not have the permission to change the I/O priority of the process and "
+"there was a problem trying to run as root."
+msgstr ""
+"Δεν έχετε επαρκή δικαιώματα για να αλλάξετε τη προτεραιότητα εισόδου/εξόδου "
+"της διεργασίας και παρουσιάστηκε πρόβλημα κατά την προσπάθεια εκτέλεσης ως "
+"υπερχρήστης. Σφάλμα %1 %2"
+
+#: ksysguardprocesslist.cpp:1344
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to change the CPU Scheduler for the "
+#| "process and there was a problem trying to run as root.  Error %1 %2"
+msgid ""
+"You do not have the permission to change the CPU Scheduler for the process "
+"and there was a problem trying to run as root."
+msgstr ""
+"Δεν έχετε επαρκή δικαιώματα για να αλλάξετε το χρονικό προγραμματιστή Ει/Εξ "
+"της διεργασίας και παρουσιάστηκε πρόβλημα κατά την προσπάθεια εκτέλεσης ως "
+"υπερχρήστης. Σφάλμα %1 %2"
+
+#: ksysguardprocesslist.cpp:1359
+#, fuzzy, kde-format
+#| msgid ""
+#| "You do not have the permission to kill the process and there was a "
+#| "problem trying to run as root. %1"
+msgid ""
+"You do not have the permission to kill the process and there was a problem "
+"trying to run as root."
+msgstr ""
+"Δεν έχετε επαρκή δικαιώματα για να τερματίσετε τη διεργασία και "
+"παρουσιάστηκε πρόβλημα κατά την προσπάθεια εκτέλεσης ως υπερχρήστης. %1"
+
+#: ksysguardprocesslist.cpp:1396
+#, kde-format
+msgid ""
+"Are you sure you want to end this process?  Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to end these %1 processes?  Any unsaved work may be "
+"lost"
+msgstr[0] ""
+"Επιθυμείτε σίγουρα να τερματίσετε αυτή την διεργασία; Οποιαδήποτε μη "
+"αποθηκευμένη εργασία μπορεί να χαθεί."
+msgstr[1] ""
+"Επιθυμείτε σίγουρα να τερματίσετε αυτές τις %1 διεργασίες; Οποιαδήποτε μη "
+"αποθηκευμένη εργασία μπορεί να χαθεί."
+
+#: ksysguardprocesslist.cpp:1399
+#, kde-format
+msgctxt "Dialog title"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Τερματισμός διεργασίας"
+msgstr[1] "Τερματισμός %1 διεργασιών"
+
+#: ksysguardprocesslist.cpp:1401
+#, kde-format
+msgid "End"
+msgstr "Τέλος"
+
+#: ksysguardprocesslist.cpp:1403
+#, kde-format
+msgid ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> this "
+"process?  Any unsaved work may be lost."
+msgid_plural ""
+"<qt>Are you sure you want to <b>immediately and forcibly kill</b> these %1 "
+"processes?  Any unsaved work may be lost"
+msgstr[0] ""
+"<qt>Επιθυμείτε σίγουρα να τερματίσετε <b>άμεσα και δια της βίας</b> αυτή την "
+"διεργασία; Οποιαδήποτε μη αποθηκευμένη εργασία μπορεί να χαθεί."
+msgstr[1] ""
+"<qt>Επιθυμείτε σίγουρα να τερματίσετε <b>άμεσα και δια της βίας</b> αυτές "
+"τις %1 διεργασίες; Οποιαδήποτε μη αποθηκευμένη εργασία μπορεί να χαθεί."
+
+#: ksysguardprocesslist.cpp:1406
+#, kde-format
+msgctxt "Dialog title"
+msgid "Forcibly Kill Process"
+msgid_plural "Forcibly Kill %1 Processes"
+msgstr[0] "Βίαιο σκότωμα διεργασίας"
+msgstr[1] "Βίαιο σκότωμα %1 διεργασιών"
+
+#: ksysguardprocesslist.cpp:1408
+#, kde-format
+msgid "Kill"
+msgstr "Σκότωμα"
+
+#: processdetails/GeneralTab.cpp:39 processdetails/MemoryMapsTab.cpp:281
+#: processdetails/OpenFilesTab.cpp:276
+#, kde-format
+msgctxt "@info:status"
+msgid "No data to display"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:73
+#, kde-format
+msgctxt "kilobytes"
+msgid "%1 kB"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:123 processdetails/OpenFilesTab.cpp:164
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, txtFilter)
+#: processdetails/MemoryMapsTab.cpp:126 processdetails/OpenFilesTab.cpp:167
+#: ProcessWidgetUI.ui:72
+#, kde-format
+msgid "Quick search"
+msgstr "Γρήγορη αναζήτηση"
+
+#: processdetails/MemoryMapsTab.cpp:251 processdetails/OpenFilesTab.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Username"
+msgctxt "@title:column"
+msgid "Filename"
+msgstr "Όνομα χρήστη"
+
+#: processdetails/MemoryMapsTab.cpp:252
+#, kde-format
+msgctxt "@title:column Start of the address space"
+msgid "Start"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:253
+#, fuzzy, kde-format
+#| msgid "End"
+msgctxt "@title:column End of the address space"
+msgid "End"
+msgstr "Τέλος"
+
+#: processdetails/MemoryMapsTab.cpp:254
+#, kde-format
+msgctxt "@title:column"
+msgid "Permissions"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:255
+#, kde-format
+msgctxt "@title:column Offset into the file"
+msgid "Offset"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:256
+#, kde-format
+msgctxt "@title:column"
+msgid "Inode"
+msgstr ""
+
+#: processdetails/MemoryMapsTab.cpp:283 processdetails/OpenFilesTab.cpp:278
+#, kde-format
+msgctxt "@info:status"
+msgid "No data matching the filter"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:33
+#, kde-format
+msgctxt "Device type"
+msgid "File"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:36
+#, fuzzy, kde-format
+#| msgid "Characters read/written"
+msgctxt "Device type"
+msgid "Character device"
+msgstr "Διαβασμένοι/γραμμένοι χαρακτήρες"
+
+#: processdetails/OpenFilesTab.cpp:39
+#, kde-format
+msgctxt "Device type"
+msgid "Block device"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:42
+#, kde-format
+msgctxt "Device type"
+msgid "Pipe"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:45
+#, kde-format
+msgctxt "Device type"
+msgid "Socket"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:124
+#, fuzzy, kde-format
+#| msgid "Idle"
+msgctxt "@title:column File ID"
+msgid "Id"
+msgstr "Αδρανής"
+
+#: processdetails/OpenFilesTab.cpp:126
+#, kde-format
+msgctxt "@title:column File type"
+msgid "Type"
+msgstr ""
+
+#: processdetails/OpenFilesTab.cpp:247
+#, kde-format
+msgctxt "@info:status"
+msgid "%1: Failed to list directory contents"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:27
+#, fuzzy, kde-format
+#| msgid "All Processes"
+msgctxt "@title:window"
+msgid "Process Details"
+msgstr "Όλες οι διεργασίες"
+
+#: processdetails/ProcessDetailsDialog.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "General"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Memory"
+msgctxt "@title:tab"
+msgid "Memory Maps"
+msgstr "Μνήμη"
+
+#: processdetails/ProcessDetailsDialog.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Open Files"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:79
+#, kde-format
+msgctxt "@info:status"
+msgid "The \"%1\" (PID: %2) process has stopped executing"
+msgstr ""
+
+#: processdetails/ProcessDetailsDialog.cpp:126
+#, fuzzy, kde-format
+#| msgid "Set Priority"
+msgctxt "@title:column Process I/O priority"
+msgid "IO Priority"
+msgstr "Ορίστε προτεραιότητα"
+
+#: ProcessModel.cpp:62
+#, kde-format
+msgid "%1 K"
+msgstr "%1 K"
+
+#: ProcessModel.cpp:63
+#, kde-format
+msgid "%1 M"
+msgstr "%1 M"
+
+#: ProcessModel.cpp:64
+#, kde-format
+msgid "%1 G"
+msgstr "%1 G"
+
+#: ProcessModel.cpp:65
+#, kde-format
+msgid "%1 T"
+msgstr "%1 T"
+
+#: ProcessModel.cpp:66
+#, kde-format
+msgid "%1 P"
+msgstr "%1 P"
+
+#: ProcessModel.cpp:636
+#, kde-format
+msgid "- Process is doing some work."
+msgstr "- Η διεργασία εκτελεί κάποια εργασία."
+
+#: ProcessModel.cpp:638
+#, kde-format
+msgid "- Process is waiting for something to happen."
+msgstr "- Η διεργασία περιμένει κάτι να συμβεί."
+
+#: ProcessModel.cpp:640
+#, kde-format
+msgid ""
+"- Process has been stopped. It will not respond to user input at the moment."
+msgstr ""
+"- Η διεργασία έχει σταματήσει. Δε θα ανταποκριθεί στον χρήστη αυτήν τη "
+"στιγμή."
+
+#: ProcessModel.cpp:642
+#, kde-format
+msgid ""
+"- Process has finished and is now dead, but the parent process has not "
+"cleaned up."
+msgstr ""
+"- Η διεργασία ολοκληρώθηκε και έχει πλέον τερματίσει, αλλά δεν έχει γίνει "
+"καθαρισμός της γονικής διεργασίας."
+
+#: ProcessModel.cpp:1054
+#, kde-format
+msgid "The process name."
+msgstr "Το όνομα της διεργασίας."
+
+#: ProcessModel.cpp:1056
+#, kde-format
+msgid "The user who owns this process."
+msgstr "Ο χρήστης που είναι ιδιοκτήτης της διεργασίας."
+
+#: ProcessModel.cpp:1058
+#, kde-format
+msgid "The controlling terminal on which this process is running."
+msgstr "Το τερματικό ελέγχου στην οποία εκτελείται η διεργασία."
+
+#: ProcessModel.cpp:1061
+#, kde-format
+msgid ""
+"The priority with which this process is being run. For the normal scheduler, "
+"this ranges from 19 (very nice, least priority) to -19 (top priority)."
+msgstr ""
+"Η προτεραιότητα με την οποία εκτελείται η διεργασία. Για το κανονικό χρονικό "
+"προγραμματιστή, κυμαίνεται από 19 (πολύ ήπια, λιγότερη προτεραιότητα) στο "
+"-19 (ανώτατη προτεραιότητα)."
+
+#: ProcessModel.cpp:1065
+#, kde-format
+msgid "The current CPU usage of the process."
+msgstr "Η τρέχουσα χρήση ΚΜΕ της διεργασίας."
+
+#: ProcessModel.cpp:1070
+#, kde-format
+msgid ""
+"The current total CPU usage of the process, divided by the %1 processor core "
+"in the machine."
+msgid_plural ""
+"The current total CPU usage of the process, divided by the %1 processor "
+"cores in the machine."
+msgstr[0] ""
+"Η τρέχουσα χρήση της ΚΜΕ της διεργασίας, διαιρεμένη με τον %1 πυρήνα του "
+"επεξεργαστή στο μηχάνημα."
+msgstr[1] ""
+"Η τρέχουσα χρήση της ΚΜΕ της διεργασίας, διαιρεμένη με τους %1 πυρήνες του "
+"επεξεργαστή στο μηχάνημα."
+
+#: ProcessModel.cpp:1074
+#, kde-format
+msgid "The current total CPU usage of the process."
+msgstr "Η τρέχουσα συνολική χρήση ΚΜΕ της διεργασίας."
+
+#: ProcessModel.cpp:1076
+#, kde-format
+msgid ""
+"<qt>The total user and system time that this process has been running for, "
+"displayed as minutes:seconds."
+msgstr ""
+"<qt>Ο συνολικός χρόνος συστήματος και χρήστη στον οποίο η διεργασία "
+"εκτελείται, εμφανίζεται ως λεπτά:δευτερόλεπτα."
+
+#: ProcessModel.cpp:1079
+#, kde-format
+msgid ""
+"<qt>This is the amount of virtual memory space that the process is using, "
+"included shared libraries, graphics memory, files on disk, and so on. This "
+"number is almost meaningless.</qt>"
+msgstr ""
+"<qt>Αυτό είναι το ποσοστό εικονικής μνήμης που χρησιμοποιεί η διεργασία, "
+"συμπεριλαμβανομένων των κοινόχρηστων βιβλιοθηκών, της μνήμης γραφικών, των "
+"αρχείων στο δίσκο κλπ.  Αυτός ο αριθμός είναι σχεδόν χωρίς σημασία.</qt>"
+
+#: ProcessModel.cpp:1083
+#, kde-format
+msgid ""
+"<qt>This is the amount of real physical memory that this process is using by "
+"itself, and approximates the Private memory usage of the process.<br>It does "
+"not include any swapped out memory, nor the code size of its shared "
+"libraries.<br>This is often the most useful figure to judge the memory use "
+"of a program.  See What's This for more information.</qt>"
+msgstr ""
+"<qt>Αυτό είναι το ποσοστό πραγματικής (φυσικής) μνήμης που χρησιμοποιεί η "
+"διεργασία για τον εαυτό της και υπολογίζει κατά προσέγγιση την ιδιωτική "
+"χρήση μνήμης της διαδικασίας. <br>Δεν περιλαμβάνει μνήμη που βρίσκεται σε "
+"swap, ούτε το μέγεθος του κώδικα από τις κοινόχρηστες βιβλιοθήκες.<br>Αυτός "
+"είναι συνήθως ο αριθμός που κρίνει τη χρήση μνήμης ενός προγράμματος. Δείτε "
+"στο «Τι είναι αυτό;» για περισσότερες πληροφορίες.</qt>"
+
+#: ProcessModel.cpp:1088
+#, kde-format
+msgid ""
+"<qt>This is approximately the amount of real physical memory that this "
+"process's shared libraries are using.<br>This memory is shared among all "
+"processes that use this library.</qt>"
+msgstr ""
+"<qt>Αυτό είναι κατά προσέγγιση το ποσοστό πραγματικής φυσικής μνήμης που "
+"χρησιμοποιούν οι κοινόχρηστες βιβλιοθήκες της διεργασίας.<br>Αυτή η μνήμη "
+"είναι κοινή σε όλες τις διεργασίες που χρησιμοποιούν αυτήν τη βιβλιοθήκη</qt>"
+
+#: ProcessModel.cpp:1091
+#, kde-format
+msgid "<qt>The elapsed time since the process was started.</qt>"
+msgstr "<qt>Ο χρόνος που πέρασε από την εκκίνηση της διεργασίας.</qt>"
+
+#: ProcessModel.cpp:1093
+#, kde-format
+msgid ""
+"<qt>Linux flag NoNewPrivileges, if set the process can't gain further "
+"privileges via setuid etc.</qt>"
+msgstr ""
+
+#: ProcessModel.cpp:1095
+#, kde-format
+msgid "<qt>The command with which this process was launched.</qt>"
+msgstr "<qt>Η εντολή με την οποία εκτελέστηκε αυτή η διεργασία.</qt>"
+
+#: ProcessModel.cpp:1097
+#, kde-format
+msgid "<qt>The amount of pixmap memory that this process is using.</qt>"
+msgstr "<qt>Το ποσό μνήμης pixmap που χρησιμοποιεί αυτή η διεργασία.</qt>"
+
+#: ProcessModel.cpp:1099
+#, kde-format
+msgid "<qt>The title of any windows that this process is showing.</qt>"
+msgstr ""
+"<qt>Ο τίτλος όποιων παραθύρων εμφανίζονται από αυτή την διεργασία.</qt>"
+
+#: ProcessModel.cpp:1101
+#, kde-format
+msgid "The unique Process ID that identifies this process."
+msgstr "Το μοναδικό ID διεργασίας που ξεχωρίζει αυτή τη διεργασία."
+
+#: ProcessModel.cpp:1103
+#, kde-format
+msgid "The number of bytes read.  See What's This for more information."
+msgstr ""
+"Ο αριθμός των διαβασμένων bytes. Δείτε στο «Τι είναι αυτό;» για περισσότερες "
+"πληροφορίες."
+
+#: ProcessModel.cpp:1105
+#, kde-format
+msgid "The number of bytes written.  See What's This for more information."
+msgstr ""
+"Ο αριθμός των γραμμένων bytes. Δείτε στο «Τι είναι αυτό;» για περισσότερες "
+"πληροφορίες."
+
+#: ProcessModel.cpp:1107
+#, fuzzy, kde-format
+#| msgid "<qt>The amount of pixmap memory that this process is using.</qt>"
+msgid "<qt>The control group (cgroup) where this process belongs.</qt>"
+msgstr "<qt>Το ποσό μνήμης pixmap που χρησιμοποιεί αυτή η διεργασία.</qt>"
+
+#: ProcessModel.cpp:1109
+#, kde-format
+msgid ""
+"<qt>Mandatory Access Control (SELinux or AppArmor) context for this process."
+"</qt>"
+msgstr ""
+
+#: ProcessModel.cpp:1112
+#, kde-format
+msgid ""
+"The amount of private physical memory used by a process, with the amount of "
+"shared memory divided by the amount of processes using that shared memory "
+"added."
+msgstr ""
+
+#: ProcessModel.cpp:1122
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The kernel process name is a maximum of 8 "
+"characters long, so the full command is examined.  If the first word in the "
+"full command line starts with the process name, the first word of the "
+"command line is shown, otherwise the process name is used."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Το όνομα της διεργασίας του πυρήνα έχει "
+"μέγιστο μήκος 8 χαρακτήρες, ώστε η πλήρης εντολή να εξετάζεται. Αν η πρώτη "
+"λέξη στην πλήρη γραμμή εντολών ξεκινάει με το όνομα της διεργασίας, η πρώτη "
+"λέξη της γραμμής εντολών εμφανίζεται, αλλιώς χρησιμοποιείται το όνομα της "
+"διεργασίας."
+
+#: ProcessModel.cpp:1126
+#, kde-format
+msgid ""
+"<qt>The user who owns this process.  If the effective, setuid etc user is "
+"different, the user who owns the process will be shown, followed by the "
+"effective user.  The ToolTip contains the full information.  "
+"<p><table><tr><td>Login Name/Group</td><td>The username of the Real User/"
+"Group who created this process</td></tr><tr><td>Effective User/Group</"
+"td><td>The process is running with privileges of the Effective User/Group.  "
+"This is shown if different from the real user.</td></tr><tr><td>Setuid User/"
+"Group</td><td>The saved username of the binary.  The process can escalate "
+"its Effective User/Group to the Setuid User/Group.</td></tr><tr><td>File "
+"System User/Group</td><td>Accesses to the filesystem are checked with the "
+"File System User/Group.  This is a Linux specific call. See setfsuid(2) for "
+"more information.</td></tr></table>"
+msgstr ""
+"<qt>Ο χρήστης που είναι ιδιοκτήτης αυτής της διεργασίας. Εάν ο ενεργός, "
+"setuid κτλ χρήστης είναι διαφορετικός,  ο χρήστης που είναι ιδιοκτήτης της "
+"διεργασίας θα εμφανιστεί, ακολουθούμενος από τον ενεργό χρήστη.  Η υπόδειξη "
+"βοήθειας περιέχει πλήρης πληροφορίες.  <p><table><tr><td>Όνομα/Ομάδα "
+"Εισόδου</td><td>Το όνομα χρήστη του Πραγματικού Χρήστη/Ομάδας που "
+"δημιούργησε αυτή την διεργασία</td></tr><tr><td>Ενεργός Χρήστης/Ομάδα</"
+"td><td>Η διεργασία εκτελείται με προνόμια του ενεργού Χρήστη/Ομάδας.  Αυτό "
+"εμφανίζεται εάν είναι διαφορετικό από τον πραγματικό χρήστη.</td></"
+"tr><tr><td>Setuid Χρήστη/Ομάδας</td><td>Το αποθηκευμένο όνομα χρήστη του "
+"εκτελέσιμου. Η διεργασία μπορεί να κλιμακώσει τον ενεργό Χρήστη/Ομάδα στον "
+"Setuid Χρήστη/Ομάδα.</td></tr><tr><td>Σύστημα αρχείων Χρήστη/Ομάδας</"
+"td><td>Οι προσβάσεις στο σύστημα αρχείων ελέγχονται με το σύστημα αρχείων "
+"Χρήστη/Ομάδας.  Αυτή είναι μια κλήση του Linux. Δείτε το setfsuid(2) για "
+"περισσότερες πληροφορίες.</td></tr></table>"
+
+#: ProcessModel.cpp:1141
+#, kde-format
+msgid ""
+"<qt>This is the size of allocated address space - not memory, but address "
+"space. This value in practice means next to nothing. When a process requests "
+"a large memory block from the system but uses only a small part of it, the "
+"real usage will be low, VIRT will be high. <p><i>Technical information: </"
+"i>This is VmSize in proc/*/status and VIRT in top."
+msgstr ""
+"<qt>Αυτό είναι το μέγεθος του δεσμευμένου χώρου διευθύνσεων - όχι της "
+"μνήμης, αλλά του χώρου διευθύνσεων. Αυτή η τιμή πρακτικά δεν σημαίνει σχεδόν "
+"τίποτα. Όταν μία διεργασία απαιτεί ένα μεγάλο κομμάτι μνήμης από το σύστημα "
+"αλλά χρησιμοποιεί μόνο ένα μικρό κομμάτι αυτού, η πραγματική χρήση θα είναι "
+"χαμηλή, το VIRT θα είναι υψηλό. <p><i>Τεχνικές Πληροφορίες: </i>Αυτό είναι "
+"το VmSize στο proc/*/status και το VIRT στο top."
+
+#: ProcessModel.cpp:1146
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Private "
+"memory usage, calculated as VmRSS - Shared, from /proc/*/statm.  This tends "
+"to underestimate the true Private memory usage of a process (by not "
+"including i/o backed memory pages), but is the best estimation that is fast "
+"to determine.  This is sometimes known as URSS (Unique Resident Set Size). "
+"For an individual process, see \"Detailed  Memory Information\" for a more "
+"accurate, but slower, calculation of the true Private memory usage."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Αυτή είναι η κατά προσέγγιση ιδιωτική χρήση "
+"μνήμης, υπολογισμένη ως VmRSS μείον τη κοινόχρηστη, από το /proc/*/statm. "
+"Αυτό τείνει να υποτιμά την πραγματική χρήση ιδιωτικής μνήμης μιας διεργασίας "
+"(με το να μην συμπεριλαμβάνει σελίδες μνήμης υποστηριγμένες από είσοδο/"
+"έξοδο), αλλά είναι η καλύτερη εκτίμηση που μπορεί προσδιοριστεί γρήγορα.  "
+"Είναι μερικές φορές γνωστό ως URSS (Unique Resident Set Size). Για μία "
+"ανεξάρτητη διεργασία, δείτε το «Λεπτομερείς πληροφορίες μνήμης» για έναν πιο "
+"ακριβή, αλλά αργό, υπολογισμό της πραγματικής ιδιωτικής χρήσης μνήμης."
+
+#: ProcessModel.cpp:1151
+#, kde-format
+msgid "The CPU usage of a process and all of its threads."
+msgstr "Η χρήση της ΚΜΕ από μια διεργασία και από όλα τα νήματά της."
+
+#: ProcessModel.cpp:1154
+#, kde-format
+msgid ""
+"<qt>The total system and user time that a process and all of its threads "
+"have been running on the CPU for. This can be greater than the wall clock "
+"time if the process has been across multiple CPU cores."
+msgstr ""
+"<qt>Ο συνολικός χρόνος συστήματος και χρήστη που μια διεργασία και όλα τα "
+"νήματά της εκτελούνται στη ΚΜΕ. Αυτός πιθανόν να είναι μεγαλύτερος από το "
+"πραγματικό φυσικό χρόνο εάν η διεργασία εκτελείται σε ΚΜΕ με πολλαπλούς "
+"πυρήνες."
+
+#: ProcessModel.cpp:1158
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is an approximation of the Shared "
+"memory, called SHR in top.  It is the number of pages that are backed by a "
+"file (see kernel Documentation/filesystems/proc.txt).  For an individual "
+"process, see \"Detailed Memory Information\" for a more accurate, but "
+"slower, calculation of the true Shared memory usage."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Αυτή είναι η κατά προσέγγιση κοινόχρηστη "
+"μνήμη, με όνομα SHR στο top. Είναι ο αριθμός των σελίδων που υποστηρίζονται "
+"από ένα αρχείο (βλέπε kernel Documentation/filesystems/proc.txt). Για μία "
+"ανεξάρτητη διεργασία, βλέπε στο «Λεπτομερής πληροφορίες μνήμης» για έναν πιο "
+"ακριβή, αλλά πιο αργό, υπολογισμό της αληθινής κοινόχρηστης μνήμης σε χρήση."
+
+#: ProcessModel.cpp:1162
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>The underlying value (clock ticks since "
+"system boot) is retrieved from /proc/[pid]/stat"
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Η τιμή αυτή (τικ ρολογιού από την εκκίνηση "
+"του συστήματος) ανακτήθηκε από το /proc/[pid]/stat"
+
+#: ProcessModel.cpp:1164
+#, fuzzy, kde-format
+#| msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
+msgid ""
+"<qt><i>Technical information: </i>The flag is retrieved from /proc/[pid]/"
+"status"
+msgstr "<qt><i>Τεχνικές πληροφορίες: </i>Αυτό είναι από /proc/*/cmdline"
+
+#: ProcessModel.cpp:1166
+#, kde-format
+msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
+msgstr "<qt><i>Τεχνικές πληροφορίες: </i>Αυτό είναι από /proc/*/cmdline"
+
+#: ProcessModel.cpp:1169
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the amount of memory used by the "
+"Xorg process for images for this process.  This is memory used in addition "
+"to Memory and Shared Memory.<br><i>Technical information: </i>This only "
+"counts the pixmap memory, and does not include resource memory used by "
+"fonts, cursors, glyphsets etc.  See the <code>xrestop</code> program for a "
+"more detailed breakdown."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Αυτό είναι το σύνολο της μνήμης που "
+"χρησιμοποιείται από τη διεργασία του Xorg για εικόνες σε αυτή τη διεργασία.  "
+"Αυτή η μνήμη χρησιμοποιείται επιπρόσθετα της μνήμης και της κοινόχρηστης "
+"μνήμης.<br><i>Τεχνικές πληροφορίες: </i>Αυτό μετράει μόνο τη μνήμη pixmap, "
+"και δεν περιλαμβάνει τους πόρους της μνήμης που χρησιμοποιούνται από τις "
+"γραμματοσειρές, δρομείς, glyphsets κτλ.  Βλέπε το πρόγραμμα <code>xrestop</"
+"code> για περισσότερο λεπτομερή ανάλυση."
+
+#: ProcessModel.cpp:1174
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>For each X11 window, the X11 property "
+"_NET_WM_PID is used to map the window to a PID.  If a process' windows are "
+"not shown, then that application incorrectly is not setting _NET_WM_PID."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Για κάθε παράθυρο X11, η ιδιότητα του "
+"X11_NET_WM_PID χρησιμοποιείται για να καθορίζει το παράθυρο με ένα PID.  Εάν "
+"η διεργασία των παραθύρων δεν εμφανίζεται, τότε η εφαρμογή λανθασμένα δεν "
+"θέτει το _NET_WM_PID."
+
+#: ProcessModel.cpp:1178
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This is the Process ID.  A multi-threaded "
+"application is treated a single process, with all threads sharing the same "
+"PID.  The CPU usage etc will be the total, accumulated, CPU usage of all the "
+"threads."
+msgstr ""
+"<qt><i>Τεχνικές πληροφορίες: </i>Αυτό είναι το ID της διεργασίας.  Μια "
+"πολυνηματική εφαρμογή αντιμετωπίζεται ως μία διεργασία, με όλα τα νήματα να "
+"μοιράζονται το ίδιο PID.  Η χρήση της ΚΜΕ κτλ. θα είναι η συνολική, "
+"συσσωρευμένη, χρήση της ΚΜΕ όλων των νημάτων."
+
+#: ProcessModel.cpp:1183
+#, kde-format
+msgid ""
+"<qt>This column shows the IO statistics for each process. The tooltip "
+"provides the following information:<br><table><tr><td>Characters Read</"
+"td><td>The number of bytes which this task has caused to be read from "
+"storage. This is simply the sum of bytes which this process passed to read() "
+"and pread(). It includes things like tty IO and it is unaffected by whether "
+"or not actual physical disk IO was required (the read might have been "
+"satisfied from pagecache).</td></tr><tr><td>Characters Written</td><td>The "
+"number of bytes which this task has caused, or shall cause to be written to "
+"disk. Similar caveats apply here as with Characters Read.</td></"
+"tr><tr><td>Read Syscalls</td><td>The number of read I/O operations, i.e. "
+"syscalls like read() and pread().</td></tr><tr><td>Write Syscalls</"
+"td><td>The number of write I/O operations, i.e. syscalls like write() and "
+"pwrite().</td></tr><tr><td>Actual Bytes Read</td><td>The number of bytes "
+"which this process really did cause to be fetched from the storage layer. "
+"Done at the submit_bio() level, so it is accurate for block-backed "
+"filesystems. This may not give sensible values for NFS and CIFS filesystems."
+"</td></tr><tr><td>Actual Bytes Written</td><td>Attempt to count the number "
+"of bytes which this process caused to be sent to the storage layer. This is "
+"done at page-dirtying time.</td></table><p>The number in brackets shows the "
+"rate at which each value is changing, determined from taking the difference "
+"between the previous value and the new value, and dividing by the update "
+"interval.<p><i>Technical information: </i>This data is collected from /proc/"
+"*/io and is documented further in Documentation/accounting and Documentation/"
+"filesystems/proc.txt in the kernel source."
+msgstr ""
+"<qt>Αυτή η στήλη εμφανίζει τα στατιστικά στοιχεία εισόδου/εξόδου για κάθε "
+"διεργασία. Η υπόδειξη παρέχει τις ακόλουθες πληροφορίες:"
+"<br><table><tr><td>Διαβασμένοι χαρακτήρες</td><td>Ο αριθμός των bytes για τα "
+"οποία η αιτία που διαβάστηκαν από το χώρο αποθήκευσης είναι αυτή η εργασία. "
+"Αυτό είναι απλά το άθροισμα των bytes που η διαδικασία πέρασε στο read() και "
+"pread(). Περιλαμβάνει πράγματα όπως είσοδος/έξοδος τερματικού και δεν "
+"επηρεάζεται από το αν απαιτήθηκε πραγματική λειτουργία εισόδου/εξόδου στο "
+"φυσικό δίσκο (η ανάγνωση μπορεί να ικανοποιήθηκε από τη λανθάνουσα μνήμη).</"
+"td></tr><tr><td>Γραμμένοι χαρακτήρες</td><td>Ο αριθμός των bytes που η "
+"εργασία αυτή ήταν ή θα γίνει η αιτία για να γραφτούν στον δίσκο. Ισχύουν "
+"προειδοποιήσεις παρόμοιες με αυτές στο Διαβασμένοι χαρακτήρες.</td></"
+"tr><tr><td>Κλήσεις συστήματος για ανάγνωση</td><td>Ο αριθμός των εργασιών "
+"εισόδου/εξόδου για αναγνώσεις, δηλ. κλήσεις συστήματος όπως read() και "
+"pread().</td></tr><tr><td>Κλήσεις συστήματος για εγγραφή</td><td>Ο αριθμός "
+"των εργασιών εισόδου-εξόδου για εγγραφές, δηλ. κλήσεις συστήματος όπως "
+"write() και pwrite().</td></tr><tr><td>Τα πραγματικά bytes που διαβάστηκαν</"
+"td><td>Ο αριθμός των bytes που η πραγματική αιτία που διαβάστηκαν από τη "
+"συσκευή αποθήκευσης είναι αυτή η διεργασία. Λειτουργεί στο επίπεδο "
+"submit_bio() και έτσι είναι ακριβές για συστήματα αρχείων block-backed. Αυτή "
+"η λειτουργία μπορεί να μην δώσει λογικές τιμές για συστήματα αρχείων NFS και "
+"CIFS.</td></tr><tr><td>Τα πραγματικά bytes που γράφτηκαν</td><td>Αποπειράται "
+"να μετρήσει τον αριθμό των bytes που η αιτία που στάλθηκαν στη συσκευή "
+"αποθήκευσης είναι αυτή η διεργασία. Αυτό γίνεται σε χρόνο page-dirtying.</"
+"td></table><p>Ο αριθμός σε παρένθεση δείχνει το ρυθμό που αλλάζει κάθε τιμή, "
+"υπολογισμένος από τη διαφορά μεταξύ προηγούμενης και επόμενης τιμής, "
+"διαιρεμένη με το διάστημα ανανέωσης<p><i>Τεχνικές πληροφορίες: </i>Αυτά τα "
+"δεδομένα συλλέγονται από το /proc/*/io και τεκμηριώνονται περαιτέρω στο "
+"Documentation/accounting και Documentation/filesystems/proc.txt στο πηγαίο "
+"κώδικα του πυρήνα."
+
+#: ProcessModel.cpp:1203
+#, kde-format
+msgid ""
+"<qt><i>Technical information: </i>This shows Linux Control Group (cgroup) "
+"membership, retrieved from /proc/[pid]/cgroup. Control groups are used by "
+"Systemd and containers for limiting process group's usage of resources and "
+"to monitor them."
+msgstr ""
+
+#: ProcessModel.cpp:1207
+#, fuzzy, kde-format
+#| msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
+msgid ""
+"<qt><i>Technical information: </i>This shows Mandatory Access Control "
+"(SELinux or AppArmor) context, retrieved from /proc/[pid]/attr/current."
+msgstr "<qt><i>Τεχνικές πληροφορίες: </i>Αυτό είναι από /proc/*/cmdline"
+
+#: ProcessModel.cpp:1211
+#, kde-format
+msgid ""
+"<i>Technical information:</i> This is often referred to as \"Proportional "
+"Set Size\" and is the closest approximation of the real amount of total "
+"memory used by a process. Note that the number of applications sharing "
+"shared memory is determined per shared memory section and thus can vary per "
+"memory section."
+msgstr ""
+
+#: ProcessModel.cpp:1294
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Login Name:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Όνομα σύνδεσης:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1298
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para>This user is not recognized for some reason.</para>"
+msgstr "<para>Για κάποιον λόγο ο χρήστης αυτός δεν αναγνωρίζεται.</para>"
+
+#: ProcessModel.cpp:1301
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>%1</emphasis></para>"
+msgstr "<para><emphasis strong='true'>%1</emphasis></para>"
+
+#: ProcessModel.cpp:1303
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Login Name:</emphasis> %1 (uid: %2)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Όνομα σύνδεσης:</emphasis> %1 (uid: %2)</para>"
+
+#: ProcessModel.cpp:1308
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Room Number:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>  Αριθμός δωματίου:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1311
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>  Work Phone:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>  Τηλέφωνο εργασίας:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1316
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective User:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Ενεργός χρήστης:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1318
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid User:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Χρήστης Setuid:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1321
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System User:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήστης συστήματος αρχείων:</emphasis> %1</"
+"para>"
+
+#: ProcessModel.cpp:1325
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Ομάδα:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1328
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Effective Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Ενεργή ομάδα:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1330
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Setuid Group:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Ομάδα Setuid:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1333
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>File System Group:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Ομάδα συστήματος αρχείων:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1342
+#, kde-format
+msgctxt "Short description of a process. PID, name, user"
+msgid "%1: %2, owned by user %3"
+msgstr "%1: %2, ανήκουν στον χρήστη %3"
+
+#: ProcessModel.cpp:1353
+#, kde-format
+msgctxt "Group name and group id"
+msgid "%1 (gid: %2)"
+msgstr "%1 (gid: %2)"
+
+#: ProcessModel.cpp:1375
+#, kde-format
+msgctxt "User name and user id"
+msgid "%1 (uid: %2)"
+msgstr "%1 (uid: %2)"
+
+#: ProcessModel.cpp:1441
+#, kde-format
+msgctxt "scheduler"
+msgid "Idle"
+msgstr "Αδρανής"
+
+#: ProcessModel.cpp:1443
+#, kde-format
+msgctxt "scheduler"
+msgid "(Batch) %1"
+msgstr "(Ομαδικός) %1"
+
+#: ProcessModel.cpp:1445
+#, kde-format
+msgctxt "Round robin scheduler"
+msgid "RR %1"
+msgstr "RR %1"
+
+#: ProcessModel.cpp:1448
+#, kde-format
+msgctxt "Real Time scheduler"
+msgid "RT"
+msgstr "RT"
+
+#: ProcessModel.cpp:1450
+#, kde-format
+msgctxt "First in first out scheduler"
+msgid "FIFO %1"
+msgstr "FIFO %1"
+
+#: ProcessModel.cpp:1452
+#, kde-format
+msgctxt "scheduler"
+msgid "(IA) %1"
+msgstr "(IA) %1"
+
+#: ProcessModel.cpp:1523 ProcessModel.cpp:1531 ProcessModel.cpp:1548
+#: ProcessModel.cpp:1556
+#, kde-format
+msgid "%1/s"
+msgstr "%1/δ"
+
+#: ProcessModel.cpp:1595
+#, kde-kuit-format
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (%2)"
+msgstr "Γίνεται αποσφαλμάτωση αυτής της διεργασίας από το %1 (%2)"
+
+#: ProcessModel.cpp:1617
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para>The parent of all other processes and cannot be "
+"killed.</para><para><emphasis strong='true'>Process ID:</emphasis> %2</para>"
+msgstr ""
+"<title>%1</title><para>Η γονική διεργασία όλων των άλλων διεργασιών και δεν "
+"μπορεί να σκοτωθεί.</para><para><emphasis strong='true'>ID διεργασίας:</"
+"emphasis> %2</para>"
+
+#: ProcessModel.cpp:1623
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>KThreadd</title><para>Manages kernel threads. The children processes "
+"run in the kernel, controlling hard disk access, etc.</para>"
+msgstr ""
+"<title>KThreadd</title><para> Διαχειρίζεται τα νήματα του πυρήνα. Οι "
+"διεργασίες απόγονοί εκτελούνται στον πυρήνα, ελέγχοντας την πρόσβαση στον "
+"δίσκο, κλπ.</para>"
+
+#: ProcessModel.cpp:1627
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>ID διεργασίας:</emphasis> %2</"
+"para>"
+
+#: ProcessModel.cpp:1635
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent:</emphasis> %3</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %4</para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>ID διεργασίας:</emphasis> %2</"
+"para><para><emphasis strong='true'>Γονέας:</emphasis> %3</"
+"para><para><emphasis strong='true'>ID γονέα:</emphasis> %4</para>"
+
+#: ProcessModel.cpp:1645
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<title>%1</title><para><emphasis strong='true'>Process ID:</emphasis> %2</"
+"para><para><emphasis strong='true'>Parent's ID:</emphasis> %3</para>"
+msgstr ""
+"<title>%1</title><para><emphasis strong='true'>ID διεργασίας:</emphasis> %2</"
+"para><para><emphasis strong='true'>ID γονέα:</emphasis> %3</para>"
+
+#: ProcessModel.cpp:1654 ProcessModel.cpp:1755
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Number of threads:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Αριθμός νημάτων:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1656
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Command:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Εντολή:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1659 ProcessModel.cpp:1690
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Running on:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Εκτελείται στο:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1674
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Clock ticks since system boot:</emphasis> %1</"
+"para><para><emphasis strong='true'>Seconds since system boot:</emphasis> %2 "
+"(System boot time: %3)</para><para><emphasis strong='true'>Absolute start "
+"time:</emphasis> %4</para><para><emphasis strong='true'>Relative start time:"
+"</emphasis> %5</para>"
+msgstr ""
+"<para><emphasis strong='true'>Τικ ρολογιού από την εκκίνηση του συστήματος:</"
+"emphasis> %1</para><para><emphasis strong='true'>Δευτερόλεπτα από την "
+"εκκίνηση του συστήματος:</emphasis> %2 (χρονική στιγμή εκκίνησης συστήματος: "
+"%3)</para><para><emphasis strong='true'>Απόλυτη χρονική στιγμή έναρξης:</"
+"emphasis> %4</para><para><emphasis strong='true'>Σχετική χρονική στιγμή "
+"έναρξης:</emphasis> %5</para>"
+
+#: ProcessModel.cpp:1686
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This process was run with the following "
+"command:</emphasis></para><para>%1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Αυτή η διεργασία εκτελέστηκε με την παρακάτω "
+"εντολή:</emphasis></para><para>%1</para>"
+
+#: ProcessModel.cpp:1711 ProcessModel.cpp:1777
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Nice level:</emphasis> %1 (%2)</para>"
+msgstr "<para><emphasis strong='true'>Επίπεδο nice:</emphasis> %1 (%2)</para>"
+
+#: ProcessModel.cpp:1718
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>This is a real time process.</emphasis></"
+"para><para><emphasis strong='true'>Scheduler priority:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Αυτή είναι μια διεργασία πραγματικού χρόνου.</"
+"emphasis></para><para><emphasis strong='true'>Προτεραιότητα στον χρονικό "
+"προγραμματιστή:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1726
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>Scheduler:</emphasis> %1</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρονικός προγραμματιστής:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1732 ProcessModel.cpp:1784
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Nice level:</emphasis> %1 (%2)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Επίπεδο Nice Ει/Εξ:</emphasis> %1 (%2)</para>"
+
+#: ProcessModel.cpp:1735 ProcessModel.cpp:1787
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>I/O Class:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Κλάση I/O:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1746
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Process status:</emphasis> %1 %2</"
+"para><para><emphasis strong='true'>User CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>System CPU usage:</emphasis> %4%</para>"
+msgstr ""
+"<para><emphasis strong='true'>Κατάσταση διεργασίας:</emphasis> %1 %2</"
+"para><para><emphasis strong='true'>Χρήση ΚΜΕ χρήστη:</emphasis> %3%</"
+"para><para><emphasis strong='true'>Χρήση ΚΜΕ συστήματος:</emphasis> %4%</"
+"para>"
+
+#: ProcessModel.cpp:1758
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Number of children:</emphasis> %1</"
+"para><para><emphasis strong='true'>Total User CPU usage:</emphasis> %2%</"
+"para><para><emphasis strong='true'>Total System CPU usage:</emphasis> %3%</"
+"para><para><emphasis strong='true'>Total CPU usage:</emphasis> %4%</para>"
+msgstr ""
+"<para><emphasis strong='true'>Αριθμός απογόνων:</emphasis> %1</"
+"para><para><emphasis strong='true'>Συνολική χρήση ΚΜΕ χρήστη:</emphasis> "
+"%2%</para><para><emphasis strong='true'>Συνολική χρήση ΚΜΕ συστήματος:</"
+"emphasis> %3%</para><para><emphasis strong='true'>Συνολική χρήση ΚΜΕ:</"
+"emphasis> %4%</para>"
+
+#: ProcessModel.cpp:1769
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running as user:</emphasis> %1 "
+"seconds</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρόνος της ΚΜΕ που δαπανήθηκε ως χρήστης:</"
+"emphasis>%1 δευτερόλεπτα</para>"
+
+#: ProcessModel.cpp:1773
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>CPU time spent running in kernel:</emphasis> "
+"%1 seconds</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρόνος της ΚΜΕ που δαπανήθηκε στον πυρήνα:</"
+"emphasis> %1 δευτερόλεπτα</para>"
+
+#: ProcessModel.cpp:1803
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Memory usage:</emphasis> %1 out of %2  (%3 %)</"
+"para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήση μνήμης:</emphasis> %1 από %2  (%3 %)</"
+"para>"
+
+#: ProcessModel.cpp:1809
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<emphasis strong='true'>Memory usage:</emphasis> %1<br />"
+msgstr "<emphasis strong='true'>Χρήση μνήμης:</emphasis> %1<br />"
+
+#: ProcessModel.cpp:1813
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1 out of %2  (%3 "
+"%)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήση μνήμης RSS:</emphasis> %1 από %2  (%3 "
+"%)</para>"
+
+#: ProcessModel.cpp:1819
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "<para><emphasis strong='true'>RSS Memory usage:</emphasis> %1</para>"
+msgstr "<para><emphasis strong='true'>Χρήση μνήμης RSS:</emphasis> %1</para>"
+
+#: ProcessModel.cpp:1826 ProcessModel.cpp:1887
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Your system does not seem to have this "
+"information available to be read.</emphasis></para>"
+msgstr ""
+"<para><emphasis strong='true'>Το σύστημά σας δε φαίνεται να έχει αυτές τις "
+"πληροφορίες διαθέσιμες για ανάγνωση.</emphasis></para>"
+
+#: ProcessModel.cpp:1830
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1 out "
+"of %2  (%3 %)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήση μνήμης κοινόχρηστων βιβλιοθηκών:</"
+"emphasis> %1 από %2  (%3 %)</para>"
+
+#: ProcessModel.cpp:1836 ProcessModel.cpp:1897
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Shared library memory usage:</emphasis> %1</"
+"para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήση μνήμης κοινόχρηστων βιβλιοθηκών:</"
+"emphasis> %1</para>"
+
+#: ProcessModel.cpp:1843
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Characters read:</emphasis> %1 (%2 KiB/s)</"
+"para><para><emphasis strong='true'>Characters written:</emphasis> %3 (%4 KiB/"
+"s)</para><para><emphasis strong='true'>Read syscalls:</emphasis> %5 (%6 "
+"s⁻¹)</para><para><emphasis strong='true'>Write syscalls:</emphasis> %7 (%8 "
+"s⁻¹)</para><para><emphasis strong='true'>Actual bytes read:</emphasis> %9 "
+"(%10 KiB/s)</para><para><emphasis strong='true'>Actual bytes written:</"
+"emphasis> %11 (%12 KiB/s)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Διαβασμένοι χαρακτήρες:</emphasis> %1 (%2 KiB/"
+"s)</para><para><emphasis strong='true'>Γραμμένοι χαρακτήρες:</emphasis> %3 "
+"(%4 KiB/s)</para><para><emphasis strong='true'>Διαβασμένα syscalls:</"
+"emphasis> %5 (%6 s⁻¹)</para><para><emphasis strong='true'>Γραμμένα syscalls:"
+"</emphasis> %7 (%8 s⁻¹)</para><para><emphasis strong='true'>Πραγματικά "
+"διαβασμένα bytes:</emphasis> %9 (%10 KiB/s)</para><para><emphasis "
+"strong='true'>Πραγματικά γραμμένα bytes:</emphasis> %11 (%12 KiB/s)</para>"
+
+#: ProcessModel.cpp:1891
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info:tooltip"
+#| msgid ""
+#| "<para><emphasis strong='true'>Memory usage:</emphasis> %1 out of %2  (%3 "
+#| "%)</para>"
+msgctxt "@info:tooltip"
+msgid ""
+"<para><emphasis strong='true'>Total memory usage:</emphasis> %1 out of %2  "
+"(%3 %)</para>"
+msgstr ""
+"<para><emphasis strong='true'>Χρήση μνήμης:</emphasis> %1 από %2  (%3 %)</"
+"para>"
+
+#: ProcessModel.cpp:2181
+#, kde-format
+msgctxt "process heading"
+msgid "Name"
+msgstr "Όνομα"
+
+#: ProcessModel.cpp:2182
+#, kde-format
+msgctxt "process heading"
+msgid "Username"
+msgstr "Όνομα χρήστη"
+
+#: ProcessModel.cpp:2183
+#, kde-format
+msgctxt "process heading"
+msgid "PID"
+msgstr "PID"
+
+#: ProcessModel.cpp:2184
+#, kde-format
+msgctxt "process heading"
+msgid "TTY"
+msgstr "TTY"
+
+#: ProcessModel.cpp:2185
+#, kde-format
+msgctxt "process heading"
+msgid "Niceness"
+msgstr "Niceness"
+
+#: ProcessModel.cpp:2187
+#, no-c-format, kde-format
+msgctxt "process heading"
+msgid "CPU %"
+msgstr "ΚΜΕ %"
+
+#: ProcessModel.cpp:2188
+#, kde-format
+msgctxt "process heading"
+msgid "CPU Time"
+msgstr "Χρόνος ΚΜΕ"
+
+#: ProcessModel.cpp:2189
+#, kde-format
+msgctxt "process heading"
+msgid "IO Read"
+msgstr "Ανάγνωση Ει/Εξ"
+
+#: ProcessModel.cpp:2190
+#, kde-format
+msgctxt "process heading"
+msgid "IO Write"
+msgstr "Εγγραφή Ει/Εξ"
+
+#: ProcessModel.cpp:2191
+#, kde-format
+msgctxt "process heading"
+msgid "Virtual Size"
+msgstr "Εικονικό μέγεθος"
+
+#: ProcessModel.cpp:2192
+#, kde-format
+msgctxt "process heading"
+msgid "Memory"
+msgstr "Μνήμη"
+
+#: ProcessModel.cpp:2193
+#, kde-format
+msgctxt "process heading"
+msgid "Shared Mem"
+msgstr "Κοινόχρηστη μνήμη"
+
+#: ProcessModel.cpp:2194
+#, kde-format
+msgctxt "process heading"
+msgid "Relative Start Time"
+msgstr "Σχετική χρονική στιγμή έναρξης"
+
+#: ProcessModel.cpp:2195
+#, kde-format
+msgctxt "process heading"
+msgid "NNP"
+msgstr ""
+
+#: ProcessModel.cpp:2196
+#, kde-format
+msgctxt "process heading"
+msgid "Command"
+msgstr "Εντολή"
+
+#: ProcessModel.cpp:2199
+#, kde-format
+msgctxt "process heading"
+msgid "X11 Memory"
+msgstr "Μνήμη X11"
+
+#: ProcessModel.cpp:2200
+#, kde-format
+msgctxt "process heading"
+msgid "Window Title"
+msgstr "Τίτλος παραθύρου"
+
+#: ProcessModel.cpp:2203
+#, fuzzy, kde-format
+#| msgid "Group: %1"
+msgctxt "process heading"
+msgid "CGroup"
+msgstr "Ομάδα: %1"
+
+#: ProcessModel.cpp:2204
+#, kde-format
+msgctxt "process heading"
+msgid "MAC Context"
+msgstr ""
+
+#: ProcessModel.cpp:2205
+#, fuzzy, kde-format
+#| msgctxt "process heading"
+#| msgid "Memory"
+msgctxt "process heading"
+msgid "Total Memory"
+msgstr "Μνήμη"
+
+#: ProcessModel.cpp:2327
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:39
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Attempt to kill the "
+"currently selected process by sending it the SIGTERM signal.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Technical information: </span><br />The SIGTERM signal is sent to "
+"the given process. If there are insufficient privileges to do so, by default "
+"a password is requested.<br />By running the program <span style=\" font-"
+"family:'Courier New,courier';\">polkit-kde-authorization</span> you can give "
+"certain (or all) users permission to kill any process, without requiring a "
+"password. </p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Προσπάθεια τερματισμού της "
+"τρέχουσας επιλεγμένης διεργασίας αποστέλλοντας σήμα SIGTERM</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Τεχνικές πληροφορίες: </span><br />Το σήμα SIGTERM αποστέλλεται "
+"στην δεδομένη διεργασία. Εάν υπάρχουν ανεπαρκή δικαιώματα για να εκτελεστεί, "
+"προκαθορισμένα θα σας ζητηθεί ο κωδικός.<br />Εκτελώντας το πρόγραμμα <span "
+"style=\" font-family:'Courier New,courier';\">polkit-kde-authorization</"
+"span> μπορείτε να δώσετε σε συγκεκριμένο (ή σε όλους) τους χρήστες "
+"δικαιώματα τερματισμού οποιασδήποτε διεργασίας, χωρίς απαίτηση κωδικού. </"
+"p></body></html>"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnKillProcess)
+#: ProcessWidgetUI.ui:42
+#, kde-format
+msgid "&End Process..."
+msgstr "&Τερματισμός διεργασίας..."
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:58
+#, kde-format
+msgid ""
+"Type comma separated search terms or regular expressions to filter the "
+"process list"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, txtFilter)
+#: ProcessWidgetUI.ui:69
+#, kde-format
+msgid ""
+"Filter which processes are shown by the text given here.  The text can be a "
+"partial string match of the Name, Command or Window Title of the process.  "
+"It can also be a Username or a Process ID number.<p>\n"
+"For example:\n"
+"\n"
+"<table>\n"
+"<tr><th>ksys</th><td>Show processes containing \"<b>ksys</b>\" in the name, "
+"for example the processes \"<i>ksysguard</i>\" and \"<i>ksysguardd</i>\"."
+"<td></tr>\n"
+"<tr><th>root</th><td>Show processes owned by <b>root</b>.  For example "
+"<i>init</i></td></tr>\n"
+"<tr><th>1234</th><td>Show the processes with the PID or Parent PID of "
+"<b>1234</b>.</td></th></tr>\n"
+"</table>\n"
+msgstr ""
+"Φιλτράρετε ποιες διεργασίες θα εμφανίζονται με βάση το κείμενο που δόθηκε "
+"εδώ.  Το κείμενο μπορεί να είναι ένα μέρος μιας συμβολοσειράς που να "
+"ταιριάζει στο όνομα, την εντολή ή το τίτλο του παραθύρου της διεργασίας.  "
+"Επίσης μπορεί να χρησιμοποιηθεί το όνομα χρήστη ή το ο αριθμός ID της "
+"διεργασίας.<p>\n"
+"Για παράδειγμα:\n"
+"\n"
+"<table>\n"
+"<tr><th>ksys</th><td>εμφάνιση διεργασιών που περιέχουν \"<b>ksys</b>\" στο "
+"όνομα, για παράδειγμα \"<i>ksysguard</i>\" και \"<i>ksysguardd</i>\".<td></"
+"tr>\n"
+"<tr><th>root</th><td>Εμφάνιση διεργασιών που εκτελούνται από τον <b>root</"
+"b>.  Για παράδειγμα <i>init</i></td></tr>\n"
+"<tr><th>1234</th><td>Εμφάνιση διεργασιών με PID ή γονικό PID <b>1234</b>.</"
+"td></th></tr>\n"
+"</table>\n"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:101
+#, kde-format
+msgid ""
+"<qt>Change which processes are shown, and how they are shown.  The processes "
+"can be further filtered by using the Quick Search text filter.<p>\n"
+"<table>\n"
+"<tr><td>All Processes</td><td>Show all the processes on the system.</td></"
+"tr>\n"
+"<tr><td>All Processes, tree</td><td>Show all the processes on the system, in "
+"a hierarchical manner using the parent PID information.</td></tr>\n"
+"<tr><td>System Processes</td><td>Show processes running as root and as a "
+"user who cannot login.</td></tr>\n"
+"<tr><td>User Processes</td><td>Show processes running as a non-root user who "
+"can login.</td></tr>\n"
+"<tr><td>Own Processes</td><td>Show processes owned by the same user that "
+"this process is owned by.</td></tr>\n"
+"<tr><td>Programs Only</td><td>Show processes which are running as a user who "
+"can login and are either attached to a TTY or have at least one X11 Window.</"
+"td></tr>\n"
+"</table>\n"
+"<p>\n"
+"<i>Technical Information:</i><br>\n"
+"Processes with multiple threads are just shown as a single process, and not "
+"treated any differently.<br>\n"
+"Kernel threads are shown as normal processes, but are actually running "
+"inside the kernel and are not real processes.  As such, many of the fields "
+"(such as Username) do not apply.\n"
+msgstr ""
+"<qt>Αλλάξτε ποιες διεργασίες θα εμφανίζονται και πως θα εμφανίζονται. Οι "
+"διεργασίες μπορούν να φιλτραριστούν περαιτέρω χρησιμοποιώντας το φίλτρο "
+"κειμένου γρήγορης αναζήτησης.<p>\n"
+"<table>\n"
+"<tr><td>Όλες οι διεργασίες</td><td>Εμφάνιση όλων των διεργασιών του "
+"συστήματος.</td></tr>\n"
+"<tr><td>Όλες οι διεργασίες, δέντρο</td><td>Εμφάνιση όλων των διεργασιών του "
+"συστήματος, σε ιεραρχημένη μορφή χρησιμοποιώντας τις πληροφορίες του γονικού "
+"ID.</td></tr>\n"
+"<tr><td>Διεργασίες συστήματος</td><td>Εμφάνιση όλων των διεργασιών που "
+"εκτελούνται ως ριζικές ή και από χρήστη που δεν έχει τη δυνατότητα να "
+"συνδεθεί.</td></tr>\n"
+"<tr><td>Διεργασίες χρήστη</td><td>Εμφάνιση των διεργασιών που εκτελούνται "
+"από μη ριζικό χρήστη που έχει τη δυνατότητα να συνδεθεί.</td></tr>\n"
+"<tr><td>Δικές μου διεργασίες</td><td>Εμφάνιση των διεργασιών που ανήκουν "
+"στον χρήστη που είναι ο ιδιοκτήτης αυτής της διεργασίας.</td></tr>\n"
+"<tr><td>Μόνο προγράμματα</td><td>Εμφάνιση των διεργασιών που εκτελούνται από "
+"χρήστη που έχει τη δυνατότητα να συνδεθεί και ή είναι συνδεδεμένες σε ένα "
+"τερματικό ή έχει τουλάχιστον ένα παράθυρο X11</td></tr>\n"
+"</table>\n"
+"<p>\n"
+"<i>Τεχνικές πληροφορίες:</i><br>\n"
+"Οι διεργασίες με πολλαπλά νήματα εμφανίζονται ως μία διεργασία και δεν "
+"υπάρχει ειδική μεταχείριση για αυτές.<br>\n"
+"Τα νήματα του πυρήνα εμφανίζονται σαν κανονικές διεργασίες, αλλά στην "
+"πραγματικότητα εκτελούνται μέσα στον πυρήνα και δεν είναι πραγματικές "
+"διεργασίες. Έτσι, πολλά από τα πεδία (όπως το όνομα χρήστη) δεν "
+"εφαρμόζονται.\n"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:111
+#, kde-format
+msgid "All Processes"
+msgstr "Όλες οι διεργασίες"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:116
+#, kde-format
+msgid "All Processes, Tree"
+msgstr "Όλες οι διεργασίες, δέντρο"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:121
+#, kde-format
+msgid "System Processes"
+msgstr "Διεργασίες συστήματος"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:126
+#, kde-format
+msgid "User Processes"
+msgstr "Διεργασίες χρήστη"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:131
+#, kde-format
+msgid "Own Processes"
+msgstr "Δικές μου διεργασίες"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilter)
+#: ProcessWidgetUI.ui:136
+#, kde-format
+msgid "Programs Only"
+msgstr "Μόνο προγράμματα"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnTools)
+#: ProcessWidgetUI.ui:144
+#, kde-format
+msgid "Tools"
+msgstr ""
+
+#: ReniceDlg.cpp:28
+#, kde-format
+msgid "Set Priority"
+msgstr "Ορίστε προτεραιότητα"
+
+#: ReniceDlg.cpp:63
+#, kde-format
+msgctxt "Scheduler"
+msgid "Interactive"
+msgstr "Διαδραστικό"
+
+#. i18n: ectx: property (text), widget (QLabel, lblMessage1)
+#: ReniceDlgUi.ui:23
+#, kde-format
+msgid "Change scheduling priority for:"
+msgstr "Αλλαγή προτεραιότητας για:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ReniceDlgUi.ui:100
+#, kde-format
+msgid "CPU Scheduler"
+msgstr "Χρονικός προγραμματιστής ΚΜΕ"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:129
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The standard time-sharing "
+"scheduler for processes without special requirements.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Ο τυπικός προγραμματισμός "
+"κοινής χρήσης του χρόνου για διεργασίες χωρίς ειδικές απαιτήσεις.</p></"
+"body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioNormal)
+#: ReniceDlgUi.ui:136
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling: Default Linux time-sharing  (Other)</span></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+"\">Normal<span style=\" font-weight:400;\"> is the standard Linux time-"
+"sharing scheduler that is intended for all processes that do not  require "
+"special static priority real-time mechanisms. The process to run is chosen "
+"from the list of other</span> Normal<span style=\" font-weight:400;\"> or </"
+"span>Batch<span style=\" font-weight:400;\"> processes based on a dynamic "
+"priority that is determined only inside this list. The dynamic priority is "
+"based on the priority level given and increased for each time-quantum the "
+"process is ready to run, but denied to run by the scheduler. This ensures "
+"fair progress among all Normal processes.</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Κανονικός χρονικός προγραμματιστής: Προκαθορισμένη κοινή χρήση "
+"χρόνου του Linux  (Άλλα)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+"\">Κανονικός<span style=\" font-weight:400;\"> είναι ο τυπικός "
+"προγραμματισμός κοινής χρήσης του χρόνου του Linux και προορίζεται για όλες "
+"τις διεργασίες που δεν απαιτούν ειδικούς μηχανισμούς στατικής προτεραιότητας "
+"πραγματικού χρόνου. Η διεργασία προς εκτέλεση επιλέγεται από τη λίστα των "
+"άλλων </span> κανονικών<span style=\" font-weight:400;\"> ή </"
+"span>ομαδικών<span style=\" font-weight:400;\"> διεργασιών με βάση μια "
+"δυναμική προτεραιότητα που ορίζεται μέσα στη λίστα. Η δυναμική προτεραιότητα "
+"βασίζεται στο δοσμένο επίπεδο προτεραιότητας και αυξάνεται για κάθε χρονικό "
+"διάστημα που η διεργασία είναι έτοιμη να εκτελεστεί, αλλά της το αρνείται ο "
+"χρονικός προγραμματιστής. Αυτό εξασφαλίζει την ισοδύναμη πρόοδο όλων των "
+"κανονικών διεργασιών.</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioNormal)
+#. i18n: ectx: property (text), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:139 ReniceDlgUi.ui:303
+#, kde-format
+msgid "Normal"
+msgstr "Κανονικός"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:149
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">For CPU-intensive non-"
+"interactive processes.  Process is mildly disfavored in scheduling decisions."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Για διεργασίες με έντονη "
+"χρήση του επεξεργαστή χωρίς απαίτηση διαδραστικότητας. Η διεργασία "
+"παραμερίζεται ελαφρά κατά τις αποφάσεις προγραμματισμού χρόνου.</p></body></"
+"html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:156
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Batch Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(Since Linux 2.6.16.)</"
+"span><span style=\" font-weight:400;\"> This policy is similar to </"
+"span>Normal<span style=\" font-weight:400;\">, except that this policy will "
+"cause the scheduler to always assume that the process is CPU-intensive.  "
+"Consequently, the scheduler will apply a small scheduling penalty so that "
+"this process is mildly disfavored in scheduling decisions. This policy is "
+"useful for workloads that are non-interactive, but do not want to lower "
+"their nice value, and for workloads that want a deterministic scheduling "
+"policy without interactivity causing extra preemptions (between the "
+"workload's tasks).</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Ομαδικός χρονικός προγραμματιστής</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><span "
+"style=\" font-weight:400; font-style:italic;\">(από το Linux 2.6.16.)</"
+"span><span style=\" font-weight:400;\">Αυτή η πολιτική είναι παρόμοια της  </"
+"span>Κανονικής<span style=\" font-weight:400;\">, εκτός από το ότι θα "
+"θεωρείται από το χρονικό προγραμματιστή ότι η διεργασία επιβαρύνει έντονα "
+"τον επεξεργαστή. Ως αποτέλεσμα ο χρονικός προγραμματιστής θα επιβάλει μια "
+"ποινή έτσι ώστε η διεργασία να υπολείπεται ελαφρά στο χρονικό "
+"προγραμματισμό. Η πολιτική αυτή είναι χρήσιμη για εργασίες μη διαδραστικές, "
+"αλλά που δεν είναι επιθυμητή η ελάττωση της τιμής nice, καθώς και για "
+"εργασίες στις οποίες είναι επιθυμητή μια προσδιορισμένη πολιτική "
+"προγραμματισμού χρόνου χωρίς την πρόκληση επιπλέον προδέσμευσης χρόνου "
+"(μεταξύ των διεργασιών της εργασίας).</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBatch)
+#: ReniceDlgUi.ui:159
+#, kde-format
+msgid "Batch"
+msgstr "Ομαδικός"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:169
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  Has Timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η διεργασία θα εκτελείται "
+"κάθε φορά που είναι διαθέσιμη. Υψηλότερη προτεραιότητα από το κανονικό ή το "
+"ομαδικό. Χρησιμοποιεί χρονικό κατακερματισμό.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:176
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Round Robin</span> is a simple enhancement of <span style=\" "
+"font-weight:600;\">FIFO</span>.  Everything described below for <span style="
+"\" font-weight:600;\">FIFO</span> also applies to <span style=\" font-"
+"weight:600;\">Round Robin</span>, except that each process is only allowed "
+"to run for a maximum time quantum.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Χρονικός προγραμματιστής Round Robin</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Το <span style=\" font-"
+"weight:600;\">Round Robin</span> είναι μια απλή βελτίωση του <span style=\" "
+"font-weight:600;\">FIFO</span>.  Ότι ισχύει για το <span style=\" font-"
+"weight:600;\">FIFO</span> ισχύει και για το <span style=\" font-weight:600;"
+"\">Round Robin</span>, με τη διαφορά ότι η εκτέλεση της κάθε διεργασίας δεν "
+"μπορεί να υπερβαίνει μια μέγιστη χρονική περίοδο.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRR)
+#: ReniceDlgUi.ui:179
+#, kde-format
+msgid "Round robin"
+msgstr "Round robin"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:189
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
+"runnable.  Higher priority than Normal or Batch.  No timeslicing.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η διεργασία θα εκτελείται "
+"κάθε φορά που είναι διαθέσιμη. Υψηλότερη προτεραιότητα από το κανονικό ή το "
+"ομαδικό. Χωρίς χρονικό κατακερματισμό..</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:196
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">First In-First Out Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">When  a  <span style=\" "
+"font-weight:600;\">FIFO</span> process  becomes  runnable,  it  will always "
+"immediately preempt any currently running <span style=\" font-weight:600;"
+"\">Normal</span> or <span style=\" font-weight:600;\">Batch</span> process.</"
+"p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Χρονικός προγραμματιστής First In-First Out</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Όταν εκτελείται μια "
+"διεργασία <span style=\"font-weight:600;\">FIFO</span>,  θα παραγκωνίζει "
+"πάντα και άμεσα οποιαδήποτε εκτελούμενη <span style=\" font-weight:600;"
+"\">Κανονική</span> ή <span style=\" font-weight:600;\">Ομαδική</span> "
+"διεργασία.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioFIFO)
+#: ReniceDlgUi.ui:199
+#, kde-format
+msgid "FIFO"
+msgstr "FIFO"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ReniceDlgUi.ui:264
+#, kde-format
+msgid "I/O Scheduler"
+msgstr "Χρονικός προγραμματιστής Ει/Εξ"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:293
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process's priority is "
+"based on the CPU priority.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η προτεραιότητα των "
+"διεργασιών εξαρτάται από την προτεραιότητα της ΚΜΕ.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIONormal)
+#: ReniceDlgUi.ui:300
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Normal Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This is the same as <span "
+"style=\" font-weight:600;\">Best Effort</span> scheduling, except that the "
+"priority is calculated automatically based on the CPU priority.  Processes "
+"with a higher priority will take priority for access to the hard disk.  "
+"Programs running at the same <span style=\" font-weight:600;\">Best Effort/"
+"Normal</span> priority are served in a <span style=\" font-weight:600;"
+"\">Round Robin</span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Κανονικός χρονικός προγραμματιστής</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Αυτό είναι ίδιο με το "
+"χρονικό προγραμματισμό <span style=\" font-weight:600;\">βέλτιστου έργου</"
+"span>, αλλά ή προτεραιότητα υπολογίζεται αυτόματα με βάση την προτεραιότητα "
+"της ΚΜΕ. Διεργασίες με μεγαλύτερη προτεραιότητα έχουν πρώτες πρόσβαση στο "
+"σκληρό δίσκο.  Προγράμματα που τρέχουν με ίδια προτεραιότητα <span style=\" "
+"font-weight:600;\"> βέλτιστου έργου/κανονική</span> εξυπηρετούνται μέσω του "
+"σχήματος <span style=\" font-weight:600;\">Round Robin</span>.</p></body></"
+"html>"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:313
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process can only use the "
+"hard disk when no other process has used it very recently.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Οι διεργασίες μπορούν να "
+"χρησιμοποιήσουν το σκληρό δίσκο μόνο όταν καμία άλλη διεργασία δεν τον έχει "
+"χρησιμοποιήσει πρόσφατα.</p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:320
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Idle Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A  program running with "
+"<span style=\" font-weight:600;\">Idle</span> I/O priority will only get "
+"disk time when no other program has asked for disk I/O for a defined grace "
+"period. The impact of <span style=\" font-weight:600;\">Idle</span> I/O "
+"processes on normal system activity should be zero. Priority is not "
+"applicable to this scheduling class.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Χρονικός προγραμματιστής αδράνειας</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Ένα πρόγραμμα που τρέχει "
+"με προτεραιότητα Ει/Εξ <span style=\" font-weight:600;\">αδράνειας</span> θα "
+"αποκτήσει πρόσβαση στο δίσκο μόνο όταν κανένα άλλο πρόγραμμα δεν έχει "
+"ζητήσει πρόσβαση σε αυτόν για συγκεκριμένη χρονική περίοδο. Οι διεργασίες "
+"<span style=\" font-weight:600;\">αδράνειας</span> Ει/Εξ δεν επηρεάζουν το "
+"συνολικό φόρτο του συστήματος. Σε αυτήν την κλάση χρονικού προγραμματισμού "
+"δεν υπάρχει προτεραιότητα.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioIdle)
+#: ReniceDlgUi.ui:323
+#, kde-format
+msgid "Idle"
+msgstr "Αδρανής"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:333
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process is given higher "
+"priority to access the hard disk than Normal.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η διεργασία λαμβάνει "
+"υψηλότερη προτεραιότητα από την Κανονική, για πρόσβαση στο σκληρό δίσκο.</"
+"p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:340
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Best Effort Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Processes with a higher "
+"priority will take priority for access to the hard disk.  Programs running "
+"at the same <span style=\" font-weight:600;\">Best Effort/Normal</span> "
+"priority are served in a <span style=\" font-weight:600;\">Round Robin</"
+"span> fashion.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Χρονικός προγραμματιστής βέλτιστου έργου</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Διεργασίες με μεγαλύτερη "
+"προτεραιότητα έχουν πρώτες πρόσβαση στο σκληρό δίσκο.  Προγράμματα που "
+"τρέχουν με ίδια προτεραιότητα <span style=\" font-weight:600;\"> βέλτιστου "
+"έργου/κανονική</span> εξυπηρετούνται μέσω του σχήματος <span style=\" font-"
+"weight:600;\">Round Robin</span>.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioBestEffort)
+#: ReniceDlgUi.ui:343
+#, kde-format
+msgid "Best effort"
+msgstr "Βέλτιστου έργου"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:353
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process gets immediate "
+"access to the hard disk whenever needed, regardless of what else is going on."
+"</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η διεργασία λαμβάνει άμεσα "
+"πρόσβαση στο σκληρό δίσκο ασχέτως από το τι άλλο τρέχει εκείνη την ώρα.</p></"
+"body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:360
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Real Time Scheduling</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The <span style=\" font-"
+"weight:600;\">Real Time</span> scheduling class is given first access to the "
+"disk, regardless of what else is going on in the system. Thus the <span "
+"style=\" font-weight:600;\">Real Time</span> class needs to be used with "
+"some care, as it can starve other processes. As with the <span style=\" font-"
+"weight:600;\">Best Effort</span> class, 8 priority levels are defined "
+"denoting how big a time slice a given process will receive on each "
+"scheduling window.</p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Χρονικός προγραμματιστής πραγματικού χρόνου</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Η κλάση κατανομής <span "
+"style=\" font-weight:600;\">πραγματικού χρόνου</span> λαμβάνει πρώτη "
+"πρόσβαση στο δίσκο, ασχέτως του τι άλλο τρέχει εκείνη την ώρα. Έτσι η κλάση "
+"<span style=\" font-weight:600;\">πραγματικού χρόνου</span> θα πρέπει να "
+"χρησιμοποιείται με προσοχή,  αφού μπορεί να κάνει τις υπόλοιπες διεργασίες "
+"να μην ανταποκρίνονται. Όπως και με την κλάση <span style=\"font-weight:600;"
+"\"> βέλτιστου έργου</span>, υπάρχουν 8 επίπεδα προτεραιότητας που καθορίζουν "
+"πόσος χρόνος θα δίνεται σε μία διεργασία.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioRealTime)
+#: ReniceDlgUi.ui:363
+#, kde-format
+msgid "Real time"
+msgstr "Πραγματικού χρόνου"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuLow)
+#. i18n: ectx: property (text), widget (QLabel, lblIOLow)
+#: ReniceDlgUi.ui:402 ReniceDlgUi.ui:470
+#, kde-format
+msgid "Low Priority"
+msgstr "Χαμηλή προτεραιότητα"
+
+#. i18n: ectx: property (text), widget (QLabel, lblCpuHigh)
+#. i18n: ectx: property (text), widget (QLabel, lblIOHigh)
+#: ReniceDlgUi.ui:409 ReniceDlgUi.ui:477
+#, kde-format
+msgid "High Priority"
+msgstr "Υψηλή προτεραιότητα"
+
+#: scripting.cpp:243
+#, fuzzy, kde-format
+#| msgid "QtWebKitWidgets not available"
+msgid "QtWebEngineWidgets not available"
+msgstr "Το QtWebKitWidgets δεν είναι διαθέσιμο"
+
+#: scripting.cpp:244
+#, fuzzy, kde-format
+#| msgid ""
+#| "KSysGuard library was compiled without QtWebKitWidgets, please contact "
+#| "your distribution."
+msgid ""
+"KSysGuard library was compiled without QtWebEngineWidgets, please contact "
+"your distribution."
+msgstr ""
+"Η βιβλιοθήκη KSysGuard μεταγλωττίστηκε χωρίς το QtWebKitWidgets, "
+"παρακαλείστε να επικοινωνήσετε με τη διανομή σας."
+
+#, fuzzy
+#~| msgctxt "process heading"
+#~| msgid "Command"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Run Command"
+#~ msgstr "Εντολή"
+
+#~ msgid ""
+#~ "You do not have the permission to renice the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Δεν έχετε άδεια να αλλάξετε τη προτεραιότητα της διεργασίας και "
+#~ "παρουσιάστηκε πρόβλημα κατά την προσπάθεια εκτέλεσης ως υπερχρήστης. "
+#~ "Σφάλμα %1 %2"
+
+#~ msgid ""
+#~ "You do not have the permission to kill the process and there was a "
+#~ "problem trying to run as root.  Error %1 %2"
+#~ msgstr ""
+#~ "Δεν έχετε επαρκή δικαιώματα για να τερματίσετε τη διεργασία και "
+#~ "παρουσιάστηκε πρόβλημα κατά την προσπάθεια εκτέλεσης ως υπερχρήστης. "
+#~ "Σφάλμα %1 %2"
+
+#, fuzzy
+#~| msgid "Memory usage: %1<br />"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Memory usage:</emphasis> %1<br />"
+#~ msgstr "Χρήση μνήμης: %1<br />"
+
+#~ msgid "Login Name: %1<br/>"
+#~ msgstr "Όνομα σύνδεσης: %1<br/>"
+
+#~ msgid "<b>%1</b><br/>"
+#~ msgstr "<b>%1</b><br/>"
+
+#~ msgid "Login Name: %1 (uid: %2)<br/>"
+#~ msgstr "Όνομα σύνδεσης: %1 (uid: %2)<br/>"
+
+#~ msgid "  Room Number: %1<br/>"
+#~ msgstr "  Αριθμός δωματίου: %1<br/>"
+
+#~ msgid "  Work Phone: %1<br/>"
+#~ msgstr "  Τηλέφωνο εργασίας: %1<br/>"
+
+#~ msgid "Effective User: %1<br/>"
+#~ msgstr "Ενεργός χρήστης: %1<br/>"
+
+#~ msgid "Setuid User: %1<br/>"
+#~ msgstr "Χρήστης Setuid: %1<br/>"
+
+#~ msgid "File System User: %1<br/>"
+#~ msgstr "Χρήστης συστήματος αρχείων: %1<br/>"
+
+#~ msgid "<br/>Effective Group: %1"
+#~ msgstr "<br/>Ενεργή ομάδα: %1"
+
+#~ msgid "<br/>Setuid Group: %1"
+#~ msgstr "<br/>Ομάδα Setuid: %1"
+
+#~ msgid "<br/>File System Group: %1"
+#~ msgstr "<br/>Ομάδα συστήματος αρχείων: %1"
+
+#~ msgid ""
+#~ "<b>Init</b> is the parent of all other processes and cannot be killed.<br/"
+#~ ">"
+#~ msgstr ""
+#~ "Το <b>Init</b> είναι η γονική διεργασία όλων των άλλων διεργασιών και δεν "
+#~ "μπορεί να σκοτωθεί.<br/>"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2"
+#~ msgstr "<b>%1</b><br />ID διεργασίας: %2"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent: %3<br />Parent's ID: %4"
+#~ msgstr "<b>%1</b><br />ID διεργασίας: %2<br />Γονέας: %3<br />ID γονέα: %4"
+
+#~ msgctxt "name column tooltip. first item is the name"
+#~ msgid "<b>%1</b><br />Process ID: %2<br />Parent's ID: %3"
+#~ msgstr "<b>%1</b><br />ID διεργασίας: %2<br />ID γονέα: %3"
+
+#~ msgid "<br/>Number of threads: %1"
+#~ msgstr "<br/>Αριθμός νημάτων: %1"
+
+#~ msgid "<br/>Command: %1"
+#~ msgstr "<br/>Εντολή: %1"
+
+#~ msgid "<br />Running on: %1"
+#~ msgstr "<br />Εκτελείται στο: %1"
+
+#~ msgid ""
+#~ "Clock ticks since system boot: %1<br/>Seconds since system boot: %2 "
+#~ "(System boot time: %3)<br/>Absolute start time: %4<br/>Relative start "
+#~ "time: %5"
+#~ msgstr ""
+#~ "Τικ ρολογιού από την εκκίνηση του συστήματος: %1<br/>Δευτερόλεπτα από την "
+#~ "εκκίνηση του συστήματος: %2 (Χρονική στιγμή εκκίνησης συστήματος: %3)<br/"
+#~ ">Απόλυτη χρονική στιγμή έναρξης: %4<br/>Σχετική χρονική στιγμή έναρξης: %5"
+
+#~ msgid "<br /><br />Running on: %1"
+#~ msgstr "<br /><br />Εκτελείται στο: %1"
+
+#~ msgid "Nice level: %1 (%2)"
+#~ msgstr "Επίπεδο nice: %1 (%2)"
+
+#~ msgid "This is a real time process.<br>Scheduler priority: %1"
+#~ msgstr ""
+#~ "Αυτή είναι μια διεργασία πραγματικού χρόνου.<br>Προτεραιότητα στο χρονικό "
+#~ "προγραμματιστή: %1"
+
+#~ msgid "<br/>Scheduler: %1"
+#~ msgstr "<br/>Χρονικός προγραμματιστής: %1"
+
+#~ msgid "<br/>I/O Nice level: %1 (%2)"
+#~ msgstr "<br />Επίπεδο Nice Ει/Εξ: %1 (%2)"
+
+#~ msgid "<br/>I/O Class: %1"
+#~ msgstr "<br/>Κλάση Ει/Εξ: %1"
+
+#~ msgid ""
+#~ "<qt><p style='white-space:pre'>Process status: %1 %2<br />User CPU usage: "
+#~ "%3%<br />System CPU usage: %4%"
+#~ msgstr ""
+#~ "<qt><p style='white-space:pre'>Κατάσταση διεργασίας: %1 %2<br />Χρήση ΚΜΕ "
+#~ "χρήστη: %3% <br />Χρήση ΚΜΕ συστήματος: %4%"
+
+#~ msgid ""
+#~ "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
+#~ "System CPU usage: %3%<br />Total CPU usage: %4%"
+#~ msgstr ""
+#~ "<br />Αριθμός απογόνων: %1<br />Συνολική χρήση ΚΜΕ χρήστη: %2%<br /"
+#~ ">Συνολική χρήση ΚΜΕ συστήματος: %3%<br />Συνολική χρήση ΚΜΕ: %4%"
+
+#~ msgid "<br />Nice level: %1 (%2)"
+#~ msgstr "<br />Επίπεδο Nice: %1 (%2)"
+
+#~ msgid "RSS Memory usage: %1"
+#~ msgstr "Χρήση μνήμης RRS: %1"
+
+#~ msgid "Shared library memory usage: %1"
+#~ msgstr "Χρήση μνήμης κοινόχρηστων βιβλιοθηκών: %1"
+
+#~ msgid ""
+#~ "Characters read: %1 (%2 KiB/s)<br>Characters written: %3 (%4 KiB/"
+#~ "s)<br>Read syscalls: %5 (%6 s⁻¹)<br>Write syscalls: %7 (%8 s⁻¹)<br>Actual "
+#~ "bytes read: %9 (%10 KiB/s)<br>Actual bytes written: %11 (%12 KiB/s)"
+#~ msgstr ""
+#~ "Διαβασμένοι χαρακτήρες: %1 (%2 KiB/s)<br>Γραμμένοι χαρακτήρες: %3 (%4 KiB/"
+#~ "s)<br>Διαβασμένα syscalls: %5 (%6 s⁻¹)<br>Γραμμένα syscalls: %7 (%8 "
+#~ "s⁻¹)<br>Πραγματικά διαβασμένα bytes: %9 (%10 KiB/s)<br>Πραγματικά "
+#~ "γραμμένα bytes: %11 (%12 KiB/s)"
+
+#~ msgid "%1 (gid: <numid>%2</numid>)"
+#~ msgstr "%1 (gid: <numid>%2</numid>)"
+
+#~ msgid "End Process..."
+#~ msgid_plural "End Processes..."
+#~ msgstr[0] "Τερματισμός διεργασίας..."
+#~ msgstr[1] "Τερματισμός διεργασιών..."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the CPU scheduler. "
+#~ "Aborting."
+#~ msgstr ""
+#~ "Δεν έχετε επαρκή δικαιώματα για να αλλάξετε το χρονικό προγραμματιστή της "
+#~ "ΚΜΕ. Εγκατάλειψη."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the CPU priority. "
+#~ "Aborting."
+#~ msgstr ""
+#~ "Δεν έχετε επαρκή δικαιώματα για να αλλάξετε την προτεραιότητα της ΚΜΕ. "
+#~ "Εγκατάλειψη."
+
+#~ msgid ""
+#~ "You do not have sufficient privileges to change the IO scheduler and "
+#~ "priority. Aborting."
+#~ msgstr ""
+#~ "Δεν έχετε επαρκή δικαιώματα για να αλλάξετε το χρονικό προγραμματιστή Ει/"
+#~ "Εξ και την προτεραιότητα. Εγκατάλειψη."
+
+#~ msgid "End process"
+#~ msgid_plural "End %1 processes"
+#~ msgstr[0] "Τερματισμός διεργασίας"
+#~ msgstr[1] "Τερματισμός %1 διεργασιών"
+
+#~ msgid "Scheduler priority: %1"
+#~ msgstr "Προτεραιότητα προγραμματιστή χρόνου: %1"
+
+#~ msgid "Monitoring I/O for %1 (%2)"
+#~ msgstr "Εποπτεία I/O για το %1 (%2)"
+
+#~ msgid ""
+#~ "The program '%1' (PID: %2) is being monitored for input and output "
+#~ "through any file descriptor (stdin, stdout, stderr, open files, network "
+#~ "connections, etc.).  Data being written by the process is shown in red "
+#~ "and data being read by the process is shown in blue."
+#~ msgstr ""
+#~ "Το πρόγραμμα '%1' (PID: %2) εποπτεύεται για είσοδο και έξοδο με "
+#~ "οποιονδήποτε περιγραφέα αρχείου (stdin, stdout, stderr, ανοιχτά αρχεία, "
+#~ "συνδέσεις δικτύου, κτλ). Τα δεδομένα που γράφονται από τη διεργασία "
+#~ "εμφανίζονται με κόκκινο και τα δεδομένα που γίνονται ανάγνωση με μπλε "
+#~ "χρώμα."
+
+#~ msgid "&Attach"
+#~ msgstr "&Επισύναψη"
+
+#~ msgid "&Pause"
+#~ msgstr "&Παύση"
+
+#~ msgid "&Resume"
+#~ msgstr "&Συνέχιση"
+
+#~ msgid "&Detach"
+#~ msgstr "&Αποσύνδεση"
+
+#, fuzzy
+#~| msgid ""
+#~| "<br/><i><font color=\"gray\">Failed to attach to process %1</font></"
+#~| "i><br/>"
+#~ msgid ""
+#~ "<br/><i><font color=\"gray\">Failed to attach to process %1.</font></"
+#~ "i><br/>"
+#~ msgstr ""
+#~ "<br/><i><font color=\"gray\">Αποτυχία επισύναψης με τη διεργασία %1</"
+#~ "font></i><br/>"
+
+#~ msgid "Monitor Input && Output"
+#~ msgstr "Εποπτεία εισόδου && εξόδου"
+
+#, fuzzy
+#~| msgid "Kill Process"
+#~| msgid_plural "Kill Processes"
+#~ msgid "Kill Process..."
+#~ msgid_plural "Kill Processes..."
+#~ msgstr[0] "Σκότωμα διεργασίας"
+#~ msgstr[1] "Σκότωμα διεργασιών"
+
+#~ msgid ""
+#~ "Interpret output as containing VT100 commands. For console-based programs."
+#~ msgstr ""
+#~ "Μετάφραση εξόδου σαν να περιέχει εντολές VT100. Για προγράμματα κονσόλας."
+
+#~ msgid ""
+#~ "If this is checked then ANSI escape sequences will be interpreted and not "
+#~ "displayed.  Useful for when monitoring bash."
+#~ msgstr ""
+#~ "Αν ενεργοποιηθεί αυτή η επιλογή, οι ακολουθίες ANSI escape θα "
+#~ "μεταφραστούν και δε θα εμφανιστούν. Χρήσιμο για την εποπτεία του bash."
+
+#~ msgid "Interpret ANSI escape sequences"
+#~ msgstr "Μετάφραση ακολουθιών escape ANSI"
+
+#~ msgid "Show the output from processes launched by this process."
+#~ msgstr ""
+#~ "Εμφάνιση εξόδου απο διεργασίες που εκκίνησαν από αυτήν τη διεργασία."
+
+#~ msgid "Follow fork and clone commands to monitor child processes"
+#~ msgstr ""
+#~ "Ακολούθηση εντολών fork και clone για την εποπτεία των απογόνων διεργασιών"
+
+#~ msgid "Monitor child processes"
+#~ msgstr "Εποπτεία απογόνων διεργασιών"
+
+#~ msgid "Pause the process and its output"
+#~ msgstr "Παύση της διεργασίας και της εξόδου της"
+
+#~ msgid ""
+#~ "Stop reading the output from the process. This will cause the process to "
+#~ "be blocked, effectively pausing it. The process can be resumed by "
+#~ "resuming, detaching or closing the dialog."
+#~ msgstr ""
+#~ "Σταμάτημα ανάγνωσης εξόδου της διεργασίας. Αυτό θα έχει σαν αποτέλεσμα το "
+#~ "μπλοκάρισμα της διεργασίας, σαν να βρίσκεται σε παύση. Η διεργασία μπορεί "
+#~ "να συνεχιστεί με αποσύνδεση ή με κλείσιμο του διαλόγου."
+
+#~ msgid "Stop monitoring the process"
+#~ msgstr "Σταμάτημα εποπτείας της διεργασίας"
+
+#~ msgid "Stop monitoring the process and allow the process to resume running."
+#~ msgstr ""
+#~ "Σταμάτημα εποπτείας της διεργασίας και συνέχιση εκτέλεσης της διεργασίας."
+
+#~ msgid "Renice Process"
+#~ msgstr "Renice διεργασίας"
+
+#~ msgid "No."
+#~ msgstr "Αριθμ."
+
+#, fuzzy
+#~| msgid "Could not find kdesu executable"
+#~ msgid "Could not find kdesu executable."
+#~ msgstr "Αδυναμία εύρεσης του εκτελέσιμου kdesu"
+
+#~ msgid ""
+#~ "Could not find setscheduler executable.  This should have been installed "
+#~ "alongside system monitor."
+#~ msgstr ""
+#~ "Αδυναμία εύρεσης του εκτελέσιμου setscheduler.  Αυτό θα έπρεπε να "
+#~ "εγκατασταθεί μαζί με την εποπτεία του συστήματος."
+
+#, fuzzy
+#~| msgid ""
+#~| "You do not have the permission to set the I/O priority and there was a "
+#~| "problem trying to run as root"
+#~ msgid ""
+#~ "You do not have the permission to set the I/O priority and there was a "
+#~ "problem trying to run as root."
+#~ msgstr ""
+#~ "Δεν έχετε άδεια να αλλάξετε την προτεραιότητα Ει/Εξ και παρουσιάστηκε "
+#~ "πρόβλημα κατά την προσπάθεια εκτέλεσης ως υπερχρήστης"
+
+#~ msgid "Form"
+#~ msgstr "Φόρμα"

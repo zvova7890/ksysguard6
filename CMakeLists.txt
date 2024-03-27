@@ -175,6 +175,12 @@ add_subdirectory( pics )
 add_subdirectory( example )
 
 add_subdirectory( ksysguardd )
+
+option(WITH_SYSTEMMONITOR "Build with Plasma Dekstop SystemMonitor" ON)
+if(WITH_SYSTEMMONITOR)
+    add_subdirectory( systemmonitor )
+endif()
+
 ki18n_install(po)
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)

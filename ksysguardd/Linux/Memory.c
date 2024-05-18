@@ -59,18 +59,25 @@ static void scan_one( const char* buff, const char *key, unsigned long long* val
 
 static void processMemInfo()
 {
-  unsigned long long Slab = 0;
+  //unsigned long long Slab = 0;
+  unsigned long long SReclaimable = 0;
+  unsigned long long Shmem = 0;
+
   scan_one( MemInfoBuf, "MemTotal", &Total );
   scan_one( MemInfoBuf, "MemFree", &MFree );
   scan_one( MemInfoBuf, "MemAvailable", &Available );
   scan_one( MemInfoBuf, "Buffers", &Buffers );
   scan_one( MemInfoBuf, "Cached", &Cached );
-  scan_one( MemInfoBuf, "Slab", &Slab );
+  //scan_one( MemInfoBuf, "Slab", &Slab );
   scan_one( MemInfoBuf, "SwapTotal", &STotal );
   scan_one( MemInfoBuf, "SwapFree", &SFree );
   scan_one( MemInfoBuf, "Dirty", &CDirty );
   scan_one( MemInfoBuf, "Writeback", &CWriteback );
-  Cached += Slab;
+  scan_one( MemInfoBuf, "SReclaimable", &SReclaimable );
+  scan_one( MemInfoBuf, "Shmem", &Shmem );
+
+  //Cached += Slab;
+  Cached = Cached + SReclaimable - Shmem;
   Used = Total - MFree;
   Appl = ( Used - ( Buffers + Cached ) );
 

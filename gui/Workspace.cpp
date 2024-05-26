@@ -40,14 +40,17 @@
 
 #include "Workspace.h"
 #include "ksysguard.h"
+#include "qtabbar.h"
 
 Workspace::Workspace( QWidget* parent)
   : QTabWidget( parent )
 {
   KAcceleratorManager::setNoAccel(this);
   setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+  setMovable(true);
   setDocumentMode(true);
   connect(&mDirWatch, SIGNAL(deleted(QString)), this, SLOT(removeWorkSheet(QString)));
+  connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(tabMoved(int,int)));
 }
 
 Workspace::~Workspace()
@@ -282,6 +285,11 @@ void Workspace::removeWorkSheet( const QString &fileName )
       return;
     }
   }
+}
+
+void Workspace::tabMoved(int from, int to)
+{
+    mSheetList.swapItemsAt(from, to);
 }
 
 WorkSheet *Workspace::currentWorkSheet()

@@ -1,0 +1,66 @@
+Source: ksysguard6
+Section: kernel
+Priority: optional
+Maintainer: Volodymyr Zolotopupov <zvova7890@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 12),
+ cmake,
+ quilt,
+ kf6-extra-cmake-modules,
+ qt6-base-dev,
+ qt6-declarative-dev,
+ kf6-kcoreaddons-dev,
+ kf6-kdeclarative-dev,
+ kf6-kpackage-dev,
+ kf6-kdbusaddons-dev,
+ kf6-kiconthemes-dev,
+ kf6-kitemviews-dev,
+ kf6-ksvg-dev,
+ kf6-knewstuff-dev,
+ libkf6notifications-dev,
+ libkf6windowsystem-dev,
+ libkf6configwidgets-dev,
+ libkf6globalaccel-dev,
+ libkf6xmlgui-dev,
+ kio6-dev,
+ kdoctools6-dev,
+ libkf6auth-dev,
+ libplasma-dev,
+ libkdecorations2-dev,
+ libkf6kcmutils-dev,
+ libkf6config-dev,
+ libksysguard-dev,
+ qt6-webengine-dev,
+ libpcap0.8-dev,
+ libpcap-dev,
+ libsensors-dev,
+Standards-Version: 4.5.0
+
+Package: ksysguard6
+Architecture: any
+Depends:
+ kf6-extra-cmake-modules,
+ qt6-base,
+ qt6-declarative,
+ kf6-kcoreaddons,
+ kf6-kdeclarative,
+ kf6-kpackage,
+ kf6-kdbusaddons,
+ kf6-kiconthemes,
+ kf6-kitemviews,
+ kf6-ksvg,
+ kf6-knewstuff,
+ libkf6notifications6,
+ libkf6windowsystem6,
+ libkf6configwidgets6,
+ libkf6globalaccel6,
+ libkf6xmlgui6,
+ kio6,
+ libkf6auth6,
+ libkf6config-bin,
+ libksysguard,
+ qt6-webengine,
+ libpcap0.8,
+ lm-sensors,
+Description: Track and control the processes running in your system. KF6 version.

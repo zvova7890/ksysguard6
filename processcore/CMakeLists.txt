@@ -23,7 +23,7 @@ set(ksysguard_LIB_SRCS
 ecm_qt_declare_logging_category(ksysguard_LIB_SRCS HEADER processcore_debug.h IDENTIFIER LIBKSYSGUARD_PROCESSCORE CATEGORY_NAME org.kde.libksysguard.processcore
     DESCRIPTION "libksysguard (processcore)" EXPORT LIBKSYSGUARD)
 
-add_library(processcore STATIC ${ksysguard_LIB_SRCS})
+add_library(processcore SHARED ${ksysguard_LIB_SRCS})
 add_library(ProcessCore ALIAS processcore)
 
 generate_export_header(processcore)
@@ -62,8 +62,7 @@ target_include_directories(processcore
 #install(TARGETS processcore EXPORT libksysguardLibraryTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 #add_subdirectory(declarative)
-# Unfortunately, it doesn't work yet.
-#add_subdirectory(plugins)
+add_subdirectory(plugins)
 
 ########### install files ###############
 

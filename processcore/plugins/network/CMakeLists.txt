@@ -18,4 +18,4 @@ configure_file(networkconstants.h.in networkconstants.h @ONLY)
 add_library(ksysguard_plugin_network MODULE ${networkplugin_SRCS})
 target_link_libraries(ksysguard_plugin_network Qt::Core Qt::DBus KF6::CoreAddons KF6::I18n ProcessCore)
 
-install(TARGETS ksysguard_plugin_network DESTINATION ${KDE_INSTALL_PLUGINDIR}/ksysguard5/process)
+install(TARGETS ksysguard_plugin_network DESTINATION ${KDE_INSTALL_PLUGINDIR}/ksysguard6/process)

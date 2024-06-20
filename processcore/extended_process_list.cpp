@@ -546,7 +546,7 @@ QList<ProcessAttribute *> ExtendedProcesses::extendedAttributes() const
 
 void ExtendedProcesses::Private::loadPlugins()
 {
-    const QList<KPluginMetaData> listMetaData = KPluginMetaData::findPlugins(QStringLiteral("ksysguard5/process"));
+    const QList<KPluginMetaData> listMetaData = KPluginMetaData::findPlugins(QStringLiteral("ksysguard6/process"));
     // instantiate all plugins
     for (const auto &pluginMetaData : listMetaData) {
         qCDebug(LIBKSYSGUARD_PROCESSCORE) << "loading plugin" << pluginMetaData.name();

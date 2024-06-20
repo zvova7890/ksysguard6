@@ -2,6 +2,6 @@
 
 namespace NetworkConstants {
 
-static const QString HelperLocation = QStringLiteral("@KDE_INSTALL_FULL_LIBEXECDIR@/ksysguard5/ksgrd_network_helper");
+static const QString HelperLocation = QStringLiteral("@KDE_INSTALL_FULL_LIBEXECDIR@/ksysguard6/ksgrd_network_helper");
 
 }

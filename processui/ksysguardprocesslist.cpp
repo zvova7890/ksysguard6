@@ -1249,10 +1249,6 @@ void KSysGuardProcessList::reniceSelectedProcesses()
         case -1: // Invalid, not changed etc.
             break; // So do nothing
         case KSysGuard::Process::Other:
-        case KSysGuard::Process::Fifo: // Don't know if some other
-                                       // system uses SCHED_FIFO
-                                       // with niceness. Linux
-                                       // doesn't
         case KSysGuard::Process::Batch:
             if (reniceDlg->newCPUSched != (int)process->scheduler()) {
                 changeCPUSchedulerPids << pid;
@@ -1261,6 +1257,10 @@ void KSysGuardProcessList::reniceSelectedProcesses()
                 renicePids << pid;
             break;
 
+        case KSysGuard::Process::Fifo: // Don't know if some other
+                                       // system uses SCHED_FIFO
+                                       // with niceness. Linux
+                                       // doesn't
         case KSysGuard::Process::RoundRobin:
             if (reniceDlg->newCPUSched != (int)process->scheduler() || reniceDlg->newCPUPriority != process->niceLevel()) {
                 changeCPUSchedulerPids << pid;

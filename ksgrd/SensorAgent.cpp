@@ -185,14 +185,14 @@ void SensorAgent::executeCommand()
 #if SA_TRACE
         qCDebug(LIBKSYSGUARD_KSGRD) << ">> " << req->request() << "(" << mInputFIFO.count() << "/" << mProcessingFIFO.count() << ")" << endl;
 #endif
+        // add request to processing FIFO.
+        // Note that this means that mProcessingFIFO is now responsible for managing the memory for it.
+        mProcessingFIFO.enqueue(req);
+
         // send request to daemon
         QString cmdWithNL = req->request() + '\n';
         if (!writeMsg(cmdWithNL.toLatin1().constData(), cmdWithNL.length()))
             qCDebug(LIBKSYSGUARD_KSGRD) << "SensorAgent::writeMsg() failed";
-
-        // add request to processing FIFO.
-        // Note that this means that mProcessingFIFO is now responsible for managing the memory for it.
-        mProcessingFIFO.enqueue(req);
     }
 }
 

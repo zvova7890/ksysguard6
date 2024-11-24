@@ -54,7 +54,8 @@ static inline QChar circleCharacter(const QFontMetrics& fm)
 
 class SensorToAdd {
   public:
-    QRegularExpression name;
+    QString rawNamePattern;     // pattern without anchoring
+    QRegularExpression name;    // rawNamePattern + anchors
     QString hostname;
     QString type;
     QList<QColor> colors;
@@ -772,7 +773,7 @@ void FancyPlotter::answerReceived( int id, const QList<QByteArray> &answerlist )
                             color = KSGRD::Style->sensorColor( beamId % KSGRD::Style->numSensorColors());
                         addSensor( sensor->hostname, sensorName,
                                 (sensor->type.isEmpty()) ? QStringLiteral("float") : sensor->type
-                                , QLatin1String(""), color, sensor->name.pattern(), beamId, sensor->summationName);
+                                , QLatin1String(""), color, sensor->rawNamePattern, beamId, sensor->summationName);
                     }
                 }
             }
@@ -825,7 +826,8 @@ bool FancyPlotter::restoreSettings( QDomElement &element )
         QDomElement el = dnList.item( i ).toElement();
         if(el.hasAttribute(QStringLiteral("regexpSensorName"))) {
             SensorToAdd *sensor = new SensorToAdd();
-            sensor->name = QRegularExpression(QRegularExpression::anchoredPattern(el.attribute(QStringLiteral("regexpSensorName"))));
+            sensor->rawNamePattern = el.attribute(QStringLiteral("regexpSensorName"));
+            sensor->name = QRegularExpression(QRegularExpression::anchoredPattern(sensor->rawNamePattern));
             sensor->hostname = el.attribute( QStringLiteral("hostName") );
             sensor->type = el.attribute( QStringLiteral("sensorType") );
             sensor->summationName = el.attribute(QStringLiteral("summationName"));

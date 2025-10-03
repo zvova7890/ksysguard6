@@ -145,7 +145,7 @@ bool SensorDisplay::eventFilter( QObject *object, QEvent *event )
   if ( event->type() == QEvent::MouseButtonPress) {
     QMouseEvent *e = static_cast<QMouseEvent *> (event);
     if( e->button() == Qt::RightButton ) {
-      showContextMenu( mapFromGlobal( e->globalPos() ) );
+      showContextMenu( mapFromGlobal( e->globalPosition() ).toPoint() );
       return true;
     }
   } 
@@ -473,5 +473,3 @@ QString SensorProperties::regExpName() const
 {
   return mRegExpName;
 }
-
-

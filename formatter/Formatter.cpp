@@ -399,7 +399,7 @@ static QString formatNumber(const QVariant &value, Unit unit, MetricPrefix prefi
         amount /= std::pow(unitOrder(unit), adjusted - unit);
     }
 
-    const int precision = (value.type() != QVariant::Double && adjusted <= unit) ? 0 : 1;
+    const int precision = (value.typeId() != QMetaType::Double && adjusted <= unit) ? 0 : 1;
     const QString text = QLocale().toString(amount, 'f', precision);
 
     return unitFormat(adjusted).subs(text).toString();

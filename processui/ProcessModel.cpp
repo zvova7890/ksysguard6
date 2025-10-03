@@ -1407,7 +1407,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
         case Qt::TextAlignmentRole: {
             KSysGuard::Process *process = reinterpret_cast<KSysGuard::Process *>(index.internalPointer());
             const QVariant value = d->mExtraAttributes[attr]->data(process);
-            if (value.canConvert(QMetaType::LongLong) && static_cast<QMetaType::Type>(value.type()) != QMetaType::QString) {
+            if (value.canConvert(QMetaType(QMetaType::LongLong)) && value.typeId() != QMetaType::QString) {
                 return (int)(Qt::AlignRight | Qt::AlignVCenter);
             }
             return (int)(Qt::AlignLeft | Qt::AlignVCenter);
@@ -1489,7 +1489,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
             return formatMemoryInfo(process->vmSize(), d->mUnits, true);
         case HeadingSharedMemory:
             if (process->vmRSS() - process->vmURSS() <= 0 || process->vmURSS() == -1)
-                return QVariant(QVariant::String);
+                return QVariant(QMetaType(QMetaType::QString));
             return formatMemoryInfo(process->vmRSS() - process->vmURSS(), d->mUnits);
         case HeadingStartTime: {
             // NOTE: the next 6 lines are the same as in the next occurrence of 'case HeadingStartTime:' => keep in sync or remove duplicate code
@@ -1565,11 +1565,11 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
             return formatMemoryInfo(process->pixmapBytes() / 1024, d->mUnits, true);
         case HeadingXTitle: {
             if (!process->hasManagedGuiWindow())
-                return QVariant(QVariant::String);
+                return QVariant(QMetaType(QMetaType::QString));
 
             WindowInfo *w = d->mPidToWindowInfo.value(process->pid(), NULL);
             if (!w)
-                return QVariant(QVariant::String);
+                return QVariant(QMetaType(QMetaType::QString));
             else
                 return w->name;
         }
@@ -1901,7 +1901,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
             }
         }
         default:
-            return QVariant(QVariant::String);
+            return QVariant(QMetaType(QMetaType::QString));
         }
     }
     case Qt::TextAlignmentRole:
@@ -1947,7 +1947,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
             return (qlonglong)(process->userTime() + process->sysTime());
         case HeadingMemory:
             if (process->vmRSS() == 0)
-                return QVariant(QVariant::String);
+                return QVariant(QMetaType(QMetaType::QString));
             if (process->vmURSS() == -1) {
                 return (qlonglong)process->vmRSS();
             } else {
@@ -1957,7 +1957,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int role) const
             return (qlonglong)process->vmSize();
         case HeadingSharedMemory:
             if (process->vmRSS() - process->vmURSS() < 0 || process->vmURSS() == -1)
-                return QVariant(QVariant::String);
+                return QVariant(QMetaType(QMetaType::QString));
             return (qlonglong)(process->vmRSS() - process->vmURSS());
         case HeadingStartTime:
             return process->startTime(); // 2015-01-03, gregormi: can maybe be replaced with something better later

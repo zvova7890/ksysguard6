@@ -65,7 +65,7 @@ public:
                 if (column >= 0 && column < dataItem.count()) {
                     const QVariant data = dataItem.at(column);
                     Q_ASSERT(data.isValid());
-                    if (role == Qt::DisplayRole && data.type() != QVariant::String) {
+                    if (role == Qt::DisplayRole && data.typeId() != QMetaType::QString) {
                         if (column == Column_Start || column == Column_End || column == Column_Offset) {
                             return QString::number(data.toULongLong(), 16); // show in hex
                         }

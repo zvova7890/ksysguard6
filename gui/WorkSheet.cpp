@@ -478,7 +478,7 @@ void WorkSheet::dragMoveEvent( QDragMoveEvent *event )
 {
     /* Find the sensor display that is supposed to get the drop
      * event and replace or add sensor. */
-    const QPoint globalPos = mapToGlobal( event->pos() );
+    const QPoint globalPos = mapToGlobal( event->position().toPoint() );
     for ( int i = 0; i < mGridLayout->count(); i++ ) {
         KSGRD::SensorDisplay* display = static_cast<KSGRD::SensorDisplay*>(mGridLayout->itemAt(i)->widget());
         const QRect widgetRect = QRect( display->mapToGlobal( QPoint( 0, 0 ) ),
@@ -515,7 +515,7 @@ void WorkSheet::dropEvent( QDropEvent *event )
 
     /* Find the sensor display that is supposed to get the drop
      * event and replace or add sensor. */
-    const QPoint globalPos = mapToGlobal( event->pos() );
+    const QPoint globalPos = mapToGlobal( event->position().toPoint() );
     for ( int i = 0; i < mGridLayout->count(); i++ ) {
         KSGRD::SensorDisplay* display = static_cast<KSGRD::SensorDisplay*>(mGridLayout->itemAt(i)->widget());
         const QSize displaySize = display->size();
@@ -810,5 +810,3 @@ float WorkSheet::updateInterval() const
     else
         return 0;
 }
-
-

@@ -86,7 +86,11 @@ if(WITH_X11)
         if (QT_MAJOR_VERSION STREQUAL "5")
             find_package(Qt5X11Extras REQUIRED)
         elseif (QT_MAJOR_VERSION STREQUAL "6")
-            find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Gui) # qtx11extras_p.h
+            if (Qt6_VERSION VERSION_LESS "6.10.0")
+                find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Gui) # qtx11extras_p.h
+            else()
+                find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED GuiPrivate) # qtx11extras_p.h
+            endif()
         endif()
         set(HAVE_X11 1)
         find_library(X11_XRes_LIB XRes ${X11_LIB_SEARCH_PATH})

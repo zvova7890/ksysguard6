@@ -46,6 +46,8 @@ target_include_directories(Formatter
 
 target_compile_definitions(Formatter PRIVATE -DTRANSLATION_DOMAIN=\"KSysGuardFormatter\")
 
+set_target_properties(Formatter PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
 add_subdirectory(declarative)
 
 #install(TARGETS Formatter EXPORT libksysguardLibraryTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

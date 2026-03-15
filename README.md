@@ -22,6 +22,7 @@ Irix, NetBSD, OpenBSD, Solaris, and Tru64 with varying degrees of completion.
 1) Install build dependencies:
 
 ```bash
+sudo apt install build-essential debhelper-compat
 sudo apt-get build-dep .
 ```
 

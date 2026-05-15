@@ -41,6 +41,7 @@
 #include "FancyPlotterSettings.h"
 
 #include "FancyPlotter.h"
+#include "BalancedFlowLayout.h"
 
 // The unicode character 0x25CF is a big filled in circle.  We would prefer 
 // to use this in the tooltip (or other messages). However it's possible 
@@ -53,7 +54,7 @@ static inline QChar circleCharacter(const QFontMetrics& fm)
 }
 
 class SensorToAdd {
-  public:
+public:
     QString rawNamePattern;     // pattern without anchoring
     QRegularExpression name;    // rawNamePattern + anchors
     QString hostname;
@@ -63,16 +64,23 @@ class SensorToAdd {
 };
 
 class FancyPlotterLabel : public QLabel {
-  public:
+public:
+    enum class LabelMode {
+        Full,
+        Compact,
+    };
+
     FancyPlotterLabel(QWidget *parent) : QLabel(parent) {
         setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
         longHeadingWidth = 0;
         shortHeadingWidth = 0;
         textMargin = 0;
-        setLayoutDirection(Qt::LeftToRight); //We do this because we organise the strings ourselves.. is this going to muck it up though for RTL languages?
+        labelMode = LabelMode::Compact;
+        // The label markup is assembled manually; keep dot/name/value ordering stable.
+        setLayoutDirection(Qt::LeftToRight);
     }
-    ~FancyPlotterLabel() override {
-    }
+    ~FancyPlotterLabel() = default;
+
     void setLabel(const QString &name, const QColor &color) {
         labelName = name;
 
@@ -82,15 +90,37 @@ class FancyPlotterLabel : public QLabel {
         changeLabel(color);
 
     }
-    void setValueText(const QString &value) {
+
+    void setValueText(const QString &value, const QString &sizingValue = QString()) {
         //value can have multiple strings, separated with the 0x9c character
         valueText = value.split(QChar(0x9c));
+        sizingValueText = sizingValue;
+        updateMinimumWidth();
         resizeEvent(nullptr);
         update();
     }
-    void resizeEvent( QResizeEvent * ) override {
-        QFontMetrics fm = fontMetrics();
 
+    void setLabelMode(LabelMode mode) {
+        if (labelMode == mode) {
+            return;
+        }
+        labelMode = mode;
+        resizeEvent(nullptr);
+        update();
+    }
+
+    int preferredFullWidth() const {
+        return fullLabelWidth();
+    }
+
+    QSize sizeHint() const override {
+        QSize size = QLabel::sizeHint();
+        // Keep geometry stable while live values change width, e.g. "0.0%" -> "100.0%"
+        size.setWidth(labelMode == LabelMode::Full ? fullLabelWidth() : compactLabelWidth());
+        return size;
+    }
+
+    void resizeEvent( QResizeEvent * ) override {
         if(valueText.isEmpty()) {
             if(longHeadingWidth < width())
                 setText(longHeadingText);
@@ -100,26 +130,13 @@ class FancyPlotterLabel : public QLabel {
         }
         QString value = valueText.first();
 
-        int textWidth = fm.boundingRect(value).width();
-        if(textWidth + longHeadingWidth < width())
+        if (labelMode == LabelMode::Full) {
             setBothText(longHeadingText, value);
-        else if(textWidth + shortHeadingWidth < width())
+        } else {
             setBothText(shortHeadingText, value);
-        else {
-            int valueTextCount = valueText.count();
-            int i;
-            for(i = 1; i < valueTextCount; ++i) {
-                textWidth = fm.boundingRect(valueText.at(i)).width();
-                if(textWidth + shortHeadingWidth <= width()) {
-                    break;
-                }
-            }
-            if(i < valueTextCount)
-                setBothText(shortHeadingText, valueText.at(i));
-            else
-                setText(noHeadingText + valueText.last()); //This just sets the color of the text
         }
     }
+
     void changeLabel(const QColor &_color) {
         color = _color;
 
@@ -130,19 +147,41 @@ class FancyPlotterLabel : public QLabel {
         shortHeadingText = QLatin1String("<qt><font color=\"") + color.name() + QLatin1String("\">") + indicatorSymbol + QLatin1String("</font>");
         noHeadingText = QLatin1String("<qt><font color=\"") + color.name() + QLatin1String("\">");
 
-        textMargin = fontMetrics().boundingRect(QLatin1Char('x')).width() + margin()*2 + frameWidth()*2;
-        longHeadingWidth = fontMetrics().boundingRect(labelName + QLatin1String(" :") + indicatorSymbol + QLatin1String(" x")).width() + textMargin;
+        textMargin = fontMetrics().boundingRect(QLatin1Char(':')).width() + (margin() * 2) + (frameWidth() * 2);
+        longHeadingWidth = fontMetrics().boundingRect(labelName + QLatin1String(" :") + indicatorSymbol + QLatin1String("x")).width() + textMargin;
         shortHeadingWidth = fontMetrics().boundingRect(indicatorSymbol).width() + textMargin;
-        setMinimumWidth(shortHeadingWidth);
+        updateMinimumWidth();
         update();
     }
-  private:
+
+private:
     void setBothText(const QString &heading, const QString & value) {
         if(QApplication::layoutDirection() == Qt::LeftToRight)
             setText(heading + QLatin1Char(' ') + value);
         else
             setText(QStringLiteral("<qt>") + value + QLatin1Char(' ') + heading);
     }
+
+    void updateMinimumWidth() {
+        setMinimumWidth(compactLabelWidth());
+    }
+
+    int representativeValueWidth() const {
+        // Use a stable representative value for sizing, so changing live values do not move labels.
+        const QString value = sizingValueText.isEmpty()
+            ? (valueText.isEmpty() ? QString() : valueText.first())
+            : sizingValueText;
+        return fontMetrics().boundingRect(value).width();
+    }
+
+    int fullLabelWidth() const {
+        return representativeValueWidth() + longHeadingWidth;
+    }
+
+    int compactLabelWidth() const {
+        return representativeValueWidth() + shortHeadingWidth;
+    }
+
     int textMargin;
     QString longHeadingText;
     QString shortHeadingText;
@@ -150,12 +189,37 @@ class FancyPlotterLabel : public QLabel {
     int longHeadingWidth;
     int shortHeadingWidth;
     QList<QString> valueText;
+    QString sizingValueText;
     QString labelName;
     QColor color;
+    LabelMode labelMode;
     static QChar indicatorSymbol;
 };
 
 QChar FancyPlotterLabel::indicatorSymbol;
+
+class FancyPlotterLabelsWidget : public QWidget
+{
+public:
+    using QWidget::QWidget;
+
+    bool hasHeightForWidth() const override
+    {
+        return true;
+    }
+
+    int heightForWidth(int width) const override
+    {
+        return layout() ? layout()->totalHeightForWidth(width) : QWidget::heightForWidth(width);
+    }
+
+    QSize sizeHint() const override
+    {
+        QSize size = QWidget::sizeHint();
+        size.setHeight(heightForWidth(size.width()));
+        return size;
+    }
+};
 
 FancyPlotter::FancyPlotter( QWidget* parent,
                             const QString &title,
@@ -187,18 +251,19 @@ FancyPlotter::FancyPlotter( QWidget* parent,
     layout->addWidget(mPlotter);
 
     /* Create a set of labels underneath the graph. */
-    mLabelsWidget = new QWidget;
+    mLabelsWidget = new FancyPlotterLabelsWidget;
     layout->addWidget(mLabelsWidget);
     QBoxLayout *outerLabelLayout = new QHBoxLayout(mLabelsWidget);
     outerLabelLayout->setSpacing(0);
     outerLabelLayout->setContentsMargins(0,0,0,0);
 
     /* create a spacer to fill up the space up to the start of the graph */
-    outerLabelLayout->addItem(new QSpacerItem(axisTextWidth + 10, 0, QSizePolicy::Preferred));
+    outerLabelLayout->addItem(new QSpacerItem(axisTextWidth + 10, 0, QSizePolicy::Fixed));
 
-    mLabelLayout = new QHBoxLayout;
-    outerLabelLayout->addLayout(mLabelLayout);
+    mLabelLayout = new BalancedFlowLayout;
+    outerLabelLayout->addLayout(mLabelLayout, 1);
     mLabelLayout->setContentsMargins(0,0,0,0);
+    connect(mLabelLayout, &BalancedFlowLayout::layoutModeChanged, this, &FancyPlotter::updateLabelModes);
     QFont font;
     font.setPointSize( KSGRD::Style->fontSize() );
     mPlotter->setFont( font );
@@ -361,14 +426,45 @@ void FancyPlotter::resizeEvent( QResizeEvent* )
 {
     bool showHeading = true;
     bool showLabels = true;
+    const int labelsHeight = mLabelsWidget->heightForWidth(width());
 
-    if( height() < mLabelsWidget->sizeHint().height() + mHeading->sizeHint().height() + mPlotter->minimumHeight() )
+    if( height() < labelsHeight + mHeading->sizeHint().height() + mPlotter->minimumHeight() )
         showHeading = false;
-    if( height() < mLabelsWidget->sizeHint().height() + mPlotter->minimumHeight() )
+    if( height() < labelsHeight + mPlotter->minimumHeight() )
         showLabels = false;
     mHeading->setVisible(showHeading);
     mLabelsWidget->setVisible(showLabels);
 
+}
+
+void FancyPlotter::updateLabelModes()
+{
+    mLabelModeUpdatePending = false;
+
+    // Avoid a mixed legend where some labels are full and others are compact
+    bool canShowFullLabels = mLabelLayout->rowCount() == 1;
+    int fullLabelsWidth = 0;
+    const int spacing = qMax(mLabelLayout->horizontalSpacing(), 0);
+    for (int i = 0; i < mLabelLayout->count(); ++i) {
+        auto item = static_cast<QWidgetItem *>(mLabelLayout->itemAt(i));
+        if (!item || !item->widget()) {
+            continue;
+        }
+        fullLabelsWidth += static_cast<FancyPlotterLabel *>(item->widget())->preferredFullWidth();
+    }
+    if (mLabelLayout->count() > 1) {
+        fullLabelsWidth += spacing * (mLabelLayout->count() - 1);
+    }
+    canShowFullLabels = canShowFullLabels && fullLabelsWidth <= mLabelLayout->availableWidth();
+
+    const auto mode = canShowFullLabels ? FancyPlotterLabel::LabelMode::Full : FancyPlotterLabel::LabelMode::Compact;
+    for (int i = 0; i < mLabelLayout->count(); ++i) {
+        auto item = static_cast<QWidgetItem *>(mLabelLayout->itemAt(i));
+        if (!item || !item->widget()) {
+            continue;
+        }
+        static_cast<FancyPlotterLabel *>(item->widget())->setLabelMode(mode);
+    }
 }
 
 void FancyPlotter::reorderBeams(const QList<int> & orderOfBeams)
@@ -594,6 +690,7 @@ void FancyPlotter::sendDataToPlotter( )
                 QToolTip::showText(QCursor::pos(), mPlotter->toolTip(), mPlotter);
             }
             QString lastValue;
+            QString sizingValue;
             int beamId = -1;
             for ( int i = 0; i < sensors().size(); ++i ) {
                 FPSensorProperties *sensor = static_cast<FPSensorProperties *>(sensors().at(i));
@@ -601,19 +698,37 @@ void FancyPlotter::sendDataToPlotter( )
                     continue;
                 beamId = sensor->beamId;
                 if(sensor->isOk() && mPlotter->numBeams() > beamId) {
-
                     int precision;
                     if(sensor->unit() == mUnit) {
                         precision = (sensor->isInteger && mPlotter->scaleDownBy() == 1)?0:-1;
                         lastValue = mPlotter->lastValueAsString(beamId, precision);
+                        if(sensor->maxValue != 0) {
+                            if(isPercentage(sensor)) {
+                                sizingValue = i18nc("units", "%1%", QLocale().toString(sensor->maxValue, 'f', usefulPrecision(sensor)));
+                            } else {
+                                sizingValue = mPlotter->valueAsString(sensor->maxValue, precision);
+                            }
+                        } else {
+                            sizingValue.clear();
+                        }
                     } else {
                         static_assert(std::is_same<double, decltype(mPlotter->lastValue(beamId))>::value, "Beam values should be double");
                         precision = usefulPrecision(sensor);
                         lastValue = QLocale().toString( mPlotter->lastValue(beamId), 'f', precision );
-                        if (isPercentage(sensor))
+                        if (isPercentage(sensor)) {
                             lastValue = i18nc("units", "%1%", lastValue);
-                        else if( !sensor->unit().isEmpty() )  {
+                        } else if( !sensor->unit().isEmpty() )  {
                             lastValue = i18nc("units", QString(QLatin1String("%1 ") + sensor->unit()).toUtf8().constData(), lastValue);
+                        }
+
+                        if(sensor->maxValue == 0) {
+                            sizingValue.clear();
+                        } else if (isPercentage(sensor)) {
+                            sizingValue = i18nc("units", "%1%", QLocale().toString(sensor->maxValue, 'f', precision));
+                        } else if( !sensor->unit().isEmpty() )  {
+                            sizingValue = i18nc("units", QString(QLatin1String("%1 ") + sensor->unit()).toUtf8().constData(), QLocale().toString(sensor->maxValue, 'f', precision));
+                        } else {
+                            sizingValue = QLocale().toString(sensor->maxValue, 'f', precision);
                         }
                     }
 
@@ -623,8 +738,13 @@ void FancyPlotter::sendDataToPlotter( )
                     }
                 } else {
                     lastValue = i18n("Error");
+                    sizingValue.clear();
                 }
-                static_cast<FancyPlotterLabel *>((static_cast<QWidgetItem *>(mLabelLayout->itemAt(beamId)))->widget())->setValueText(lastValue);
+                static_cast<FancyPlotterLabel *>((static_cast<QWidgetItem *>(mLabelLayout->itemAt(beamId)))->widget())->setValueText(lastValue, sizingValue);
+            }
+            if (!mLabelModeUpdatePending) {
+                mLabelModeUpdatePending = true;
+                QMetaObject::invokeMethod(this, &FancyPlotter::updateLabelModes, Qt::QueuedConnection);
             }
         }
 
@@ -962,6 +1082,3 @@ QColor FPSensorProperties::color() const
 {
     return mColor;
 }
-
-
-

@@ -8,25 +8,25 @@ include_directories(
 add_definitions(-DTRANSLATION_DOMAIN=\"ksysguard\")
 
 set(libsensordisplays_SRCS
-   	SensorDisplayLib/SensorDisplay.cpp SensorDisplayLib/SensorDisplay.h
-   	SensorDisplayLib/BarGraph.cpp SensorDisplayLib/BarGraph.h
-   	SensorDisplayLib/DancingBars.cpp SensorDisplayLib/DancingBars.h
-   	SensorDisplayLib/DancingBarsSettings.cpp SensorDisplayLib/DancingBarsSettings.h
-   	SensorDisplayLib/DummyDisplay.cpp SensorDisplayLib/DummyDisplay.h
-   	SensorDisplayLib/FancyPlotter.cpp SensorDisplayLib/FancyPlotter.h
-   	SensorDisplayLib/FancyPlotterSettings.cpp SensorDisplayLib/FancyPlotterSettings.h
-   	SensorDisplayLib/ListView.cpp SensorDisplayLib/ListView.h
-   	SensorDisplayLib/LogFile.cpp SensorDisplayLib/LogFile.h
-   	SensorDisplayLib/MultiMeter.cpp SensorDisplayLib/MultiMeter.h
-   	SensorDisplayLib/MultiMeterSettings.cpp SensorDisplayLib/MultiMeterSettings.h
-   	SensorDisplayLib/ProcessController.cpp SensorDisplayLib/ProcessController.h
-   	SensorDisplayLib/SensorLogger.cpp SensorDisplayLib/SensorLogger.h
-   	SensorDisplayLib/SensorLoggerDlg.cpp SensorDisplayLib/SensorLoggerDlg.h
-   	SensorDisplayLib/SensorLoggerSettings.cpp SensorDisplayLib/SensorLoggerSettings.h
-   	SensorDisplayLib/SensorModel.cpp SensorDisplayLib/SensorModel.h
-   	SensorDisplayLib/ListViewSettings.cpp SensorDisplayLib/ListViewSettings.h
-#   	SensorDisplayLib/modeltest.cpp
-	)
+    SensorDisplayLib/SensorDisplay.cpp SensorDisplayLib/SensorDisplay.h
+    SensorDisplayLib/BarGraph.cpp SensorDisplayLib/BarGraph.h
+    SensorDisplayLib/DancingBars.cpp SensorDisplayLib/DancingBars.h
+    SensorDisplayLib/DancingBarsSettings.cpp SensorDisplayLib/DancingBarsSettings.h
+    SensorDisplayLib/DummyDisplay.cpp SensorDisplayLib/DummyDisplay.h
+    SensorDisplayLib/FancyPlotter.cpp SensorDisplayLib/FancyPlotter.h
+    SensorDisplayLib/FancyPlotterSettings.cpp SensorDisplayLib/FancyPlotterSettings.h
+    SensorDisplayLib/ListView.cpp SensorDisplayLib/ListView.h
+    SensorDisplayLib/LogFile.cpp SensorDisplayLib/LogFile.h
+    SensorDisplayLib/MultiMeter.cpp SensorDisplayLib/MultiMeter.h
+    SensorDisplayLib/MultiMeterSettings.cpp SensorDisplayLib/MultiMeterSettings.h
+    SensorDisplayLib/ProcessController.cpp SensorDisplayLib/ProcessController.h
+    SensorDisplayLib/SensorLogger.cpp SensorDisplayLib/SensorLogger.h
+    SensorDisplayLib/SensorLoggerDlg.cpp SensorDisplayLib/SensorLoggerDlg.h
+    SensorDisplayLib/SensorLoggerSettings.cpp SensorDisplayLib/SensorLoggerSettings.h
+    SensorDisplayLib/SensorModel.cpp SensorDisplayLib/SensorModel.h
+    SensorDisplayLib/ListViewSettings.cpp SensorDisplayLib/ListViewSettings.h
+#    SensorDisplayLib/modeltest.cpp
+)
 
 ki18n_wrap_ui( libsensordisplays_SRCS
    SensorDisplayLib/ListViewSettingsWidget.ui

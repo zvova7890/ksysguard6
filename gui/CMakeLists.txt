@@ -25,6 +25,7 @@ set(libsensordisplays_SRCS
     SensorDisplayLib/SensorLoggerSettings.cpp SensorDisplayLib/SensorLoggerSettings.h
     SensorDisplayLib/SensorModel.cpp SensorDisplayLib/SensorModel.h
     SensorDisplayLib/ListViewSettings.cpp SensorDisplayLib/ListViewSettings.h
+    SensorDisplayLib/BalancedFlowLayout.cpp SensorDisplayLib/BalancedFlowLayout.h
 #    SensorDisplayLib/modeltest.cpp
 )
 

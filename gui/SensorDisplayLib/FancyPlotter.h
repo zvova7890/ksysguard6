@@ -34,6 +34,7 @@ class QBoxLayout;
 class QLabel;
 class SensorToAdd;
 class KSignalPlotter;
+class BalancedFlowLayout;
 
 class FPSensorProperties : public KSGRD::SensorProperties
 {
@@ -104,6 +105,7 @@ class FancyPlotter : public KSGRD::SensorDisplay
 
   private:
     void sendDataToPlotter();
+    void updateLabelModes();
     uint mBeams;
     
     int mNumAnswers;
@@ -134,8 +136,9 @@ class FancyPlotter : public KSGRD::SensorDisplay
     QString mUnit;
 
     QList<SensorToAdd *> mSensorsToAdd;
-    QBoxLayout *mLabelLayout;
+    BalancedFlowLayout *mLabelLayout;
     QChar mIndicatorSymbol;
+    bool mLabelModeUpdatePending = false;
 
     /** True if we will override the values from ksysguardd with user-specified values. */
     bool mUseManualRange;

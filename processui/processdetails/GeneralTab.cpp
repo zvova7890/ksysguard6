@@ -8,13 +8,19 @@
 
 #include "GeneralTab.h"
 
+#include <QAction>
+#include <QAbstractItemView>
 #include <QGraphicsOpacityEffect>
 #include <QHeaderView>
+#include <QKeySequence>
 #include <QLabel>
 #include <QLayout>
+#include <QMenu>
 #include <QTreeWidget>
 
 #include <KLocalizedString>
+
+#include "ClipboardHelpers.h"
 
 GeneralTab::GeneralTab(QWidget *parent)
     : QWidget(parent)
@@ -24,8 +30,24 @@ GeneralTab::GeneralTab(QWidget *parent)
     m_dataTreeWidget->setColumnCount(2);
     m_dataTreeWidget->setHeaderHidden(true);
     m_dataTreeWidget->setRootIsDecorated(false);
+    m_dataTreeWidget->setSelectionMode(QAbstractItemView::ExtendedSelection);
     m_dataTreeWidget->header()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
     m_dataTreeWidget->header()->setStretchLastSection(true);
+
+    QAction *copyAction = new QAction(i18nc("@action:inmenu", "Copy"), this);
+    copyAction->setShortcut(QKeySequence::Copy);
+    copyAction->setShortcutContext(Qt::WidgetWithChildrenShortcut);
+    addAction(copyAction);
+    connect(copyAction, &QAction::triggered, this, &GeneralTab::copySelection);
+
+    m_dataTreeWidget->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(m_dataTreeWidget, &QTreeWidget::customContextMenuRequested, this, [this, copyAction](const QPoint &pos) {
+        copyAction->setEnabled(!m_dataTreeWidget->selectionModel()->selectedIndexes().isEmpty());
+
+        QMenu menu(this);
+        menu.addAction(copyAction);
+        menu.exec(m_dataTreeWidget->viewport()->mapToGlobal(pos));
+    });
 
     QVBoxLayout *rootLayout = new QVBoxLayout;
     rootLayout->addWidget(m_dataTreeWidget);
@@ -66,4 +88,9 @@ void GeneralTab::setData(const QVariantMap &data)
         m_placeholderLabel->hide();
         m_dataTreeWidget->addTopLevelItems(items);
     }
+}
+
+void GeneralTab::copySelection() const
+{
+    ProcessDetails::copyIndexes(m_dataTreeWidget->selectionModel()->selectedIndexes());
 }

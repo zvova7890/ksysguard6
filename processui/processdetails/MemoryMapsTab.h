@@ -14,6 +14,7 @@
 class QLabel;
 class QLineEdit;
 class QSortFilterProxyModel;
+class QTreeView;
 
 class KMessageWidget;
 
@@ -35,12 +36,15 @@ private Q_SLOTS:
     void onSearchEditEditingFinished();
 
 private:
+    void copySelection() const;
+
     long m_processId = 0;
     MemoryMapsModel *m_dataModel = nullptr;
     QSortFilterProxyModel *m_proxyModel = nullptr;
 
     KMessageWidget *m_errorWidget = nullptr;
     QLineEdit *m_searchEdit = nullptr;
+    QTreeView *m_dataTreeView = nullptr;
     QLabel *m_placeholderLabel = nullptr;
 };
 

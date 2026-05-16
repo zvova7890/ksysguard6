@@ -24,6 +24,8 @@ public:
     void setData(const QVariantMap &data);
 
 private:
+    void copySelection() const;
+
     QTreeWidget *m_dataTreeWidget = nullptr;
     QLabel *m_placeholderLabel = nullptr;
 };

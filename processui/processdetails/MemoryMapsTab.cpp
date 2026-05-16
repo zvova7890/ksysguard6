@@ -8,12 +8,16 @@
 
 #include "MemoryMapsTab.h"
 
+#include <QAction>
+#include <QAbstractItemView>
 #include <QFile>
 #include <QGraphicsOpacityEffect>
 #include <QHeaderView>
+#include <QKeySequence>
 #include <QLabel>
 #include <QLayout>
 #include <QLineEdit>
+#include <QMenu>
 #include <QPushButton>
 #include <QSortFilterProxyModel>
 #include <QTextStream>
@@ -22,6 +26,8 @@
 
 #include <KLocalizedString>
 #include <KMessageWidget>
+
+#include "ClipboardHelpers.h"
 
 class MemoryMapsModel : public QAbstractTableModel
 {
@@ -133,19 +139,35 @@ MemoryMapsTab::MemoryMapsTab(QWidget *parent)
     m_proxyModel->setSortRole(Qt::EditRole);
     m_proxyModel->setSourceModel(m_dataModel);
 
-    QTreeView *dataTreeView = new QTreeView;
-    dataTreeView->setAlternatingRowColors(true);
-    dataTreeView->setRootIsDecorated(false);
-    dataTreeView->setSortingEnabled(true);
-    dataTreeView->sortByColumn(MemoryMapsModel::Column_Start, Qt::AscendingOrder);
-    dataTreeView->setModel(m_proxyModel);
-    dataTreeView->header()->setStretchLastSection(true);
+    m_dataTreeView = new QTreeView;
+    m_dataTreeView->setAlternatingRowColors(true);
+    m_dataTreeView->setRootIsDecorated(false);
+    m_dataTreeView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    m_dataTreeView->setSortingEnabled(true);
+    m_dataTreeView->sortByColumn(MemoryMapsModel::Column_Start, Qt::AscendingOrder);
+    m_dataTreeView->setModel(m_proxyModel);
+    m_dataTreeView->header()->setStretchLastSection(true);
+
+    QAction *copyAction = new QAction(i18nc("@action:inmenu", "Copy"), this);
+    copyAction->setShortcut(QKeySequence::Copy);
+    copyAction->setShortcutContext(Qt::WidgetWithChildrenShortcut);
+    addAction(copyAction);
+    connect(copyAction, &QAction::triggered, this, &MemoryMapsTab::copySelection);
+
+    m_dataTreeView->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(m_dataTreeView, &QTreeView::customContextMenuRequested, this, [this, copyAction](const QPoint &pos) {
+        copyAction->setEnabled(!m_dataTreeView->selectionModel()->selectedIndexes().isEmpty());
+
+        QMenu menu(this);
+        menu.addAction(copyAction);
+        menu.exec(m_dataTreeView->viewport()->mapToGlobal(pos));
+    });
 
     QGridLayout *rootLayout = new QGridLayout;
     rootLayout->addWidget(m_errorWidget, 0, 0, 1, 2);
     rootLayout->addWidget(refreshButton, 1, 0);
     rootLayout->addWidget(m_searchEdit, 1, 1);
-    rootLayout->addWidget(dataTreeView, 2, 0, 1, 2);
+    rootLayout->addWidget(m_dataTreeView, 2, 0, 1, 2);
     setLayout(rootLayout);
 
     m_placeholderLabel = new QLabel;
@@ -164,7 +186,7 @@ MemoryMapsTab::MemoryMapsTab(QWidget *parent)
 
     QVBoxLayout *placeholderLayout = new QVBoxLayout;
     placeholderLayout->addWidget(m_placeholderLabel);
-    dataTreeView->setLayout(placeholderLayout);
+    m_dataTreeView->setLayout(placeholderLayout);
 
     // use some delay while searching as you type, because an immediate
     // search in large data can slow down the UI
@@ -289,4 +311,9 @@ void MemoryMapsTab::onProxyModelChanged()
 void MemoryMapsTab::onSearchEditEditingFinished()
 {
     m_proxyModel->setFilterFixedString(m_searchEdit->text());
+}
+
+void MemoryMapsTab::copySelection() const
+{
+    ProcessDetails::copyIndexes(m_dataTreeView->selectionModel()->selectedIndexes());
 }

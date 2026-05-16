@@ -8,12 +8,16 @@
 
 #include "OpenFilesTab.h"
 
+#include <QAction>
+#include <QAbstractItemView>
 #include <QDir>
 #include <QGraphicsOpacityEffect>
 #include <QHeaderView>
+#include <QKeySequence>
 #include <QLabel>
 #include <QLayout>
 #include <QLineEdit>
+#include <QMenu>
 #include <QPushButton>
 #include <QSortFilterProxyModel>
 #include <QTimer>
@@ -21,6 +25,8 @@
 
 #include <KLocalizedString>
 #include <KMessageWidget>
+
+#include "ClipboardHelpers.h"
 
 #include <unistd.h>
 #include <sys/stat.h>
@@ -174,19 +180,35 @@ OpenFilesTab::OpenFilesTab(QWidget *parent)
     m_proxyModel->setSortRole(Qt::EditRole);
     m_proxyModel->setSourceModel(m_dataModel);
 
-    QTreeView *dataTreeView = new QTreeView;
-    dataTreeView->setAlternatingRowColors(true);
-    dataTreeView->setRootIsDecorated(false);
-    dataTreeView->setSortingEnabled(true);
-    dataTreeView->sortByColumn(OpenFilesModel::Column_Id, Qt::AscendingOrder);
-    dataTreeView->setModel(m_proxyModel);
-    dataTreeView->header()->setStretchLastSection(true);
+    m_dataTreeView = new QTreeView;
+    m_dataTreeView->setAlternatingRowColors(true);
+    m_dataTreeView->setRootIsDecorated(false);
+    m_dataTreeView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    m_dataTreeView->setSortingEnabled(true);
+    m_dataTreeView->sortByColumn(OpenFilesModel::Column_Id, Qt::AscendingOrder);
+    m_dataTreeView->setModel(m_proxyModel);
+    m_dataTreeView->header()->setStretchLastSection(true);
+
+    QAction *copyAction = new QAction(i18nc("@action:inmenu", "Copy"), this);
+    copyAction->setShortcut(QKeySequence::Copy);
+    copyAction->setShortcutContext(Qt::WidgetWithChildrenShortcut);
+    addAction(copyAction);
+    connect(copyAction, &QAction::triggered, this, &OpenFilesTab::copySelection);
+
+    m_dataTreeView->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(m_dataTreeView, &QTreeView::customContextMenuRequested, this, [this, copyAction](const QPoint &pos) {
+        copyAction->setEnabled(!m_dataTreeView->selectionModel()->selectedIndexes().isEmpty());
+
+        QMenu menu(this);
+        menu.addAction(copyAction);
+        menu.exec(m_dataTreeView->viewport()->mapToGlobal(pos));
+    });
 
     QGridLayout *rootLayout = new QGridLayout;
     rootLayout->addWidget(m_errorWidget, 0, 0, 1, 2);
     rootLayout->addWidget(refreshButton, 1, 0);
     rootLayout->addWidget(m_searchEdit, 1, 1);
-    rootLayout->addWidget(dataTreeView, 2, 0, 1, 2);
+    rootLayout->addWidget(m_dataTreeView, 2, 0, 1, 2);
     setLayout(rootLayout);
 
     m_placeholderLabel = new QLabel;
@@ -205,7 +227,7 @@ OpenFilesTab::OpenFilesTab(QWidget *parent)
 
     QVBoxLayout *placeholderLayout = new QVBoxLayout;
     placeholderLayout->addWidget(m_placeholderLabel);
-    dataTreeView->setLayout(placeholderLayout);
+    m_dataTreeView->setLayout(placeholderLayout);
 
     // use some delay while searching as you type, because an immediate
     // search in large data can slow down the UI
@@ -284,4 +306,9 @@ void OpenFilesTab::onProxyModelChanged()
 void OpenFilesTab::onSearchEditEditingFinished()
 {
     m_proxyModel->setFilterFixedString(m_searchEdit->text());
+}
+
+void OpenFilesTab::copySelection() const
+{
+    ProcessDetails::copyIndexes(m_dataTreeView->selectionModel()->selectedIndexes());
 }

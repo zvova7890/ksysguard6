@@ -15,13 +15,14 @@
 namespace KSysGuard
 {
 class ProcessAttribute;
+class ExtendedProcessAttribute;
 
 class PROCESSCORE_EXPORT ExtendedProcesses : public KSysGuard::Processes
 {
     Q_OBJECT
 public:
     QList<ProcessAttribute *> attributes() const;
-    QList<ProcessAttribute *> extendedAttributes() const;
+    QList<ExtendedProcessAttribute *> extendedAttributes() const;
 
     /**
      * Returns a single shared instance of the process list for when used in multiple views

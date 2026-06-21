@@ -51,6 +51,7 @@
 #include "processdetails/ProcessDetailsDialog.h"
 #include "ReniceDlg.h"
 #include "../processcore/process_attribute.h"
+#include "../processcore/extended_process_attribute.h"
 #include "../processcore/process_controller.h"
 #include "scripting.h"
 #include "ui_ProcessWidgetUI.h"
@@ -916,6 +917,18 @@ void KSysGuardProcessList::showColumnContextMenu(const QPoint &point)
         }
     }
 
+    // let plugins add items to context menu
+    KSysGuard::ExtendedProcessAttribute *plugin = nullptr;
+    {
+        int pluginIndex = index - d->mModel.baseColumnCount();
+        auto pluginAttrs = d->mModel.extraAttributes();
+        if ((pluginIndex >= 0) && (pluginIndex < pluginAttrs.count()))
+        {
+            plugin = pluginAttrs[pluginIndex];
+            plugin->setupMenu(menu);
+        }
+    }
+
     menu.addSeparator();
     actionShowTooltips = new QAction(&menu);
     actionShowTooltips->setCheckable(true);
@@ -989,6 +1002,10 @@ void KSysGuardProcessList::showColumnContextMenu(const QPoint &point)
         default:
             break;
         }
+
+    // allow plugins to handle actions
+    } else if (plugin != nullptr) {
+        plugin->checkMenu(result);
     }
 
     int i = result->data().toInt();
@@ -1472,6 +1489,12 @@ void KSysGuardProcessList::saveSettings(KConfigGroup &cg)
     // If we change, say, the header between versions of ksysguard, then the old headerState settings will not be valid.
     // The version property lets us keep track of which version we are
     cg.writeEntry("version", PROCESSHEADERVERSION);
+
+    // trigger plugins to save settings
+    for (auto plugin : d->mModel.extraAttributes())
+    {
+        plugin->saveSettings(cg);
+    }
 }
 
 void KSysGuardProcessList::loadSettings(const KConfigGroup &cg)
@@ -1489,6 +1512,12 @@ void KSysGuardProcessList::loadSettings(const KConfigGroup &cg)
     int version = cg.readEntry("version", 0);
     if (version == PROCESSHEADERVERSION) { // If the header has changed, the old settings are no longer valid.  Only restore if version is the same
         restoreHeaderState(cg.readEntry("headerState", QByteArray()));
+    }
+
+    // trigger plugins to load settings
+    for (auto plugin : d->mModel.extraAttributes())
+    {
+        plugin->loadSettings(cg);
     }
 }
 

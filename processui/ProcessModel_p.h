@@ -201,7 +201,7 @@ public:
     /** Storage for the history entries. We need one per percentage column. */
     QHash<KSysGuard::Process *, QVector<ProcessModel::PercentageHistoryEntry>> mMapProcessCPUHistory;
 
-    QVector<KSysGuard::ProcessAttribute *> mExtraAttributes;
+    QVector<KSysGuard::ExtendedProcessAttribute *> mExtraAttributes;
 
 #if HAVE_XRES
     bool mHaveXRes; ///< True if the XRes extension is available at run time

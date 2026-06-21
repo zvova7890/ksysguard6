@@ -15,7 +15,7 @@ namespace KSysGuard
 {
 class Processes;
 class Process;
-class ProcessAttribute;
+class ExtendedProcessAttribute;
 
 /**
  * Base class for a process plugin data
@@ -45,7 +45,7 @@ public:
      * A list of all process attributes provided by this plugin
      * It is expected to remain constant through the lifespan of this class
      */
-    QList<ProcessAttribute *> attributes() const;
+    QList<ExtendedProcessAttribute *> attributes() const;
 
     /**
      * Called when processes should be updated if manually polled
@@ -77,7 +77,7 @@ protected:
      * Register a new process attribute
      * Process attributes should be created in the plugin constructor and must live for the duration the plugin
      */
-    void addProcessAttribute(ProcessAttribute *attribute);
+    void addProcessAttribute(ExtendedProcessAttribute *attribute);
 
 private:
     class Private;

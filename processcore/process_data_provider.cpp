@@ -6,6 +6,7 @@
 
 #include "process_data_provider.h"
 #include "process_attribute.h"
+#include "extended_process_attribute.h"
 #include "processes.h"
 
 using namespace KSysGuard;
@@ -14,7 +15,7 @@ class Q_DECL_HIDDEN KSysGuard::ProcessDataProvider::Private
 {
 public:
     KSysGuard::Processes *m_processes;
-    QList<ProcessAttribute *> m_attributes;
+    QList<ExtendedProcessAttribute *> m_attributes;
     bool m_enabled = false;
 };
 
@@ -49,7 +50,7 @@ KSysGuard::Process *ProcessDataProvider::getProcess(long pid)
     return process;
 }
 
-QList<ProcessAttribute *> ProcessDataProvider::attributes() const
+QList<ExtendedProcessAttribute *> ProcessDataProvider::attributes() const
 {
     return d->m_attributes;
 }
@@ -59,7 +60,7 @@ bool ProcessDataProvider::enabled() const
     return d->m_enabled;
 }
 
-void ProcessDataProvider::addProcessAttribute(ProcessAttribute *attribute)
+void ProcessDataProvider::addProcessAttribute(ExtendedProcessAttribute *attribute)
 {
     d->m_attributes << attribute;
     connect(attribute, &ProcessAttribute::enabledChanged, this, [this](bool enabled) {

@@ -30,6 +30,7 @@
 #include "ProcessController.h"
 #include "../processui/ksysguardprocesslist.h"
 #include "../processcore/processes.h"
+#include "../processcore/extended_process_attribute.h"
 
 //#define DO_MODELCHECK
 #ifdef DO_MODELCHECK
@@ -95,6 +96,12 @@ ProcessController::restoreSettings(QDomElement& element)
     int filterState = element.attribute(QStringLiteral("filterState"), QString::number((int)ProcessFilter::AllProcesses)).toUInt();
     mProcessList->setState((ProcessFilter::State)filterState);
 
+    // allow plugins to load settings
+    for (auto plugin : mProcessList->processModel()->extraAttributes())
+    {
+        plugin->loadSettingsLegacy(element);
+    }
+
     SensorDisplay::restoreSettings(element);
     return result;
 }
@@ -118,6 +125,12 @@ bool ProcessController::saveSettings(QDomDocument& doc, QDomElement& element)
     element.setAttribute(QStringLiteral("showTooltips"), mProcessList->processModel()->isShowingTooltips());
     element.setAttribute(QStringLiteral("normalizeCPUUsage"), mProcessList->processModel()->isNormalizedCPUUsage());
     element.setAttribute(QStringLiteral("filterState"), (int)(mProcessList->state()));
+
+    // allow plugins to save settings
+    for (auto plugin : mProcessList->processModel()->extraAttributes())
+    {
+        plugin->saveSettingsLegacy(element);
+    }
 
     SensorDisplay::saveSettings(doc, element);
 

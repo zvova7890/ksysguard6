@@ -16,6 +16,7 @@
 #include "../processcore/formatter.h"
 #include "../processcore/process.h"
 #include "../processcore/process_attribute.h"
+#include "../processcore/extended_process_attribute.h"
 #include "../processcore/process_data_provider.h"
 
 #include "processui_debug.h"
@@ -35,6 +36,8 @@
 #include <QTextDocument>
 #include <kcolorscheme.h>
 #include <kiconloader.h>
+#include <qnamespace.h>
+#include <qvariant.h>
 
 #define HEADING_X_ICON_SIZE 16
 #define MILLISECONDS_TO_SHOW_RED_FOR_KILLED_PROCESS 2000
@@ -365,7 +368,7 @@ KSysGuard::Processes *ProcessModel::processController() const
     return d->mProcesses.get();
 }
 
-const QVector<KSysGuard::ProcessAttribute *> ProcessModel::extraAttributes() const
+const QVector<KSysGuard::ExtendedProcessAttribute *> ProcessModel::extraAttributes() const
 {
     return d->mExtraAttributes;
 }
@@ -680,6 +683,11 @@ int ProcessModel::rowCount(const QModelIndex &parent) const
 int ProcessModel::columnCount(const QModelIndex &) const
 {
     return d->mHeadings.count() + d->mExtraAttributes.count();
+}
+
+int ProcessModel::baseColumnCount() const
+{
+    return d->mHeadings.count();
 }
 
 bool ProcessModel::hasChildren(const QModelIndex &parent = QModelIndex()) const
@@ -1040,6 +1048,10 @@ QVariant ProcessModel::headerData(int section, Qt::Orientation orientation, int 
         switch (role) {
         case Qt::DisplayRole:
             return d->mExtraAttributes[attr]->shortName();
+        case Qt::ToolTipRole:
+            return d->mExtraAttributes[attr]->getTooltip();
+        case Qt::WhatsThisRole:
+            return d->mExtraAttributes[attr]->getWhatsThis();
         }
         return QVariant();
     }

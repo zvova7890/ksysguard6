@@ -1,5 +1,6 @@
 /*
     SPDX-FileCopyrightText: 2019 David Edmundson <davidedmundson@kde.org>
+    SPDX-FileCopyrightText: 2026 Juho Ovaska <ovaska.juho@gmail.com>
 
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
@@ -12,6 +13,7 @@
 
 #include "process.h"
 #include "process_attribute.h"
+#include "extended_process_attribute.h"
 #include "process_data_provider.h"
 #include "processcore_debug.h"
 
@@ -532,12 +534,18 @@ ExtendedProcesses::~ExtendedProcesses()
 
 QList<ProcessAttribute *> ExtendedProcesses::attributes() const
 {
-    return d->m_coreAttributes + extendedAttributes();
+    QList<ProcessAttribute *> attrs;
+    attrs += d->m_coreAttributes;
+    for (auto attr : extendedAttributes())
+    {
+        attrs += attr;
+    }
+    return attrs;
 }
 
-QList<ProcessAttribute *> ExtendedProcesses::extendedAttributes() const
+QList<ExtendedProcessAttribute *> ExtendedProcesses::extendedAttributes() const
 {
-    QList<ProcessAttribute *> rc;
+    QList<ExtendedProcessAttribute *> rc;
     for (auto p : std::as_const(d->m_providers)) {
         rc << p->attributes();
     }

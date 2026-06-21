@@ -7,9 +7,13 @@
 
 #include "nvidia.h"
 
+#include <QMenu>
 #include <QDebug>
 #include <QLibrary>
+#include <QDomElement>
+#include <QLoggingCategory>
 
+#include <KConfigGroup>
 #include <KLocalizedString>
 #include <KPluginFactory>
 
@@ -22,11 +26,13 @@
 
 #include <cassert>
 
+#include "nvidialogging.h"
+
 #include "nvml.h"
 
 using namespace KSysGuard;
 
-class nvmlLib {
+class NvidiaPlugin::nvmlLib {
 public:
     struct nvmlFuncs
     {
@@ -74,14 +80,14 @@ NV_FUNC(nvmlDeviceGetMPSComputeRunningProcesses)
         nvmlFuncs funcs{};
         bool failed = false;
 #define NV_STR(name) #name
-#define NV_FUNC(name) do {                                                             \
-            auto *ptr = m_lib.resolve(NV_STR(name));                                   \
-            if (ptr == nullptr) {                                                      \
-                qDebug() << "ERROR: Failed to resolve NVML symbol '" NV_STR(name) "'"; \
-                failed = true;                                                         \
-            } else {                                                                   \
-                funcs.name = reinterpret_cast<decltype(funcs.name)>(ptr);              \
-            }                                                                          \
+#define NV_FUNC(name) do {                                                                                       \
+            auto *ptr = m_lib.resolve(NV_STR(name));                                                             \
+            if (ptr == nullptr) {                                                                                \
+                qCWarning(KSYSGUARD_PLUGIN_NVIDIA) << "ERROR: Failed to resolve NVML symbol '" NV_STR(name) "'"; \
+                failed = true;                                                                                   \
+            } else {                                                                                             \
+                funcs.name = reinterpret_cast<decltype(funcs.name)>(ptr);                                        \
+            }                                                                                                    \
         } while (0);
 NV_FUNC(nvmlInit)
 NV_FUNC(nvmlShutdown)
@@ -101,7 +107,7 @@ NV_FUNC(nvmlDeviceGetMPSComputeRunningProcesses)
             auto ret = funcs.nvmlInit();
             if (ret != NVML_SUCCESS)
             {
-                qDebug() << "ERROR: Failed to initialize NVML, nvmlInit() returned " << ret;
+                qCWarning(KSYSGUARD_PLUGIN_NVIDIA) << "ERROR: Failed to initialize NVML, nvmlInit() returned " << ret;
                 failed = true;
             }
         }
@@ -137,15 +143,16 @@ private:
     nvmlFuncs m_funcs;
 };
 
-class nvmlDetail {
+class NvidiaPlugin::nvmlDetail {
     struct processInfo {
         unsigned int gpuUtil;
         unsigned long long memUsage;
     };
 
 public:
-    explicit nvmlDetail(const nvmlLib &lib)
-        : m_lib(lib)
+    explicit nvmlDetail(const NvidiaPlugin &plugin, const nvmlLib &lib)
+        : m_plugin(plugin)
+        , m_lib(lib)
         , m_pidListSelect(false)
         , m_bufferSize(0)
     {
@@ -208,6 +215,11 @@ public:
             pidsNow().cbegin(), pidsNow().cend(),
             std::inserter(m_pidListDelta, m_pidListDelta.begin())
         );
+    }
+
+    unsigned int numGpus() const
+    {
+        return m_gpus.size();
     }
 
     void removedPids(std::function<void(unsigned int pid)> &&callback)
@@ -292,7 +304,12 @@ private:
         {
             auto &item = buf[i];
             auto &info = getInfo(item.pid);
-            info.gpuUtil += static_cast<double>(item.smUtil) / static_cast<double>(m_gpus.size()) + 0.5;
+            double usage = static_cast<double>(item.smUtil);
+            if (m_plugin.isNormalizedGPUUsage())
+            {
+                usage /= static_cast<double>(m_gpus.size());
+            }
+            info.gpuUtil = usage + 0.5;
             if (timestamp < item.timeStamp)
             {
                 timestamp = item.timeStamp;
@@ -333,6 +350,7 @@ private:
         }
     }
 
+    const NvidiaPlugin &m_plugin;
     const nvmlLib &m_lib;
 
     // used to select between m_pidList1/2 to avoid moves/reallocations
@@ -355,8 +373,109 @@ private:
     std::unordered_map<unsigned int, processInfo> m_infoList;
 };
 
+class NvidiaPlugin::usageInterface : public ExtendedProcessAttribute::ProcessModelInterface
+{
+public:
+    explicit usageInterface(NvidiaPlugin &plugin)
+        : m_plugin(plugin)
+        , m_normalizeAction(nullptr)
+    {}
+
+    ~usageInterface() override
+    {}
+
+    void saveSettings(KConfigGroup &cg) override
+    {
+        cg.writeEntry("normalizeGPUUsage", m_plugin.isNormalizedGPUUsage());
+    }
+
+    void saveSettingsLegacy(QDomElement &element) override
+    {
+        element.setAttribute(QStringLiteral("normalizeGPUUsage"), m_plugin.isNormalizedGPUUsage());
+    }
+
+    void loadSettings(const KConfigGroup &cg) override
+    {
+        m_plugin.setNormalizedGPUUsage(cg.readEntry("normalizeGPUUsage", true));
+    }
+
+    void loadSettingsLegacy(QDomElement &element) override
+    {
+        int normalizeGPUUsage = element.attribute(QStringLiteral("normalizeGPUUsage"), "1").toUInt();
+        m_plugin.setNormalizedGPUUsage(normalizeGPUUsage);
+    }
+
+    void setupMenu(QMenu &menu) override
+    {
+        m_normalizeAction = new QAction(&menu);
+        m_normalizeAction->setText(i18n("Divide GPU usage by number of GPUs"));
+        m_normalizeAction->setCheckable(true);
+        m_normalizeAction->setChecked(m_plugin.isNormalizedGPUUsage());
+        menu.addSeparator();
+        menu.addAction(m_normalizeAction);
+    }
+
+    void checkMenu(QAction *action) override
+    {
+        if (action == m_normalizeAction)
+        {
+            m_plugin.setNormalizedGPUUsage(m_normalizeAction->isChecked());
+        }
+    }
+
+    QVariant getTooltip() override
+    {
+        if (m_plugin.numGpus() == 1)
+        {
+            return i18n("The current GPU usage of the process.");
+        }
+        else if (m_plugin.isNormalizedGPUUsage())
+        {
+            return i18np("The current total GPU usage of the process, divided by the %1 GPU in the machine.",
+                            "The current total GPU usage of the process, divided by the %1 GPUs in the machine.",
+                            m_plugin.numGpus());
+        }
+        else
+        {
+            return i18n("The current total CPU usage of the process.");
+        }
+        
+    }
+
+    QVariant getWhatsThis() override
+    {
+        return i18n("<qt>The current total CPU usage of the process.");
+    }
+ 
+private:
+    NvidiaPlugin &m_plugin;
+    QAction *m_normalizeAction;
+};
+
+class NvidiaPlugin::memoryInterface : public ExtendedProcessAttribute::ProcessModelInterface
+{
+public:
+    explicit memoryInterface(NvidiaPlugin &plugin)
+        : m_plugin(plugin)
+    {}
+
+    QVariant getTooltip() override
+    {
+        return i18n("The current total VRAM allocations of the process. (graphics + compute)");
+    }
+
+    QVariant getWhatsThis() override
+    {
+        return i18n("<qt>The current VRAM allocations of the process.");
+    }
+
+private:
+    NvidiaPlugin &m_plugin;
+};
+
 NvidiaPlugin::NvidiaPlugin(QObject *parent, const QVariantList &args)
     : ProcessDataProvider(parent, args)
+    , m_normalizeUsage(true) // default to true
 {
     m_nvmlLib = std::make_unique<nvmlLib>();
     if (!m_nvmlLib->tryLoad()) {
@@ -364,10 +483,16 @@ NvidiaPlugin::NvidiaPlugin(QObject *parent, const QVariantList &args)
         return;
     }
 
-    m_usage = new ProcessAttribute(QStringLiteral("nvidia_usage"), i18n("GPU Usage"), this);
+    m_usage = new ExtendedProcessAttribute(QStringLiteral("nvidia_usage"), i18n("GPU Usage"), this);
     m_usage->setUnit(KSysGuard::UnitPercent);
-    m_memory = new ProcessAttribute(QStringLiteral("nvidia_memory"), i18n("GPU Memory"), this);
+    m_memory = new ExtendedProcessAttribute(QStringLiteral("nvidia_memory"), i18n("GPU Memory"), this);
     m_memory->setUnit(KSysGuard::UnitByte);
+
+    m_usageInterface = std::make_unique<usageInterface>(*this);
+    m_usage->setInterface(m_usageInterface.get());
+
+    m_memoryInterface = std::make_unique<memoryInterface>(*this);
+    m_memory->setInterface(m_memoryInterface.get());
 
     addProcessAttribute(m_usage);
     addProcessAttribute(m_memory);
@@ -383,7 +508,7 @@ void NvidiaPlugin::handleEnabledChanged(bool enabled)
         return;
 
     if (enabled) {
-        m_nvmlDetail = std::make_unique<nvmlDetail>(*m_nvmlLib.get());
+        m_nvmlDetail = std::make_unique<nvmlDetail>(*this, *m_nvmlLib.get());
         m_nvmlDetail->loadGpus();
     } else {
         m_nvmlDetail.reset();
@@ -416,6 +541,48 @@ void NvidiaPlugin::update()
             m_memory->setData(proc, memory);
         }
     });
+}
+
+unsigned int NvidiaPlugin::numGpus()
+{
+    if (m_nvmlDetail)
+    {
+        return m_nvmlDetail->numGpus();
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+bool NvidiaPlugin::isNormalizedGPUUsage() const
+{
+    return m_normalizeUsage;
+}
+
+void NvidiaPlugin::setNormalizedGPUUsage(bool normalize)
+{
+    m_normalizeUsage = normalize;
+}
+
+KSysGuard::Unit NvidiaPlugin::getMemoryUnits()
+{
+    if (m_memory != nullptr)
+    {
+        return m_memory->unit();
+    }
+    else
+    {
+        return KSysGuard::UnitInvalid;
+    }
+}
+
+void NvidiaPlugin::setMemoryUnits(KSysGuard::Unit unit)
+{
+    if (m_memory != nullptr)
+    {
+        return m_memory->setUnit(unit);
+    }
 }
 
 K_PLUGIN_FACTORY_WITH_JSON(PluginFactory, "nvidia.json", registerPlugin<NvidiaPlugin>();)

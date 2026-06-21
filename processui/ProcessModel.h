@@ -20,6 +20,7 @@ namespace KSysGuard
 class Processes;
 class Process;
 class ProcessAttribute;
+class ExtendedProcessAttribute;
 }
 
 class ProcessModelPrivate;
@@ -54,6 +55,9 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
     QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
     QModelIndex parent(const QModelIndex &index) const override;
+
+    // returns number of non-plugin columns
+    int baseColumnCount() const;
 
     bool hasChildren(const QModelIndex &parent) const override;
     /** Returns if (left < right), used by the sort-filter proxy model to sort the columns */
@@ -118,7 +122,7 @@ public:
     KSysGuard::Processes *processController() const; // The processes instance
 
     /** Returns the list of extra attributes provided by plugins */
-    const QVector<KSysGuard::ProcessAttribute *> extraAttributes() const;
+    const QVector<KSysGuard::ExtendedProcessAttribute *> extraAttributes() const;
 
     /** Convenience function to get the number of processes.
      *

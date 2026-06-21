@@ -16,10 +16,41 @@
 #include <KLocalizedString>
 #include <KPluginFactory>
 
+#include "extended_process_attribute.h"
 #include "networkconstants.h"
 #include "networklogging.h"
 
 using namespace KSysGuard;
+
+class NetworkPlugin::inboundInterface : public ExtendedProcessAttribute::ProcessModelInterface
+{
+    QVariant getTooltip() override
+    {
+        return i18n(
+    "Displays the total inbound network activity to the process.");
+    }
+
+    QVariant getWhatsThis() override
+    {
+        return i18n(
+    "<qt>Total inbound network activity.");
+    }
+};
+
+class NetworkPlugin::outboundInterface : public ExtendedProcessAttribute::ProcessModelInterface
+{
+    QVariant getTooltip() override
+    {
+        return i18n(
+    "Displays the total outbound network activity from the process.");
+    }
+
+    QVariant getWhatsThis() override
+    {
+        return i18n(
+    "<qt>Total outbound network activity.");
+    }
+};
 
 NetworkPlugin::NetworkPlugin(QObject *parent, const QVariantList &args)
     : ProcessDataProvider(parent, args)
@@ -33,14 +64,20 @@ NetworkPlugin::NetworkPlugin(QObject *parent, const QVariantList &args)
     qCDebug(KSYSGUARD_PLUGIN_NETWORK) << "Network plugin loading";
     qCDebug(KSYSGUARD_PLUGIN_NETWORK) << "Found helper at" << qPrintable(executable);
 
-    m_inboundSensor = new ProcessAttribute(QStringLiteral("netInbound"), i18nc("@title", "Download Speed"), this);
+    m_inboundSensor = new ExtendedProcessAttribute(QStringLiteral("netInbound"), i18nc("@title", "Download Speed"), this);
     m_inboundSensor->setShortName(i18nc("@title", "Download"));
     m_inboundSensor->setUnit(KSysGuard::UnitByteRate);
     m_inboundSensor->setVisibleByDefault(true);
-    m_outboundSensor = new ProcessAttribute(QStringLiteral("netOutbound"), i18nc("@title", "Upload Speed"), this);
+    m_outboundSensor = new ExtendedProcessAttribute(QStringLiteral("netOutbound"), i18nc("@title", "Upload Speed"), this);
     m_outboundSensor->setShortName(i18nc("@title", "Upload"));
     m_outboundSensor->setUnit(KSysGuard::UnitByteRate);
     m_outboundSensor->setVisibleByDefault(true);
+
+    m_inboundSensorInterface.reset(new inboundInterface());
+    m_inboundSensor->setInterface(m_inboundSensorInterface.get());
+
+    m_outboundSensorInterface.reset(new outboundInterface());
+    m_outboundSensor->setInterface(m_outboundSensorInterface.get());
 
     addProcessAttribute(m_inboundSensor);
     addProcessAttribute(m_outboundSensor);
@@ -81,6 +118,10 @@ NetworkPlugin::NetworkPlugin(QObject *parent, const QVariantList &args)
             m_outboundSensor->setData(process, bytesOut);
         }
     });
+}
+
+NetworkPlugin::~NetworkPlugin()
+{
 }
 
 void NetworkPlugin::handleEnabledChanged(bool enabled)
